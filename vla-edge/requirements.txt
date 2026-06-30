@@ -1,0 +1,27 @@
+# Core DL
+torch>=2.2            # install the build matching your CUDA: https://pytorch.org/get-started/locally/
+transformers>=4.44
+accelerate
+
+# VLA + robot data
+lerobot              # SmolVLA, datasets, policies
+
+# Fine-tune + compress
+peft                 # LoRA / adapters
+bitsandbytes         # 4-bit / QLoRA  (NVIDIA GPU only — skip on CPU/Mac, use fp16)
+
+# Perception inputs (observe.py)
+ultralytics          # YOLO / SAM
+pillow
+numpy
+
+# Deploy
+onnxruntime          # swap for onnxruntime-gpu / tensorrt on the fast path
+
+# Tests
+pytest               # run `pytest tests/` to check your work (green = done)
+
+# Notes:
+#  - bitsandbytes requires an NVIDIA GPU. On CPU/Mac, comment it out and stay in fp16.
+#  - Each src/ module runs its provided helpers, then stops at your first TODO. `pytest tests/`
+#    shows which functions still need writing — install libraries lazily as each week needs them.

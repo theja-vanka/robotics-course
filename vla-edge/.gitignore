@@ -1,0 +1,21 @@
+# envs / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# data + weights (keep the repo light)
+data/*
+!data/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# generated artifacts
+benchmarks/*.csv
+demo/*.mp4
+demo/*.gif
