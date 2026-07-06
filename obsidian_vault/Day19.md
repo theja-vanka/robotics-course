@@ -82,10 +82,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [3DGS Robotics Survey](https://arxiv.org/abs/2410.12262) — ⏱️ ~15 min
-- [ ] 📄 [GaussianGrasper Paper](https://arxiv.org/abs/2403.09637) — ⏱️ ~15 min
-- [ ] 🎥 [3DGS for Robotics — Tutorial](https://www.youtube.com/watch?v=HVv_IschId8) — ⏱️ ~25 min
-- [ ] 📦 [awesome-representation-for-robotics](https://github.com/dtc111111/awesome-representation-for-robotics) — ⏱️ ~10 min
+- [ ] 📄 [3DGS Robotics Survey](https://www.google.com/search?q=3DGS+Robotics+Survey) — ⏱️ ~15 min
+- [ ] 📄 [GaussianGrasper Paper](https://www.google.com/search?q=GaussianGrasper+Paper) — ⏱️ ~15 min
+- [ ] 🎥 [3DGS for Robotics — Tutorial](https://www.youtube.com/results?search_query=3DGS+for+Robotics+%E2%80%94+Tutorial) — ⏱️ ~25 min
+- [ ] 📦 [awesome-representation-for-robotics](https://www.google.com/search?q=awesome-representation-for-robotics) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -119,9 +119,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [Nerfstudio GitHub](https://github.com/nerfstudio-project/nerfstudio) — ⏱️ ~10 min
-- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
-- [ ] 📄 [Nerfstudio 3DGS Export](https://docs.nerf.studio/quickstart/export_geometry.html) — ⏱️ ~15 min
+- [ ] 📦 [Nerfstudio GitHub](https://www.google.com/search?q=Nerfstudio+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Nerfstudio 3DGS Export](https://www.google.com/search?q=Nerfstudio+3DGS+Export) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~35 min*
 
@@ -155,9 +155,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
-- [ ] 📝 [3D Shape Search with Vector DBs](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
+- [ ] 📝 [3D Shape Search with Vector DBs](https://www.google.com/search?q=3D+Shape+Search+with+Vector+DBs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -191,10 +191,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [GPTQ Paper](https://arxiv.org/abs/2210.17323) — ⏱️ ~15 min
-- [ ] 📄 [AWQ Paper](https://arxiv.org/abs/2306.00978) — ⏱️ ~15 min
-- [ ] 📦 [AutoGPTQ GitHub](https://github.com/AutoGPTQ/AutoGPTQ) — ⏱️ ~10 min
-- [ ] 📦 [AWQ GitHub](https://github.com/mit-han-lab/llm-awq) — ⏱️ ~10 min
+- [ ] 📄 [GPTQ Paper](https://www.google.com/search?q=GPTQ+Paper) — ⏱️ ~15 min
+- [ ] 📄 [AWQ Paper](https://www.google.com/search?q=AWQ+Paper) — ⏱️ ~15 min
+- [ ] 📦 [AutoGPTQ GitHub](https://www.google.com/search?q=AutoGPTQ+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [AWQ GitHub](https://www.google.com/search?q=AWQ+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -236,9 +236,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -264,9 +264,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

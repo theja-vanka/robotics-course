@@ -82,8 +82,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [ML Interviews Book — Chip Huyen](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
-- [ ] 📝 [CV Interview Bank — LearnOpenCV](https://learnopencv.com/interview-questions/) — ⏱️ ~15 min
+- [ ] 📝 [ML Interviews Book — Chip Huyen](https://www.google.com/search?q=ML+Interviews+Book+%E2%80%94+Chip+Huyen) — ⏱️ ~15 min
+- [ ] 📝 [CV Interview Bank — LearnOpenCV](https://www.google.com/search?q=CV+Interview+Bank+%E2%80%94+LearnOpenCV) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -108,8 +108,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Open3D Point Cloud from Depth](http://www.open3d.org/docs/release/tutorial/geometry/rgbd_image.html) — ⏱️ ~15 min
-- [ ] 🎥 [Convolution from Scratch](https://www.youtube.com/watch?v=KuXjwB4LzSA) — ⏱️ ~25 min
+- [ ] 📄 [Open3D Point Cloud from Depth](https://www.google.com/search?q=Open3D+Point+Cloud+from+Depth) — ⏱️ ~15 min
+- [ ] 🎥 [Convolution from Scratch](https://www.youtube.com/results?search_query=Convolution+from+Scratch) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -134,8 +134,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [GitHub Pages Setup](https://pages.github.com/) — ⏱️ ~15 min
-- [ ] 📝 [Excalidraw — Architecture Diagrams](https://excalidraw.com/) — ⏱️ ~15 min
+- [ ] 📝 [GitHub Pages Setup](https://www.google.com/search?q=GitHub+Pages+Setup) — ⏱️ ~15 min
+- [ ] 📝 [Excalidraw — Architecture Diagrams](https://www.google.com/search?q=Excalidraw+%E2%80%94+Architecture+Diagrams) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -169,8 +169,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Benchmark Utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
-- [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch Benchmark Utils](https://www.google.com/search?q=PyTorch+Benchmark+Utils) — ⏱️ ~15 min
+- [ ] 📦 [TensorRT GitHub](https://www.google.com/search?q=TensorRT+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~25 min*
 
@@ -212,9 +212,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -240,9 +240,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

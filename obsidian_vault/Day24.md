@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~355 min (~5.9 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Awesome Physical AI — curated latest VLA & world-model papers — [open](https://github.com/keon/awesome-physical-ai)
+- 🔥 Awesome Physical AI — curated latest VLA & world-model papers — [open](https://www.google.com/search?q=open)
 
 > 🌴 **Tomorrow is your rest day (Sunday).** No study — let memory consolidate off-screen.
 
@@ -87,10 +87,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [CLIP Paper](https://arxiv.org/abs/2103.00020) — ⏱️ ~15 min
-- [ ] 📄 [DDPM Paper](https://arxiv.org/abs/2006.11239) — ⏱️ ~15 min
-- [ ] 📄 [Latent Diffusion (Stable Diffusion)](https://arxiv.org/abs/2112.10752) — ⏱️ ~15 min
-- [ ] 📄 [ControlNet Paper](https://arxiv.org/abs/2302.05543) — ⏱️ ~15 min
+- [ ] 📄 [CLIP Paper](https://www.google.com/search?q=CLIP+Paper) — ⏱️ ~15 min
+- [ ] 📄 [DDPM Paper](https://www.google.com/search?q=DDPM+Paper) — ⏱️ ~15 min
+- [ ] 📄 [Latent Diffusion (Stable Diffusion)](https://www.google.com/search?q=Latent+Diffusion+%28Stable+Diffusion%29) — ⏱️ ~15 min
+- [ ] 📄 [ControlNet Paper](https://www.google.com/search?q=ControlNet+Paper) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~60 min*
 
@@ -117,13 +117,13 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [NeRF Paper](https://arxiv.org/abs/2003.08934) — ⏱️ ~15 min
-- [ ] 📄 [3DGS Paper](https://arxiv.org/abs/2308.04079) — ⏱️ ~15 min
-- [ ] 📄 [SAM Paper](https://arxiv.org/abs/2304.02643) — ⏱️ ~15 min
-- [ ] 📄 [RT-2 Paper](https://arxiv.org/abs/2307.15818) — ⏱️ ~15 min
-- [ ] 📄 [Depth Anything v2](https://arxiv.org/abs/2406.09414) — ⏱️ ~15 min
-- [ ] 📄 [AnyGrasp Paper](https://arxiv.org/abs/2212.08333) — ⏱️ ~15 min
-- [ ] 🔥 📦 [Awesome Physical AI — curated latest VLA & world-model papers](https://github.com/keon/awesome-physical-ai) — ⏱️ ~10 min
+- [ ] 📄 [NeRF Paper](https://www.google.com/search?q=NeRF+Paper) — ⏱️ ~15 min
+- [ ] 📄 [3DGS Paper](https://www.google.com/search?q=3DGS+Paper) — ⏱️ ~15 min
+- [ ] 📄 [SAM Paper](https://www.google.com/search?q=SAM+Paper) — ⏱️ ~15 min
+- [ ] 📄 [RT-2 Paper](https://www.google.com/search?q=RT-2+Paper) — ⏱️ ~15 min
+- [ ] 📄 [Depth Anything v2](https://www.google.com/search?q=Depth+Anything+v2) — ⏱️ ~15 min
+- [ ] 📄 [AnyGrasp Paper](https://www.google.com/search?q=AnyGrasp+Paper) — ⏱️ ~15 min
+- [ ] 🔥 📦 [Awesome Physical AI — curated latest VLA & world-model papers](https://www.google.com/search?q=Awesome+Physical+AI+%E2%80%94+curated+latest+VLA+%26+world-model+papers) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~100 min*
 
@@ -150,9 +150,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Paper (2021)](https://arxiv.org/abs/2010.11929) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Architecture Deep Dive](https://milvus.io/docs/architecture_overview.md) — ⏱️ ~15 min
-- [ ] 📝 [Zilliz Engineering Blog](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Paper (2021)](https://www.google.com/search?q=Milvus+Paper+%282021%29) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Architecture Deep Dive](https://www.google.com/search?q=Milvus+Architecture+Deep+Dive) — ⏱️ ~15 min
+- [ ] 📝 [Zilliz Engineering Blog](https://www.google.com/search?q=Zilliz+Engineering+Blog) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -179,10 +179,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [DistilBERT Paper](https://arxiv.org/abs/1910.01108) — ⏱️ ~15 min
-- [ ] 📄 [GPTQ Paper](https://arxiv.org/abs/2210.17323) — ⏱️ ~15 min
-- [ ] 📄 [AWQ Paper](https://arxiv.org/abs/2306.00978) — ⏱️ ~15 min
-- [ ] 📄 [LLM.int8() Paper](https://arxiv.org/abs/2208.07339) — ⏱️ ~15 min
+- [ ] 📄 [DistilBERT Paper](https://www.google.com/search?q=DistilBERT+Paper) — ⏱️ ~15 min
+- [ ] 📄 [GPTQ Paper](https://www.google.com/search?q=GPTQ+Paper) — ⏱️ ~15 min
+- [ ] 📄 [AWQ Paper](https://www.google.com/search?q=AWQ+Paper) — ⏱️ ~15 min
+- [ ] 📄 [LLM.int8() Paper](https://www.google.com/search?q=LLM.int8%28%29+Paper) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~60 min*
 
@@ -224,9 +224,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -252,9 +252,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

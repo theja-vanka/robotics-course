@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~380 min (~6.3 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 NVIDIA GR00T N1.5 — open humanoid foundation model — [open](https://research.nvidia.com/labs/gear/gr00t-n1_5/)
+- 🔥 NVIDIA GR00T N1.5 — open humanoid foundation model — [open](https://www.google.com/search?q=open)
 
 > 🌴 **Tomorrow is your rest day (Sunday).** No study — let memory consolidate off-screen.
 
@@ -87,11 +87,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [VLA Survey — Perception Section](https://vla-survey.github.io/) — ⏱️ ~15 min
-- [ ] 📝 [Robot Perception Overview — Towards Robotics](https://towardsai.net/p/machine-learning/robot-perception) — ⏱️ ~15 min
-- [ ] 🎥 [Robot Perception Pipeline — MIT OpenCourseWare](https://www.youtube.com/watch?v=GUoJSRyPKYU) — ⏱️ ~25 min
-- [ ] 📄 [ROS2 Perception Docs](https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Introduction-To-Tf2.html) — ⏱️ ~15 min
-- [ ] 🔥 📄 [NVIDIA GR00T N1.5 — open humanoid foundation model](https://research.nvidia.com/labs/gear/gr00t-n1_5/) — ⏱️ ~15 min
+- [ ] 📄 [VLA Survey — Perception Section](https://www.google.com/search?q=VLA+Survey+%E2%80%94+Perception+Section) — ⏱️ ~15 min
+- [ ] 📝 [Robot Perception Overview — Towards Robotics](https://www.google.com/search?q=Robot+Perception+Overview+%E2%80%94+Towards+Robotics) — ⏱️ ~15 min
+- [ ] 🎥 [Robot Perception Pipeline — MIT OpenCourseWare](https://www.youtube.com/results?search_query=Robot+Perception+Pipeline+%E2%80%94+MIT+OpenCourseWare) — ⏱️ ~25 min
+- [ ] 📄 [ROS2 Perception Docs](https://www.google.com/search?q=ROS2+Perception+Docs) — ⏱️ ~15 min
+- [ ] 🔥 📄 [NVIDIA GR00T N1.5 — open humanoid foundation model](https://www.google.com/search?q=NVIDIA+GR00T+N1.5+%E2%80%94+open+humanoid+foundation+model) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -133,9 +133,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Python OOP Guide](https://docs.python.org/3/tutorial/classes.html) — ⏱️ ~15 min
-- [ ] 📝 [Designing a Robot Perception System](https://robotics.stackexchange.com/questions/tagged/perception) — ⏱️ ~15 min
-- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
+- [ ] 📄 [Python OOP Guide](https://www.google.com/search?q=Python+OOP+Guide) — ⏱️ ~15 min
+- [ ] 📝 [Designing a Robot Perception System](https://www.google.com/search?q=Designing+a+Robot+Perception+System) — ⏱️ ~15 min
+- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -169,10 +169,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Python Search Tutorial](https://milvus.io/docs/search.md) — ⏱️ ~15 min
-- [ ] 📝 [Build a Scene Search Engine — Zilliz Blog](https://zilliz.com/blog) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Python Search Tutorial](https://www.google.com/search?q=Milvus+Python+Search+Tutorial) — ⏱️ ~15 min
+- [ ] 📝 [Build a Scene Search Engine — Zilliz Blog](https://www.google.com/search?q=Build+a+Scene+Search+Engine+%E2%80%94+Zilliz+Blog) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -199,10 +199,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Knowledge Distillation Paper (Hinton et al.)](https://arxiv.org/abs/1503.02531) — ⏱️ ~15 min
-- [ ] 📄 [DistilBERT Paper](https://arxiv.org/abs/1910.01108) — ⏱️ ~15 min
-- [ ] 🎥 [Knowledge Distillation Explained](https://www.youtube.com/watch?v=IObONhOGgEk) — ⏱️ ~25 min
-- [ ] 📝 [KD Tutorial — PyTorch](https://pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html) — ⏱️ ~15 min
+- [ ] 📄 [Knowledge Distillation Paper (Hinton et al.)](https://www.google.com/search?q=Knowledge+Distillation+Paper+%28Hinton+et+al.%29) — ⏱️ ~15 min
+- [ ] 📄 [DistilBERT Paper](https://www.google.com/search?q=DistilBERT+Paper) — ⏱️ ~15 min
+- [ ] 🎥 [Knowledge Distillation Explained](https://www.youtube.com/results?search_query=Knowledge+Distillation+Explained) — ⏱️ ~25 min
+- [ ] 📝 [KD Tutorial — PyTorch](https://www.google.com/search?q=KD+Tutorial+%E2%80%94+PyTorch) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~70 min*
 
@@ -228,9 +228,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.hellocpp.dev/course/cpp-plus) — ⏱️ ~45 min
-- [ ] 📦 [OpenCV GitHub](https://github.com/opencv/opencv) — ⏱️ ~10 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
+- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Plus+%28Intermediate%29) — ⏱️ ~45 min
+- [ ] 📦 [OpenCV GitHub](https://www.google.com/search?q=OpenCV+GitHub) — ⏱️ ~10 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~80 min*
 
@@ -256,9 +256,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

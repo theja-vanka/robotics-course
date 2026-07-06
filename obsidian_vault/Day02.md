@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~410 min (~6.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Gemini Robotics 1.5 — DeepMind VLA — [open](https://deepmind.google/models/gemini-robotics/)
+- 🔥 Gemini Robotics 1.5 — DeepMind VLA — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -61,7 +61,7 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Connection Guide](https://milvus.io/docs/manage-collections.md) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Connection Guide](https://www.google.com/search?q=Milvus+Connection+Guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~15 min*
 
@@ -88,12 +88,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [CLIP Paper (Radford et al.)](https://arxiv.org/abs/2103.00020) — ⏱️ ~15 min
-- [ ] 📄 [BLIP-2 Paper](https://arxiv.org/abs/2301.12597) — ⏱️ ~15 min
-- [ ] 🎥 [CLIP Explained — Yannic Kilcher](https://www.youtube.com/watch?v=T9XSU0pKX2E) — ⏱️ ~25 min
-- [ ] 📝 [Understanding CLIP — LearnOpenCV](https://learnopencv.com/clip-what-it-is-how-it-works-applications/) — ⏱️ ~15 min
-- [ ] 📦 [LLaVA GitHub](https://github.com/haotian-liu/LLaVA) — ⏱️ ~10 min
-- [ ] 🔥 📝 [Gemini Robotics 1.5 — DeepMind VLA](https://deepmind.google/models/gemini-robotics/) — ⏱️ ~15 min
+- [ ] 📄 [CLIP Paper (Radford et al.)](https://www.google.com/search?q=CLIP+Paper+%28Radford+et+al.%29) — ⏱️ ~15 min
+- [ ] 📄 [BLIP-2 Paper](https://www.google.com/search?q=BLIP-2+Paper) — ⏱️ ~15 min
+- [ ] 🎥 [CLIP Explained — Yannic Kilcher](https://www.youtube.com/results?search_query=CLIP+Explained+%E2%80%94+Yannic+Kilcher) — ⏱️ ~25 min
+- [ ] 📝 [Understanding CLIP — LearnOpenCV](https://www.google.com/search?q=Understanding+CLIP+%E2%80%94+LearnOpenCV) — ⏱️ ~15 min
+- [ ] 📦 [LLaVA GitHub](https://www.google.com/search?q=LLaVA+GitHub) — ⏱️ ~10 min
+- [ ] 🔥 📝 [Gemini Robotics 1.5 — DeepMind VLA](https://www.google.com/search?q=Gemini+Robotics+1.5+%E2%80%94+DeepMind+VLA) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -127,9 +127,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [LLaVA HuggingFace Model Card](https://huggingface.co/llava-hf/llava-1.5-7b-hf) — ⏱️ ~15 min
-- [ ] 📄 [Transformers Pipeline Docs](https://huggingface.co/docs/transformers/main_classes/pipelines) — ⏱️ ~15 min
-- [ ] 🎥 [Run LLaVA Locally Tutorial](https://www.youtube.com/watch?v=MqMAnO8yJGQ) — ⏱️ ~25 min
+- [ ] 📄 [LLaVA HuggingFace Model Card](https://www.google.com/search?q=LLaVA+HuggingFace+Model+Card) — ⏱️ ~15 min
+- [ ] 📄 [Transformers Pipeline Docs](https://www.google.com/search?q=Transformers+Pipeline+Docs) — ⏱️ ~15 min
+- [ ] 🎥 [Run LLaVA Locally Tutorial](https://www.youtube.com/results?search_query=Run+LLaVA+Locally+Tutorial) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -163,10 +163,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Image Search Tutorial](https://milvus.io/docs/image_similarity_search.md) — ⏱️ ~15 min
-- [ ] 📝 [CLIP + Milvus Reverse Image Search](https://zilliz.com/blog/building-a-reverse-image-search-with-milvus-and-clip) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Insert Docs](https://milvus.io/docs/insert-update.md) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Image Search Tutorial](https://www.google.com/search?q=Milvus+Image+Search+Tutorial) — ⏱️ ~15 min
+- [ ] 📝 [CLIP + Milvus Reverse Image Search](https://www.google.com/search?q=CLIP+%2B+Milvus+Reverse+Image+Search) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Insert Docs](https://www.google.com/search?q=Milvus+Insert+Docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -200,9 +200,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch AMP (Automatic Mixed Precision)](https://pytorch.org/docs/stable/amp.html) — ⏱️ ~15 min
-- [ ] 📝 [FP16 vs FP32 Training — PyTorch Blog](https://pytorch.org/blog/accelerating-training-on-nvidia-gpus-with-pytorch-automatic-mixed-precision/) — ⏱️ ~15 min
-- [ ] 🎥 [Mixed Precision Training Explained](https://www.youtube.com/watch?v=UK8IMfgEMhs) — ⏱️ ~25 min
+- [ ] 📄 [PyTorch AMP (Automatic Mixed Precision)](https://www.google.com/search?q=PyTorch+AMP+%28Automatic+Mixed+Precision%29) — ⏱️ ~15 min
+- [ ] 📝 [FP16 vs FP32 Training — PyTorch Blog](https://www.google.com/search?q=FP16+vs+FP32+Training+%E2%80%94+PyTorch+Blog) — ⏱️ ~15 min
+- [ ] 🎥 [Mixed Precision Training Explained](https://www.youtube.com/results?search_query=Mixed+Precision+Training+Explained) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -228,9 +228,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.hellocpp.dev/course/cpp-programming-fundamentals) — ⏱️ ~45 min
-- [ ] 📄 [cppreference — read C++](https://en.cppreference.com/w/) — ⏱️ ~15 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
+- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Fundamentals+Course) — ⏱️ ~45 min
+- [ ] 📄 [cppreference — read C++](https://www.google.com/search?q=cppreference+%E2%80%94+read+C%2B%2B) — ⏱️ ~15 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -256,9 +256,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

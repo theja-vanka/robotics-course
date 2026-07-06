@@ -38,9 +38,9 @@
 **⏱️ Estimated resource time today:** ~510 min (~8.5 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 VLA Models Comparison 2026 — Octo · OpenVLA · π0/π0.5 · GR00T · SmolVLA — [open](https://www.roboticscenter.ai/tools/vla-models-comparison)
-- 🔥 SmolVLA — 450M open VLA that runs on consumer hardware (HF) — [open](https://huggingface.co/blog/smolvla)
-- 🔥 π0.5 on Jetson Thor with NVFP4 — real edge VLA inference — [open](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/)
+- 🔥 VLA Models Comparison 2026 — Octo · OpenVLA · π0/π0.5 · GR00T · SmolVLA — [open](https://www.google.com/search?q=open)
+- 🔥 SmolVLA — 450M open VLA that runs on consumer hardware (HF) — [open](https://www.google.com/search?q=open)
+- 🔥 π0.5 on Jetson Thor with NVFP4 — real edge VLA inference — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -64,9 +64,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Install Guide](https://pytorch.org/get-started/locally/) — ⏱️ ~15 min
-- [ ] 📄 [HuggingFace Hub Quickstart](https://huggingface.co/docs/huggingface_hub/quick-start) — ⏱️ ~15 min
-- [ ] 📝 [RunPod GPU Setup Guide](https://docs.runpod.io/pods/overview) — ⏱️ ~15 min
+- [ ] 📄 [PyTorch Install Guide](https://www.google.com/search?q=PyTorch+Install+Guide) — ⏱️ ~15 min
+- [ ] 📄 [HuggingFace Hub Quickstart](https://www.google.com/search?q=HuggingFace+Hub+Quickstart) — ⏱️ ~15 min
+- [ ] 📝 [RunPod GPU Setup Guide](https://www.google.com/search?q=RunPod+GPU+Setup+Guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -93,12 +93,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [CVPR 2026 Trends — Encord](https://encord.com/cvpr-2026/) — ⏱️ ~15 min
-- [ ] 📄 [VLA Models Survey](https://vla-survey.github.io/) — ⏱️ ~15 min
-- [ ] 📝 [NVIDIA GR00T N1 Blog](https://blogs.nvidia.com/blog/gr00t-n1-open-foundation-model-humanoid-robots/) — ⏱️ ~15 min
-- [ ] 🎥 [Andrej Karpathy — Software 2.0](https://www.youtube.com/watch?v=VrBiDsYB8J0) — ⏱️ ~25 min
-- [ ] 📝 [CVPR 2026 Robotics Showcase](https://cvpr.thecvf.com/Conferences/2026/News/Robotics) — ⏱️ ~15 min
-- [ ] 🔥 📝 [VLA Models Comparison 2026 — Octo · OpenVLA · π0/π0.5 · GR00T · SmolVLA](https://www.roboticscenter.ai/tools/vla-models-comparison) — ⏱️ ~15 min
+- [ ] 📝 [CVPR 2026 Trends — Encord](https://www.google.com/search?q=CVPR+2026+Trends+%E2%80%94+Encord) — ⏱️ ~15 min
+- [ ] 📄 [VLA Models Survey](https://www.google.com/search?q=VLA+Models+Survey) — ⏱️ ~15 min
+- [ ] 📝 [NVIDIA GR00T N1 Blog](https://www.google.com/search?q=NVIDIA+GR00T+N1+Blog) — ⏱️ ~15 min
+- [ ] 🎥 [Andrej Karpathy — Software 2.0](https://www.youtube.com/results?search_query=Andrej+Karpathy+%E2%80%94+Software+2.0) — ⏱️ ~25 min
+- [ ] 📝 [CVPR 2026 Robotics Showcase](https://www.google.com/search?q=CVPR+2026+Robotics+Showcase) — ⏱️ ~15 min
+- [ ] 🔥 📝 [VLA Models Comparison 2026 — Octo · OpenVLA · π0/π0.5 · GR00T · SmolVLA](https://www.google.com/search?q=VLA+Models+Comparison+2026+%E2%80%94+Octo+%C2%B7+OpenVLA+%C2%B7+%CF%800%2F%CF%800.5+%C2%B7+GR00T+%C2%B7+SmolVLA) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~100 min*
 
@@ -132,12 +132,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [CUDA Toolkit Install Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/) — ⏱️ ~15 min
-- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
-- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📦 [HuggingFace Diffusers GitHub](https://github.com/huggingface/diffusers) — ⏱️ ~10 min
-- [ ] 🔥 📝 [SmolVLA — 450M open VLA that runs on consumer hardware (HF)](https://huggingface.co/blog/smolvla) — ⏱️ ~15 min
+- [ ] 📄 [CUDA Toolkit Install Guide](https://www.google.com/search?q=CUDA+Toolkit+Install+Guide) — ⏱️ ~15 min
+- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://www.google.com/search?q=Ultralytics+YOLOv8+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [HuggingFace Diffusers GitHub](https://www.google.com/search?q=HuggingFace+Diffusers+GitHub) — ⏱️ ~10 min
+- [ ] 🔥 📝 [SmolVLA — 450M open VLA that runs on consumer hardware (HF)](https://www.google.com/search?q=SmolVLA+%E2%80%94+450M+open+VLA+that+runs+on+consumer+hardware+%28HF%29) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~70 min*
 
@@ -171,11 +171,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Standalone Docker Quickstart](https://milvus.io/docs/install_standalone-docker.md) — ⏱️ ~15 min
-- [ ] 📄 [pymilvus Hello Milvus Tutorial](https://milvus.io/docs/quickstart.md) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📦 [Milvus GitHub](https://github.com/milvus-io/milvus) — ⏱️ ~10 min
-- [ ] 🎥 [Milvus Getting Started](https://www.youtube.com/watch?v=P6DP3VLTNqo) — ⏱️ ~25 min
+- [ ] 📄 [Milvus Standalone Docker Quickstart](https://www.google.com/search?q=Milvus+Standalone+Docker+Quickstart) — ⏱️ ~15 min
+- [ ] 📄 [pymilvus Hello Milvus Tutorial](https://www.google.com/search?q=pymilvus+Hello+Milvus+Tutorial) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Milvus GitHub](https://www.google.com/search?q=Milvus+GitHub) — ⏱️ ~10 min
+- [ ] 🎥 [Milvus Getting Started](https://www.youtube.com/results?search_query=Milvus+Getting+Started) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~75 min*
 
@@ -202,11 +202,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [TensorRT Developer Guide](https://developer.nvidia.com/tensorrt) — ⏱️ ~15 min
-- [ ] 📝 [Model Compression Survey — Medium](https://towardsdatascience.com/model-compression-approaches-overview-5c0e4b0b3f4) — ⏱️ ~15 min
-- [ ] 🎥 [Neural Network Quantization Explained](https://www.youtube.com/watch?v=DDelqfkYCuo) — ⏱️ ~25 min
-- [ ] 📄 [PyTorch Quantization Overview](https://pytorch.org/docs/stable/quantization.html) — ⏱️ ~15 min
-- [ ] 🔥 📝 [π0.5 on Jetson Thor with NVFP4 — real edge VLA inference](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/) — ⏱️ ~15 min
+- [ ] 📄 [TensorRT Developer Guide](https://www.google.com/search?q=TensorRT+Developer+Guide) — ⏱️ ~15 min
+- [ ] 📝 [Model Compression Survey — Medium](https://www.google.com/search?q=Model+Compression+Survey+%E2%80%94+Medium) — ⏱️ ~15 min
+- [ ] 🎥 [Neural Network Quantization Explained](https://www.youtube.com/results?search_query=Neural+Network+Quantization+Explained) — ⏱️ ~25 min
+- [ ] 📄 [PyTorch Quantization Overview](https://www.google.com/search?q=PyTorch+Quantization+Overview) — ⏱️ ~15 min
+- [ ] 🔥 📝 [π0.5 on Jetson Thor with NVFP4 — real edge VLA inference](https://www.google.com/search?q=%CF%800.5+on+Jetson+Thor+with+NVFP4+%E2%80%94+real+edge+VLA+inference) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -232,9 +232,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.hellocpp.dev/course/cpp-programming-fundamentals) — ⏱️ ~45 min
-- [ ] 📄 [cppreference — read C++](https://en.cppreference.com/w/) — ⏱️ ~15 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
+- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Fundamentals+Course) — ⏱️ ~45 min
+- [ ] 📄 [cppreference — read C++](https://www.google.com/search?q=cppreference+%E2%80%94+read+C%2B%2B) — ⏱️ ~15 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -260,9 +260,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

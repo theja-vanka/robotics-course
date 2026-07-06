@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~265 min (~4.4 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 YOLO26 on NVIDIA Jetson — setup & benchmarks — [open](https://docs.ultralytics.com/guides/nvidia-jetson)
+- 🔥 YOLO26 on NVIDIA Jetson — setup & benchmarks — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -85,9 +85,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [ML System Design — Chip Huyen Book](https://huyenchip.com/machine-learning-systems-design/toc.html) — ⏱️ ~15 min
-- [ ] 📝 [Designing ML Systems — Stanford CS329S](https://stanford-cs329s.github.io/) — ⏱️ ~15 min
-- [ ] 🎥 [ML System Design Interview](https://www.youtube.com/watch?v=9vS3tsu3t8E) — ⏱️ ~25 min
+- [ ] 📝 [ML System Design — Chip Huyen Book](https://www.google.com/search?q=ML+System+Design+%E2%80%94+Chip+Huyen+Book) — ⏱️ ~15 min
+- [ ] 📝 [Designing ML Systems — Stanford CS329S](https://www.google.com/search?q=Designing+ML+Systems+%E2%80%94+Stanford+CS329S) — ⏱️ ~15 min
+- [ ] 🎥 [ML System Design Interview](https://www.youtube.com/results?search_query=ML+System+Design+Interview) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -121,8 +121,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Python cProfile Docs](https://docs.python.org/3/library/profile.html) — ⏱️ ~15 min
-- [ ] 📝 [Profiling Python Code Guide](https://realpython.com/python-profiling/) — ⏱️ ~15 min
+- [ ] 📄 [Python cProfile Docs](https://www.google.com/search?q=Python+cProfile+Docs) — ⏱️ ~15 min
+- [ ] 📝 [Profiling Python Code Guide](https://www.google.com/search?q=Profiling+Python+Code+Guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -149,9 +149,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Deployment Guide](https://milvus.io/docs/deploy_etcd.md) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Replica Docs](https://milvus.io/docs/replica.md) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Deployment Guide](https://www.google.com/search?q=Milvus+Deployment+Guide) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Replica Docs](https://www.google.com/search?q=Milvus+Replica+Docs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -178,9 +178,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Jetson Orin Benchmarks](https://developer.nvidia.com/embedded/jetson-agx-orin) — ⏱️ ~15 min
-- [ ] 📝 [Latency Optimization for CV — Blog](https://learnopencv.com/speeding-up-inference-with-openvino/) — ⏱️ ~15 min
-- [ ] 🔥 📄 [YOLO26 on NVIDIA Jetson — setup & benchmarks](https://docs.ultralytics.com/guides/nvidia-jetson) — ⏱️ ~15 min
+- [ ] 📄 [Jetson Orin Benchmarks](https://www.google.com/search?q=Jetson+Orin+Benchmarks) — ⏱️ ~15 min
+- [ ] 📝 [Latency Optimization for CV — Blog](https://www.google.com/search?q=Latency+Optimization+for+CV+%E2%80%94+Blog) — ⏱️ ~15 min
+- [ ] 🔥 📄 [YOLO26 on NVIDIA Jetson — setup & benchmarks](https://www.google.com/search?q=YOLO26+on+NVIDIA+Jetson+%E2%80%94+setup+%26+benchmarks) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -222,9 +222,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -250,9 +250,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

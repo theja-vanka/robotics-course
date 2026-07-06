@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~225 min (~3.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Awesome Physical AI — curated latest VLA & world-model papers — [open](https://github.com/keon/awesome-physical-ai)
+- 🔥 Awesome Physical AI — curated latest VLA & world-model papers — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -82,9 +82,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [arXiv Search](https://arxiv.org/search/) — ⏱️ ~15 min
-- [ ] 📝 [Papers With Code](https://paperswithcode.com/) — ⏱️ ~15 min
-- [ ] 🔥 📦 [Awesome Physical AI — curated latest VLA & world-model papers](https://github.com/keon/awesome-physical-ai) — ⏱️ ~10 min
+- [ ] 📄 [arXiv Search](https://www.google.com/search?q=arXiv+Search) — ⏱️ ~15 min
+- [ ] 📝 [Papers With Code](https://www.google.com/search?q=Papers+With+Code) — ⏱️ ~15 min
+- [ ] 🔥 📦 [Awesome Physical AI — curated latest VLA & world-model papers](https://www.google.com/search?q=Awesome+Physical+AI+%E2%80%94+curated+latest+VLA+%26+world-model+papers) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -108,8 +108,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HuggingFace Papers](https://huggingface.co/papers) — ⏱️ ~15 min
-- [ ] 📝 [Distill.pub — Visual ML Explanations](https://distill.pub/) — ⏱️ ~15 min
+- [ ] 📄 [HuggingFace Papers](https://www.google.com/search?q=HuggingFace+Papers) — ⏱️ ~15 min
+- [ ] 📝 [Distill.pub — Visual ML Explanations](https://www.google.com/search?q=Distill.pub+%E2%80%94+Visual+ML+Explanations) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -133,8 +133,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Fast.ai Practical Deep Learning](https://course.fast.ai/) — ⏱️ ~15 min
-- [ ] 🎥 [MIT 6.S191 Deep Learning](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI) — ⏱️ ~25 min
+- [ ] 📝 [Fast.ai Practical Deep Learning](https://www.google.com/search?q=Fast.ai+Practical+Deep+Learning) — ⏱️ ~15 min
+- [ ] 🎥 [MIT 6.S191 Deep Learning](https://www.youtube.com/results?search_query=MIT+6.S191+Deep+Learning) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -158,8 +158,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Quantization Docs](https://pytorch.org/docs/stable/quantization.html) — ⏱️ ~15 min
-- [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch Quantization Docs](https://www.google.com/search?q=PyTorch+Quantization+Docs) — ⏱️ ~15 min
+- [ ] 📦 [TensorRT GitHub](https://www.google.com/search?q=TensorRT+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~25 min*
 
@@ -201,9 +201,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -229,9 +229,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~235 min (~3.9 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 NVIDIA Cosmos-Predict 2.5 — world model for synthetic data — [open](https://github.com/nvidia-cosmos/cosmos-predict2.5)
+- 🔥 NVIDIA Cosmos-Predict 2.5 — world model for synthetic data — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -99,10 +99,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [BlenderProc GitHub](https://github.com/DLR-RM/BlenderProc) — ⏱️ ~10 min
-- [ ] 📄 [Click CLI Docs](https://click.palletsprojects.com/) — ⏱️ ~15 min
-- [ ] 📝 [Building CLI Tools in Python](https://realpython.com/python-click/) — ⏱️ ~15 min
-- [ ] 🔥 📦 [NVIDIA Cosmos-Predict 2.5 — world model for synthetic data](https://github.com/nvidia-cosmos/cosmos-predict2.5) — ⏱️ ~10 min
+- [ ] 📦 [BlenderProc GitHub](https://www.google.com/search?q=BlenderProc+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Click CLI Docs](https://www.google.com/search?q=Click+CLI+Docs) — ⏱️ ~15 min
+- [ ] 📝 [Building CLI Tools in Python](https://www.google.com/search?q=Building+CLI+Tools+in+Python) — ⏱️ ~15 min
+- [ ] 🔥 📦 [NVIDIA Cosmos-Predict 2.5 — world model for synthetic data](https://www.google.com/search?q=NVIDIA+Cosmos-Predict+2.5+%E2%80%94+world+model+for+synthetic+data) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -144,9 +144,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Batch Insert](https://milvus.io/docs/insert-update.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Batch Insert](https://www.google.com/search?q=Milvus+Batch+Insert) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -188,9 +188,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [ControlNet GitHub](https://github.com/lllyasviel/ControlNet) — ⏱️ ~10 min
-- [ ] 📦 [HuggingFace Diffusers GitHub](https://github.com/huggingface/diffusers) — ⏱️ ~10 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📦 [ControlNet GitHub](https://www.google.com/search?q=ControlNet+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [HuggingFace Diffusers GitHub](https://www.google.com/search?q=HuggingFace+Diffusers+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -232,8 +232,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
-- [ ] 📄 [TensorRT INT8 Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#optimizing_int8) — ⏱️ ~15 min
+- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://www.google.com/search?q=Ultralytics+YOLOv8+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [TensorRT INT8 Guide](https://www.google.com/search?q=TensorRT+INT8+Guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~25 min*
 
@@ -275,9 +275,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -303,9 +303,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

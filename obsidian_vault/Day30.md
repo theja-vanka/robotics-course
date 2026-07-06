@@ -82,8 +82,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [LinkedIn Post Tips for Engineers](https://www.linkedin.com/pulse/) — ⏱️ ~15 min
-- [ ] 📝 [Loom — Record Demo](https://www.loom.com) — ⏱️ ~15 min
+- [ ] 📝 [LinkedIn Post Tips for Engineers](https://www.google.com/search?q=LinkedIn+Post+Tips+for+Engineers) — ⏱️ ~15 min
+- [ ] 📝 [Loom — Record Demo](https://www.google.com/search?q=Loom+%E2%80%94+Record+Demo) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -108,9 +108,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Upwork ML/CV Jobs](https://www.upwork.com/nx/search/jobs/?q=computer+vision+robotics) — ⏱️ ~15 min
-- [ ] 📝 [Robotics Startups Hiring](https://www.ycombinator.com/companies?industry=Robotics) — ⏱️ ~15 min
-- [ ] 📝 [LinkedIn Jobs — Robotics CV](https://www.linkedin.com/jobs/) — ⏱️ ~15 min
+- [ ] 📝 [Upwork ML/CV Jobs](https://www.google.com/search?q=Upwork+ML%2FCV+Jobs) — ⏱️ ~15 min
+- [ ] 📝 [Robotics Startups Hiring](https://www.google.com/search?q=Robotics+Startups+Hiring) — ⏱️ ~15 min
+- [ ] 📝 [LinkedIn Jobs — Robotics CV](https://www.google.com/search?q=LinkedIn+Jobs+%E2%80%94+Robotics+CV) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -135,8 +135,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Software Engineer Career Roadmap](https://roadmap.sh/) — ⏱️ ~15 min
-- [ ] 📝 [ML Engineer Learning Path](https://roadmap.sh/mlops) — ⏱️ ~15 min
+- [ ] 📝 [Software Engineer Career Roadmap](https://www.google.com/search?q=Software+Engineer+Career+Roadmap) — ⏱️ ~15 min
+- [ ] 📝 [ML Engineer Learning Path](https://www.google.com/search?q=ML+Engineer+Learning+Path) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -163,9 +163,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [GitHub Gist](https://gist.github.com/) — ⏱️ ~15 min
-- [ ] 📝 [Dev.to — Technical Blog](https://dev.to/) — ⏱️ ~15 min
-- [ ] 📝 [Zilliz Community Blog](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📝 [GitHub Gist](https://www.google.com/search?q=GitHub+Gist) — ⏱️ ~15 min
+- [ ] 📝 [Dev.to — Technical Blog](https://www.google.com/search?q=Dev.to+%E2%80%94+Technical+Blog) — ⏱️ ~15 min
+- [ ] 📝 [Zilliz Community Blog](https://www.google.com/search?q=Zilliz+Community+Blog) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -207,9 +207,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -235,9 +235,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

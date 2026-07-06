@@ -84,8 +84,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Interview Prep Guide — Robotics CV](https://learnopencv.com/interview-questions/) — ⏱️ ~15 min
-- [ ] 📝 [ML Interview Questions — Chip Huyen](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
+- [ ] 📝 [Interview Prep Guide — Robotics CV](https://www.google.com/search?q=Interview+Prep+Guide+%E2%80%94+Robotics+CV) — ⏱️ ~15 min
+- [ ] 📝 [ML Interview Questions — Chip Huyen](https://www.google.com/search?q=ML+Interview+Questions+%E2%80%94+Chip+Huyen) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -109,9 +109,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [All Resources Index](https://milvus.io/docs) — ⏱️ ~15 min
-- [ ] 📦 [Nerfstudio GitHub](https://github.com/nerfstudio-project/nerfstudio) — ⏱️ ~10 min
-- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
+- [ ] 📄 [All Resources Index](https://www.google.com/search?q=All+Resources+Index) — ⏱️ ~15 min
+- [ ] 📦 [Nerfstudio GitHub](https://www.google.com/search?q=Nerfstudio+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://www.google.com/search?q=Ultralytics+YOLOv8+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~35 min*
 
@@ -145,10 +145,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
-- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
-- [ ] 📦 [SAM 2 GitHub (Meta)](https://github.com/facebookresearch/segment-anything-2) — ⏱️ ~10 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://www.google.com/search?q=Ultralytics+YOLOv8+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [SAM 2 GitHub (Meta)](https://www.google.com/search?q=SAM+2+GitHub+%28Meta%29) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -182,8 +182,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Benchmarking Docs](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
-- [ ] 📝 [Model Benchmarking Guide](https://docs.ultralytics.com/modes/benchmark/) — ⏱️ ~15 min
+- [ ] 📄 [PyTorch Benchmarking Docs](https://www.google.com/search?q=PyTorch+Benchmarking+Docs) — ⏱️ ~15 min
+- [ ] 📝 [Model Benchmarking Guide](https://www.google.com/search?q=Model+Benchmarking+Guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -209,9 +209,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [ROS2 examples (real C++ nodes)](https://github.com/ros2/examples) — ⏱️ ~10 min
-- [ ] 📦 [HelloC++ Projects](https://www.hellocpp.dev/projects) — ⏱️ ~10 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
+- [ ] 📦 [ROS2 examples (real C++ nodes)](https://www.google.com/search?q=ROS2+examples+%28real+C%2B%2B+nodes%29) — ⏱️ ~10 min
+- [ ] 📦 [HelloC++ Projects](https://www.google.com/search?q=HelloC%2B%2B+Projects) — ⏱️ ~10 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -237,9 +237,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

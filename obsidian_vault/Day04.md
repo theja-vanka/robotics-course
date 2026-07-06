@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~410 min (~6.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 DINOv3 — SOTA self-supervised vision features (2025) — [open](https://arxiv.org/abs/2508.10104)
-- 🔥 SAM 3 — Segment Anything with Concepts (Meta, 2025) — [open](https://github.com/facebookresearch/sam3)
+- 🔥 DINOv3 — SOTA self-supervised vision features (2025) — [open](https://www.google.com/search?q=open)
+- 🔥 SAM 3 — Segment Anything with Concepts (Meta, 2025) — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -86,12 +86,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [ViT Paper (Dosovitskiy et al.)](https://arxiv.org/abs/2010.11929) — ⏱️ ~15 min
-- [ ] 📄 [DINOv2 Paper](https://arxiv.org/abs/2304.07193) — ⏱️ ~15 min
-- [ ] 📄 [SAM Paper (Kirillov et al.)](https://arxiv.org/abs/2304.02643) — ⏱️ ~15 min
-- [ ] 🎥 [ViT Explained — Yannic Kilcher](https://www.youtube.com/watch?v=TrdevFK_am4) — ⏱️ ~25 min
-- [ ] 📝 [DINOv2 Blog — Meta AI](https://ai.meta.com/blog/dino-v2-computer-vision-self-supervised-learning/) — ⏱️ ~15 min
-- [ ] 🔥 📄 [DINOv3 — SOTA self-supervised vision features (2025)](https://arxiv.org/abs/2508.10104) — ⏱️ ~15 min
+- [ ] 📄 [ViT Paper (Dosovitskiy et al.)](https://www.google.com/search?q=ViT+Paper+%28Dosovitskiy+et+al.%29) — ⏱️ ~15 min
+- [ ] 📄 [DINOv2 Paper](https://www.google.com/search?q=DINOv2+Paper) — ⏱️ ~15 min
+- [ ] 📄 [SAM Paper (Kirillov et al.)](https://www.google.com/search?q=SAM+Paper+%28Kirillov+et+al.%29) — ⏱️ ~15 min
+- [ ] 🎥 [ViT Explained — Yannic Kilcher](https://www.youtube.com/results?search_query=ViT+Explained+%E2%80%94+Yannic+Kilcher) — ⏱️ ~25 min
+- [ ] 📝 [DINOv2 Blog — Meta AI](https://www.google.com/search?q=DINOv2+Blog+%E2%80%94+Meta+AI) — ⏱️ ~15 min
+- [ ] 🔥 📄 [DINOv3 — SOTA self-supervised vision features (2025)](https://www.google.com/search?q=DINOv3+%E2%80%94+SOTA+self-supervised+vision+features+%282025%29) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~100 min*
 
@@ -125,10 +125,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [SAM 2 GitHub (Meta)](https://github.com/facebookresearch/segment-anything-2) — ⏱️ ~10 min
-- [ ] 📄 [SAM 2 HuggingFace Docs](https://huggingface.co/docs/transformers/model_doc/sam) — ⏱️ ~15 min
-- [ ] 🎥 [SAM 2 Demo & Tutorial](https://www.youtube.com/watch?v=Dv003fTyO6Y) — ⏱️ ~25 min
-- [ ] 🔥 📦 [SAM 3 — Segment Anything with Concepts (Meta, 2025)](https://github.com/facebookresearch/sam3) — ⏱️ ~10 min
+- [ ] 📦 [SAM 2 GitHub (Meta)](https://www.google.com/search?q=SAM+2+GitHub+%28Meta%29) — ⏱️ ~10 min
+- [ ] 📄 [SAM 2 HuggingFace Docs](https://www.google.com/search?q=SAM+2+HuggingFace+Docs) — ⏱️ ~15 min
+- [ ] 🎥 [SAM 2 Demo & Tutorial](https://www.youtube.com/results?search_query=SAM+2+Demo+%26+Tutorial) — ⏱️ ~25 min
+- [ ] 🔥 📦 [SAM 3 — Segment Anything with Concepts (Meta, 2025)](https://www.google.com/search?q=SAM+3+%E2%80%94+Segment+Anything+with+Concepts+%28Meta%2C+2025%29) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~60 min*
 
@@ -162,9 +162,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Multi-Vector Search](https://milvus.io/docs/multi-vector-search.md) — ⏱️ ~15 min
-- [ ] 📄 [DINOv2 HuggingFace](https://huggingface.co/facebook/dinov2-base) — ⏱️ ~15 min
-- [ ] 📝 [Image Similarity Search Tutorial — Milvus](https://milvus.io/docs/image_similarity_search.md) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Multi-Vector Search](https://www.google.com/search?q=Milvus+Multi-Vector+Search) — ⏱️ ~15 min
+- [ ] 📄 [DINOv2 HuggingFace](https://www.google.com/search?q=DINOv2+HuggingFace) — ⏱️ ~15 min
+- [ ] 📝 [Image Similarity Search Tutorial — Milvus](https://www.google.com/search?q=Image+Similarity+Search+Tutorial+%E2%80%94+Milvus) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -191,10 +191,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Pruning Tutorial](https://pytorch.org/tutorials/intermediate/pruning_tutorial.html) — ⏱️ ~15 min
-- [ ] 📄 [torch.nn.utils.prune Docs](https://pytorch.org/docs/stable/generated/torch.nn.utils.prune.l1_unstructured.html) — ⏱️ ~15 min
-- [ ] 🎥 [Neural Network Pruning Explained](https://www.youtube.com/watch?v=x2TGPHhZm4g) — ⏱️ ~25 min
-- [ ] 📄 [Pruning Paper Survey](https://arxiv.org/abs/2101.09671) — ⏱️ ~15 min
+- [ ] 📄 [PyTorch Pruning Tutorial](https://www.google.com/search?q=PyTorch+Pruning+Tutorial) — ⏱️ ~15 min
+- [ ] 📄 [torch.nn.utils.prune Docs](https://www.google.com/search?q=torch.nn.utils.prune+Docs) — ⏱️ ~15 min
+- [ ] 🎥 [Neural Network Pruning Explained](https://www.youtube.com/results?search_query=Neural+Network+Pruning+Explained) — ⏱️ ~25 min
+- [ ] 📄 [Pruning Paper Survey](https://www.google.com/search?q=Pruning+Paper+Survey) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~70 min*
 
@@ -220,9 +220,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.hellocpp.dev/course/cpp-programming-fundamentals) — ⏱️ ~45 min
-- [ ] 📄 [cppreference — read C++](https://en.cppreference.com/w/) — ⏱️ ~15 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
+- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Fundamentals+Course) — ⏱️ ~45 min
+- [ ] 📄 [cppreference — read C++](https://www.google.com/search?q=cppreference+%E2%80%94+read+C%2B%2B) — ⏱️ ~15 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -248,9 +248,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

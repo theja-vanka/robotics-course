@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~335 min (~5.6 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 FoundationGrasp — task-oriented grasping w/ foundation models — [open](https://arxiv.org/abs/2404.10399)
+- 🔥 FoundationGrasp — task-oriented grasping w/ foundation models — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -85,12 +85,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [GraspNet Paper](https://arxiv.org/abs/2112.02104) — ⏱️ ~15 min
-- [ ] 📄 [AnyGrasp Paper](https://arxiv.org/abs/2212.08333) — ⏱️ ~15 min
-- [ ] 📦 [AnyGrasp SDK GitHub](https://github.com/graspnet/anygrasp_sdk) — ⏱️ ~10 min
-- [ ] 🎥 [Robot Grasping Explained](https://www.youtube.com/watch?v=iaJB0GFmxHc) — ⏱️ ~25 min
-- [ ] 📝 [Force Closure Grasps — Tutorial](https://manipulation.csail.mit.edu/grasp.html) — ⏱️ ~15 min
-- [ ] 🔥 📄 [FoundationGrasp — task-oriented grasping w/ foundation models](https://arxiv.org/abs/2404.10399) — ⏱️ ~15 min
+- [ ] 📄 [GraspNet Paper](https://www.google.com/search?q=GraspNet+Paper) — ⏱️ ~15 min
+- [ ] 📄 [AnyGrasp Paper](https://www.google.com/search?q=AnyGrasp+Paper) — ⏱️ ~15 min
+- [ ] 📦 [AnyGrasp SDK GitHub](https://www.google.com/search?q=AnyGrasp+SDK+GitHub) — ⏱️ ~10 min
+- [ ] 🎥 [Robot Grasping Explained](https://www.youtube.com/results?search_query=Robot+Grasping+Explained) — ⏱️ ~25 min
+- [ ] 📝 [Force Closure Grasps — Tutorial](https://www.google.com/search?q=Force+Closure+Grasps+%E2%80%94+Tutorial) — ⏱️ ~15 min
+- [ ] 🔥 📄 [FoundationGrasp — task-oriented grasping w/ foundation models](https://www.google.com/search?q=FoundationGrasp+%E2%80%94+task-oriented+grasping+w%2F+foundation+models) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -124,9 +124,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [AnyGrasp SDK GitHub](https://github.com/graspnet/anygrasp_sdk) — ⏱️ ~10 min
-- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
-- [ ] 📄 [GraspNet Benchmark](https://graspnet.net/) — ⏱️ ~15 min
+- [ ] 📦 [AnyGrasp SDK GitHub](https://www.google.com/search?q=AnyGrasp+SDK+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [GraspNet Benchmark](https://www.google.com/search?q=GraspNet+Benchmark) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~35 min*
 
@@ -160,9 +160,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Hybrid Search](https://milvus.io/docs/multi-vector-search.md) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📝 [Vector Similarity for Robotics](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Hybrid Search](https://www.google.com/search?q=Milvus+Hybrid+Search) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📝 [Vector Similarity for Robotics](https://www.google.com/search?q=Vector+Similarity+for+Robotics) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -196,9 +196,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [TensorRT FP16 Precision Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#reduced-precision) — ⏱️ ~15 min
-- [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
-- [ ] 🎥 [TensorRT FP16 Optimization](https://www.youtube.com/watch?v=1YVoRBV68l8) — ⏱️ ~25 min
+- [ ] 📄 [TensorRT FP16 Precision Guide](https://www.google.com/search?q=TensorRT+FP16+Precision+Guide) — ⏱️ ~15 min
+- [ ] 📦 [TensorRT GitHub](https://www.google.com/search?q=TensorRT+GitHub) — ⏱️ ~10 min
+- [ ] 🎥 [TensorRT FP16 Optimization](https://www.youtube.com/results?search_query=TensorRT+FP16+Optimization) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -224,9 +224,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [CUDA C++ Guide — read a kernel](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) — ⏱️ ~15 min
-- [ ] 🎥 [CUDA explained](https://www.youtube.com/watch?v=clo38bKJkv4) — ⏱️ ~25 min
-- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/@HelloCppOrg) — ⏱️ ~25 min
+- [ ] 📄 [CUDA C++ Guide — read a kernel](https://www.google.com/search?q=CUDA+C%2B%2B+Guide+%E2%80%94+read+a+kernel) — ⏱️ ~15 min
+- [ ] 🎥 [CUDA explained](https://www.youtube.com/results?search_query=CUDA+explained) — ⏱️ ~25 min
+- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/results?search_query=HelloC%2B%2B+YouTube+Channel) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -252,9 +252,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

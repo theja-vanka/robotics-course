@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~340 min (~5.7 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 SmolVLA — 450M open VLA that runs on consumer hardware (HF) — [open](https://huggingface.co/blog/smolvla)
-- 🔥 FP4 (NVFP4/MXFP4) on Blackwell — when it's worth it — [open](https://www.spheron.network/blog/fp4-quantization-blackwell-gpu-cost/)
+- 🔥 SmolVLA — 450M open VLA that runs on consumer hardware (HF) — [open](https://www.google.com/search?q=open)
+- 🔥 FP4 (NVFP4/MXFP4) on Blackwell — when it's worth it — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -86,10 +86,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [LoRA Paper](https://arxiv.org/abs/2106.09685) — ⏱️ ~15 min
-- [ ] 📦 [PEFT Library GitHub](https://github.com/huggingface/peft) — ⏱️ ~10 min
-- [ ] 🎥 [LoRA Explained — Andrej Karpathy Style](https://www.youtube.com/watch?v=dA-NhCtrrVE) — ⏱️ ~25 min
-- [ ] 📝 [PEFT Quickstart Docs](https://huggingface.co/docs/peft/quicktour) — ⏱️ ~15 min
+- [ ] 📄 [LoRA Paper](https://www.google.com/search?q=LoRA+Paper) — ⏱️ ~15 min
+- [ ] 📦 [PEFT Library GitHub](https://www.google.com/search?q=PEFT+Library+GitHub) — ⏱️ ~10 min
+- [ ] 🎥 [LoRA Explained — Andrej Karpathy Style](https://www.youtube.com/results?search_query=LoRA+Explained+%E2%80%94+Andrej+Karpathy+Style) — ⏱️ ~25 min
+- [ ] 📝 [PEFT Quickstart Docs](https://www.google.com/search?q=PEFT+Quickstart+Docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -123,12 +123,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [SmolVLA — fine-tune on consumer HW](https://huggingface.co/blog/smolvla) — ⏱️ ~15 min
-- [ ] 📦 [OpenVLA GitHub](https://github.com/openvla/openvla) — ⏱️ ~10 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PEFT LoRA Docs](https://huggingface.co/docs/peft/conceptual_guides/lora) — ⏱️ ~15 min
-- [ ] 🎥 [Fine-tuning LLMs with LoRA](https://www.youtube.com/watch?v=eC6Hd1hFvos) — ⏱️ ~25 min
-- [ ] 🔥 📝 [SmolVLA — 450M open VLA that runs on consumer hardware (HF)](https://huggingface.co/blog/smolvla) — ⏱️ ~15 min
+- [ ] 📝 [SmolVLA — fine-tune on consumer HW](https://www.google.com/search?q=SmolVLA+%E2%80%94+fine-tune+on+consumer+HW) — ⏱️ ~15 min
+- [ ] 📦 [OpenVLA GitHub](https://www.google.com/search?q=OpenVLA+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PEFT LoRA Docs](https://www.google.com/search?q=PEFT+LoRA+Docs) — ⏱️ ~15 min
+- [ ] 🎥 [Fine-tuning LLMs with LoRA](https://www.youtube.com/results?search_query=Fine-tuning+LLMs+with+LoRA) — ⏱️ ~25 min
+- [ ] 🔥 📝 [SmolVLA — 450M open VLA that runs on consumer hardware (HF)](https://www.google.com/search?q=SmolVLA+%E2%80%94+450M+open+VLA+that+runs+on+consumer+hardware+%28HF%29) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~90 min*
 
@@ -162,9 +162,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Partition Docs](https://milvus.io/docs/manage-partitions.md) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📝 [Contrastive Learning + Milvus](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Partition Docs](https://www.google.com/search?q=Milvus+Partition+Docs) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📝 [Contrastive Learning + Milvus](https://www.google.com/search?q=Contrastive+Learning+%2B+Milvus) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -198,10 +198,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [QLoRA Paper](https://arxiv.org/abs/2305.14314) — ⏱️ ~15 min
-- [ ] 📦 [bitsandbytes GitHub](https://github.com/TimDettmers/bitsandbytes) — ⏱️ ~10 min
-- [ ] 📝 [QLoRA Fine-tuning Guide](https://huggingface.co/blog/4bit-transformers-bitsandbytes) — ⏱️ ~15 min
-- [ ] 🔥 📝 [FP4 (NVFP4/MXFP4) on Blackwell — when it's worth it](https://www.spheron.network/blog/fp4-quantization-blackwell-gpu-cost/) — ⏱️ ~15 min
+- [ ] 📄 [QLoRA Paper](https://www.google.com/search?q=QLoRA+Paper) — ⏱️ ~15 min
+- [ ] 📦 [bitsandbytes GitHub](https://www.google.com/search?q=bitsandbytes+GitHub) — ⏱️ ~10 min
+- [ ] 📝 [QLoRA Fine-tuning Guide](https://www.google.com/search?q=QLoRA+Fine-tuning+Guide) — ⏱️ ~15 min
+- [ ] 🔥 📝 [FP4 (NVFP4/MXFP4) on Blackwell — when it's worth it](https://www.google.com/search?q=FP4+%28NVFP4%2FMXFP4%29+on+Blackwell+%E2%80%94+when+it%27s+worth+it) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -243,9 +243,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -271,9 +271,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

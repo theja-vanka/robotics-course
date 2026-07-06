@@ -83,9 +83,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [IoU & NMS from Scratch — PyImageSearch](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) — ⏱️ ~15 min
-- [ ] 📝 [mAP Explained](https://learnopencv.com/mean-average-precision-map-object-detection/) — ⏱️ ~15 min
-- [ ] 🎥 [NMS Implementation Tutorial](https://www.youtube.com/watch?v=YDkjWEN8jNA) — ⏱️ ~25 min
+- [ ] 📝 [IoU & NMS from Scratch — PyImageSearch](https://www.google.com/search?q=IoU+%26+NMS+from+Scratch+%E2%80%94+PyImageSearch) — ⏱️ ~15 min
+- [ ] 📝 [mAP Explained](https://www.google.com/search?q=mAP+Explained) — ⏱️ ~15 min
+- [ ] 🎥 [NMS Implementation Tutorial](https://www.youtube.com/results?search_query=NMS+Implementation+Tutorial) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -119,9 +119,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Dataset Docs](https://pytorch.org/docs/stable/data.html) — ⏱️ ~15 min
-- [ ] 📝 [Custom Dataset Tutorial](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch Dataset Docs](https://www.google.com/search?q=PyTorch+Dataset+Docs) — ⏱️ ~15 min
+- [ ] 📝 [Custom Dataset Tutorial](https://www.google.com/search?q=Custom+Dataset+Tutorial) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -155,9 +155,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Search with Threshold](https://milvus.io/docs/search.md) — ⏱️ ~15 min
-- [ ] 📝 [Anomaly Detection with Vector DBs](https://zilliz.com/blog) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Search with Threshold](https://www.google.com/search?q=Milvus+Search+with+Threshold) — ⏱️ ~15 min
+- [ ] 📝 [Anomaly Detection with Vector DBs](https://www.google.com/search?q=Anomaly+Detection+with+Vector+DBs) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -184,8 +184,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Model Analysis — torchinfo](https://github.com/TylerYep/torchinfo) — ⏱️ ~15 min
-- [ ] 📝 [Compression Benchmarking Guide](https://docs.ultralytics.com/modes/benchmark/) — ⏱️ ~15 min
+- [ ] 📄 [PyTorch Model Analysis — torchinfo](https://www.google.com/search?q=PyTorch+Model+Analysis+%E2%80%94+torchinfo) — ⏱️ ~15 min
+- [ ] 📝 [Compression Benchmarking Guide](https://www.google.com/search?q=Compression+Benchmarking+Guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -227,9 +227,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -255,9 +255,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

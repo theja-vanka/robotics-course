@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~245 min (~4.1 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 π0.5 on Jetson Thor with NVFP4 — real edge VLA inference — [open](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/)
+- 🔥 π0.5 on Jetson Thor with NVFP4 — real edge VLA inference — [open](https://www.google.com/search?q=open)
 
 ---
 
@@ -99,10 +99,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [SAM 2 GitHub (Meta)](https://github.com/facebookresearch/segment-anything-2) — ⏱️ ~10 min
-- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
-- [ ] 📦 [AnyGrasp SDK](https://github.com/graspnet/anygrasp_sdk) — ⏱️ ~10 min
-- [ ] 📦 [MegaPose GitHub](https://github.com/megapose6d/megapose6d) — ⏱️ ~10 min
+- [ ] 📦 [SAM 2 GitHub (Meta)](https://www.google.com/search?q=SAM+2+GitHub+%28Meta%29) — ⏱️ ~10 min
+- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
+- [ ] 📦 [AnyGrasp SDK](https://www.google.com/search?q=AnyGrasp+SDK) — ⏱️ ~10 min
+- [ ] 📦 [MegaPose GitHub](https://www.google.com/search?q=MegaPose+GitHub) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -144,8 +144,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~25 min*
 
@@ -187,9 +187,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [FastAPI Docs](https://fastapi.tiangolo.com/) — ⏱️ ~15 min
-- [ ] 📦 [FastAPI GitHub](https://github.com/tiangolo/fastapi) — ⏱️ ~10 min
-- [ ] 🎥 [FastAPI Tutorial — TechWithTim](https://www.youtube.com/watch?v=cbASjoZZGIw) — ⏱️ ~25 min
+- [ ] 📄 [FastAPI Docs](https://www.google.com/search?q=FastAPI+Docs) — ⏱️ ~15 min
+- [ ] 📦 [FastAPI GitHub](https://www.google.com/search?q=FastAPI+GitHub) — ⏱️ ~10 min
+- [ ] 🎥 [FastAPI Tutorial — TechWithTim](https://www.youtube.com/results?search_query=FastAPI+Tutorial+%E2%80%94+TechWithTim) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -223,9 +223,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [TensorRT Workflow Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/) — ⏱️ ~15 min
-- [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
-- [ ] 🔥 📝 [π0.5 on Jetson Thor with NVFP4 — real edge VLA inference](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/) — ⏱️ ~15 min
+- [ ] 📄 [TensorRT Workflow Guide](https://www.google.com/search?q=TensorRT+Workflow+Guide) — ⏱️ ~15 min
+- [ ] 📦 [TensorRT GitHub](https://www.google.com/search?q=TensorRT+GitHub) — ⏱️ ~10 min
+- [ ] 🔥 📝 [π0.5 on Jetson Thor with NVFP4 — real edge VLA inference](https://www.google.com/search?q=%CF%800.5+on+Jetson+Thor+with+NVFP4+%E2%80%94+real+edge+VLA+inference) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -267,9 +267,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -295,9 +295,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

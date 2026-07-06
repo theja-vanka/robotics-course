@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~325 min (~5.4 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Genie 3 — real-time interactive world model (DeepMind) — [open](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/)
-- 🔥 FlashAttention-3 — async + FP8 attention (Dao-AILab) — [open](https://github.com/Dao-AILab/flash-attention)
+- 🔥 Genie 3 — real-time interactive world model (DeepMind) — [open](https://www.google.com/search?q=open)
+- 🔥 FlashAttention-3 — async + FP8 attention (Dao-AILab) — [open](https://www.google.com/search?q=open)
 
 > 🌴 **Tomorrow is your rest day (Sunday).** No study — let memory consolidate off-screen.
 
@@ -88,12 +88,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [DreamerV3 Paper](https://arxiv.org/abs/2301.04104) — ⏱️ ~15 min
-- [ ] 📦 [DreamerV3 GitHub](https://github.com/danijar/dreamerv3) — ⏱️ ~10 min
-- [ ] 📄 [UniSim Paper](https://arxiv.org/abs/2310.06114) — ⏱️ ~15 min
-- [ ] 🎥 [World Models Explained — Yannic Kilcher](https://www.youtube.com/watch?v=dPmHnQ6aABQ) — ⏱️ ~25 min
-- [ ] 📝 [DreamerV3 Blog — DeepMind](https://deepmind.google/discover/blog/mastering-diverse-domains-through-world-models/) — ⏱️ ~15 min
-- [ ] 🔥 📝 [Genie 3 — real-time interactive world model (DeepMind)](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) — ⏱️ ~15 min
+- [ ] 📄 [DreamerV3 Paper](https://www.google.com/search?q=DreamerV3+Paper) — ⏱️ ~15 min
+- [ ] 📦 [DreamerV3 GitHub](https://www.google.com/search?q=DreamerV3+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [UniSim Paper](https://www.google.com/search?q=UniSim+Paper) — ⏱️ ~15 min
+- [ ] 🎥 [World Models Explained — Yannic Kilcher](https://www.youtube.com/results?search_query=World+Models+Explained+%E2%80%94+Yannic+Kilcher) — ⏱️ ~25 min
+- [ ] 📝 [DreamerV3 Blog — DeepMind](https://www.google.com/search?q=DreamerV3+Blog+%E2%80%94+DeepMind) — ⏱️ ~15 min
+- [ ] 🔥 📝 [Genie 3 — real-time interactive world model (DeepMind)](https://www.google.com/search?q=Genie+3+%E2%80%94+real-time+interactive+world+model+%28DeepMind%29) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -127,9 +127,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [DreamerV3 GitHub](https://github.com/danijar/dreamerv3) — ⏱️ ~10 min
-- [ ] 📄 [DMControl Suite](https://github.com/google-deepmind/dm_control) — ⏱️ ~15 min
-- [ ] 🎥 [DreamerV3 Demo](https://www.youtube.com/watch?v=vfpZu0R1s_Y) — ⏱️ ~25 min
+- [ ] 📦 [DreamerV3 GitHub](https://www.google.com/search?q=DreamerV3+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [DMControl Suite](https://www.google.com/search?q=DMControl+Suite) — ⏱️ ~15 min
+- [ ] 🎥 [DreamerV3 Demo](https://www.youtube.com/results?search_query=DreamerV3+Demo) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -163,9 +163,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
-- [ ] 📝 [Vector DBs for Temporal Data](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
+- [ ] 📝 [Vector DBs for Temporal Data](https://www.google.com/search?q=Vector+DBs+for+Temporal+Data) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -199,10 +199,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Flash Attention Paper](https://arxiv.org/abs/2205.14135) — ⏱️ ~15 min
-- [ ] 📦 [Flash Attention GitHub](https://github.com/Dao-AILab/flash-attention) — ⏱️ ~10 min
-- [ ] 📝 [Speculative Decoding Explained](https://huggingface.co/blog/assisted-generation) — ⏱️ ~15 min
-- [ ] 🔥 📦 [FlashAttention-3 — async + FP8 attention (Dao-AILab)](https://github.com/Dao-AILab/flash-attention) — ⏱️ ~10 min
+- [ ] 📄 [Flash Attention Paper](https://www.google.com/search?q=Flash+Attention+Paper) — ⏱️ ~15 min
+- [ ] 📦 [Flash Attention GitHub](https://www.google.com/search?q=Flash+Attention+GitHub) — ⏱️ ~10 min
+- [ ] 📝 [Speculative Decoding Explained](https://www.google.com/search?q=Speculative+Decoding+Explained) — ⏱️ ~15 min
+- [ ] 🔥 📦 [FlashAttention-3 — async + FP8 attention (Dao-AILab)](https://www.google.com/search?q=FlashAttention-3+%E2%80%94+async+%2B+FP8+attention+%28Dao-AILab%29) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -244,9 +244,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -272,9 +272,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 
