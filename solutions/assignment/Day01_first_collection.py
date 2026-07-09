@@ -24,7 +24,6 @@ from __future__ import annotations
 import os
 import time
 
-import pytest
 from pymilvus import MilvusClient
 from sklearn.datasets import (
     load_digits,  # OPEN dataset: 1797 handwritten digits (64-d), bundled with scikit-learn
