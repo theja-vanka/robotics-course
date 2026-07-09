@@ -90,8 +90,6 @@ def run_search(client):
 
 # ════ TESTS — run `pytest Day01_first_collection.py` (or `python Day01_first_collection.py`). All green = you're done. ════
 
-
-@pytest.mark.order1
 def test_insert_count():
     c = fresh_client()
     create_collection(c)
@@ -99,7 +97,6 @@ def test_insert_count():
     assert count == N, f"should insert all {N} vectors"
 
 
-@pytest.mark.order2
 def test_search_finds_itself():
     c = fresh_client()
     create_collection(c)
