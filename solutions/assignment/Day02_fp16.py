@@ -96,7 +96,7 @@ def compare(model, compressed):
     # 👇 write your code here, then DELETE the line below
     before = measure(model)
     log_metrics("baseline", before)
-    after = measure(compressed)
+    after = measure(compressed, example_input=EXAMPLE_INPUT.half())
     log_metrics("compressed", after)
     print("baseline:", before, "-> compressed:", after)
     return before, after
