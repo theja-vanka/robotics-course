@@ -46,8 +46,9 @@ def test_policy_predict_returns_action():
 
 
 def test_observe_returns_observation():
-    from observe import observe
-    obs = observe("scene.jpg")
+    from observe import observe, _get_test_frame
+    img = _get_test_frame("scene.jpg")   # downloads real SO-100 frame if not cached
+    obs = observe(img)
     assert isinstance(obs, dict) and "objects" in obs, "observe() should return a dict with 'objects'"
 
 

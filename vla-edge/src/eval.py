@@ -18,14 +18,53 @@ def iou(a, b) -> float:
 
 
 def evaluate(policy, episodes: int = 20) -> dict:
-    """TODO: roll out the policy over `episodes` and return its success rate.
-    Wire to your sim (LIBERO / Meta-World) or dataset replay + a success check."""
-    # Hint:
-    #   obs = env.reset(); done = False
-    #   while not done: obs, reward, done, info = env.step(policy.predict(obs))
-    #   successes += int(info["success"])
+    """TODO: evaluate the policy over `episodes` and return {"success_rate": float}.
+
+    Two paths — pick one:
+
+    ── PATH A: offline dataset replay (no sim needed, good for Day-13 VLA eval) ──
+        from datasets import load_dataset
+        ds  = load_dataset("lerobot/svla_so100_pickplace", split="train")
+        cam = next(k for k in ds.column_names if k.startswith("observation.images."))
+
+        # Group frames into episodes
+        from collections import defaultdict
+        eps = defaultdict(list)
+        for row in ds:
+            eps[row["episode_index"]].append(row)
+
+        successes = 0
+        for ep_id, frames in list(eps.items())[:episodes]:
+            # Feed the last frame of the episode to the policy
+            obs = {
+                cam:                  frames[-1][cam].convert("RGB"),
+                "observation.state":  frames[-1]["observation.state"],
+                "instruction":        CFG.task,
+            }
+            predicted_action = policy.predict(obs)
+            gt_action        = frames[-1]["action"]
+            # Simple proxy: action error < 0.1 rad → "success"
+            import numpy as np
+            err = float(np.mean(np.abs(np.array(predicted_action) - np.array(gt_action))))
+            successes += int(err < 0.1)
+
+        return {"success_rate": successes / episodes}
+
+    ── PATH B: live sim rollout (LIBERO / Meta-World / your robot) ──
+        import gymnasium as gym
+        env = gym.make("your-sim-id")
+        successes = 0
+        for _ in range(episodes):
+            obs, _ = env.reset()
+            done   = False
+            while not done:
+                action        = policy.predict(obs)
+                obs, _, done, _, info = env.step(action)
+            successes += int(info.get("success", False))
+        return {"success_rate": successes / episodes}
+    """
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("TODO: roll out the policy and count successes")
+    raise NotImplementedError("TODO: evaluate the policy — see PATH A (dataset replay) above")
 
 
 def log_row(tag: str, metrics: dict) -> None:

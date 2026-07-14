@@ -28,7 +28,32 @@ class VLAPolicy:
 
     def predict(self, observation: dict):
         """TODO 2: format the observation for the policy and return its action.
-        observation = {'instruction': str, 'image': ..., 'objects': [...]}."""
+
+        `observation` has this shape (matches observe.py output):
+            {
+              "instruction": "pick up the cube and place it in the box",
+              "image": "scene.jpg",          # path OR PIL.Image from lerobot/svla_so100_pickplace
+              "objects": ["cup", "block"],   # from detect_objects()
+              "depth": <PIL.Image>,          # from estimate_depth()
+            }
+
+        LeRobot SmolVLA expects a LeRobotDataset batch dict:
+            from lerobot.common.datasets.lerobot_dataset import LeRobotDataset
+            ds  = LeRobotDataset("lerobot/svla_so100_pickplace")
+            obs = ds[0]   # {'observation.images.laptop': tensor, 'observation.state': tensor, ...}
+            action = self.model.select_action(obs)   # returns a 6-DoF action tensor
+
+        Simplest working stub (after load()):
+            import torch
+            from PIL import Image
+            from transformers import AutoProcessor
+            img   = Image.open(observation["image"]).convert("RGB") if isinstance(observation["image"], str) else observation["image"]
+            proc  = AutoProcessor.from_pretrained(self.model_id)
+            inputs = proc(images=img, text=observation["instruction"], return_tensors="pt")
+            with torch.no_grad():
+                out = self.model(**inputs)
+            return out.logits if hasattr(out, "logits") else out
+        """
         if self.model is None:
             self.load()
         # 👇 write your code here, then DELETE the line below

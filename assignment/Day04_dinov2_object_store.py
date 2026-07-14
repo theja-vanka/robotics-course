@@ -16,19 +16,40 @@ DONE WHEN:
 CAPSTONE TODAY:  observe.py: add SAM/ViT segmentation to turn frames into structured observations.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day04.md
-Setup:  pip install pymilvus numpy scikit-learn pytest
+Setup:  pip install pymilvus numpy datasets transformers torch pillow pytest
 """
 from __future__ import annotations
 
 import os
-from sklearn.datasets import load_digits   # OPEN dataset: 1797 handwritten digits (64-d), bundled with scikit-learn
+import numpy as np
+import torch
+from datasets import load_dataset
+from transformers import AutoModel, AutoImageProcessor
 from pymilvus import MilvusClient
 
-_DIGITS = load_digits()
-EXAMPLE_VECTORS = _DIGITS.data.astype("float32")   # (1797, 64) REAL vectors stand in for your embeddings
+# DINOv2 embeddings of ALOHA robot scene images (LeRobot / HuggingFace).
+# 200 top-camera frames encoded with facebook/dinov2-base → 768-d CLS token.
+# In production feed real SAM-segmented object crops; the Milvus API is identical.
+# First run: ~1 min on CPU / ~20 s on MPS. Subsequent runs: instant.
+_CACHE = "dinov2_robot_embeddings.npy"
+if not os.path.exists(_CACHE):
+    print("[setup] computing DINOv2 embeddings — one-time, ~1 min…")
+    _ds   = load_dataset("lerobot/aloha_sim_insertion_human", split="train")
+    _imgs = [_ds[i]["observation.images.top"].convert("RGB") for i in range(200)]
+    _proc = AutoImageProcessor.from_pretrained("facebook/dinov2-base")
+    _mdl  = AutoModel.from_pretrained("facebook/dinov2-base")
+    _mdl.eval()
+    _vecs = []
+    with torch.no_grad():
+        for i in range(0, len(_imgs), 16):
+            _b = _proc(images=_imgs[i:i+16], return_tensors="pt")
+            _vecs.append(_mdl(**_b).last_hidden_state[:, 0].cpu().numpy())
+    np.save(_CACHE, np.vstack(_vecs).astype("float32"))
+    print(f"[setup] cached → {_CACHE}")
+EXAMPLE_VECTORS = np.load(_CACHE)   # (200, 768) — DINOv2 CLS features of robot object crops
 QUERY = EXAMPLE_VECTORS[0]
-DIM = EXAMPLE_VECTORS.shape[1]   # 64
-N = len(EXAMPLE_VECTORS)         # 1797
+DIM   = EXAMPLE_VECTORS.shape[1]    # 768  (DINOv2-base)
+N     = len(EXAMPLE_VECTORS)        # 200
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
@@ -42,13 +63,13 @@ DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 # ════ FILL IN — each function raises until you write it ════
 
 def store_objects(client):
-    """TODO 1: Create collection 'objects' and insert EXAMPLE_VECTORS (stand-ins for DINOv2 crop embeddings). Return the count."""
+    """TODO 1: Create collection 'objects' (vector dim DIM=768) and insert EXAMPLE_VECTORS — real DINOv2 CLS features of ALOHA robot scene crops. Return the count."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 1: store_objects() not written yet")
 
 
 def find_similar_objects(client, query=QUERY, k=5):
-    """TODO 2: Return ids of the k object crops most similar to `query`."""
+    """TODO 2: Return ids of the k object crops most similar to `query` (your SAM-segmented object lookup)."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 2: find_similar_objects() not written yet")
 

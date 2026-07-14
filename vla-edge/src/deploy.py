@@ -32,16 +32,50 @@ def benchmark(infer_fn, warmup=None, runs=None, budget_ms=None) -> dict:
     return {"p50_ms": round(p50, 2), "p95_ms": round(p95, 2), "within_budget": p95 <= budget_ms}
 
 
+def _get_obs_for_benchmark():
+    """PROVIDED: one real observation from lerobot/svla_so100_pickplace for latency benchmarking.
+
+    Using the same dataset the model was fine-tuned on keeps the input distribution honest.
+    Returns a dict matching what VLAPolicy.predict() expects.
+    """
+    from datasets import load_dataset
+    ds  = load_dataset("lerobot/svla_so100_pickplace", split="train")
+    cam = next(k for k in ds.column_names if k.startswith("observation.images."))
+    row = ds[0]
+    return {
+        cam:                  row[cam].convert("RGB"),
+        "observation.state":  row["observation.state"],
+        "instruction":        CFG.task,
+    }
+
+
 def deploy_policy():
-    """TODO ⭐: benchmark YOUR compressed policy and hit the latency budget:
-       from policy import VLAPolicy
-       pol = VLAPolicy(adapter_dir=CFG.adapter_dir); pol.load()
-       obs = {...}                       # one real observation (see observe.py)
-       return benchmark(lambda: pol.predict(obs))
-    benchmark() above is PROVIDED. Fast path: export ONNX -> TensorRT/NVFP4 on Jetson.
-    No Jetson? Run TensorRT on a cloud GPU, report the number, say so in the README."""
+    """TODO ⭐: benchmark YOUR compressed policy and prove it hits the latency budget.
+
+    Use _get_obs_for_benchmark() (PROVIDED above) so the benchmark uses real data:
+
+        from policy import VLAPolicy
+        pol = VLAPolicy(adapter_dir=CFG.adapter_dir)
+        pol.load()
+
+        obs = _get_obs_for_benchmark()          # real SO-100 observation
+        result = benchmark(lambda: pol.predict(obs))   # benchmark() is PROVIDED
+
+        from eval import log_row
+        log_row("compressed_deploy", result)    # writes to benchmarks/results.csv
+        return result
+
+    Target: p95 < {CFG.latency_budget_ms} ms.
+
+    Fast path to hit budget:
+        • Export to ONNX → TensorRT FP16/INT8 (see Day09-11 starter exercises).
+        • On Apple Silicon: Core ML conversion (coremltools) + MPS backend.
+        • No TensorRT? torch.compile(pol.model, mode="reduce-overhead") gives ~1.5× on MPS.
+    No Jetson? Run on a cloud GPU (Colab/Lambda), paste the number here and note it in README.
+    benchmark() is PROVIDED — you only need to wire your policy.
+    """
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("TODO ⭐: benchmark your real policy")
+    raise NotImplementedError("TODO ⭐: benchmark your real policy — see hint above")
 
 
 def main():

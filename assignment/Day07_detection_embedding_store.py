@@ -16,19 +16,40 @@ DONE WHEN:
 CAPSTONE TODAY:  observe.py: plug in YOLO26 detection → an object list the policy can use.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day07.md
-Setup:  pip install pymilvus numpy scikit-learn pytest
+Setup:  pip install pymilvus numpy datasets transformers torch pillow pytest
 """
 from __future__ import annotations
 
 import os
-from sklearn.datasets import load_digits   # OPEN dataset: 1797 handwritten digits (64-d), bundled with scikit-learn
+import numpy as np
+import torch
+from datasets import load_dataset
+from transformers import CLIPModel, CLIPProcessor
 from pymilvus import MilvusClient
 
-_DIGITS = load_digits()
-EXAMPLE_VECTORS = _DIGITS.data.astype("float32")   # (1797, 64) REAL vectors stand in for your embeddings
+# Real CLIP embeddings of ALOHA robot manipulation scenes (LeRobot / HuggingFace).
+# 200 top-camera frames encoded with openai/clip-vit-base-patch32 → 512-d vectors.
+# First run: downloads CLIP model + computes embeddings (~1 min on CPU, ~20 s on MPS/CUDA).
+# Subsequent runs: loads instantly from cache file.
+_CACHE = "clip_robot_embeddings.npy"
+if not os.path.exists(_CACHE):
+    print("[setup] computing CLIP embeddings of robot scenes — one-time, ~1 min…")
+    _ds   = load_dataset("lerobot/aloha_sim_insertion_human", split="train")
+    _imgs = [_ds[i]["observation.images.top"].convert("RGB") for i in range(200)]
+    _proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    _mdl  = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+    _mdl.eval()
+    _vecs = []
+    with torch.no_grad():
+        for i in range(0, len(_imgs), 32):
+            _b = _proc(images=_imgs[i:i+32], return_tensors="pt", padding=True)
+            _vecs.append(_mdl.get_image_features(**_b).cpu().numpy())
+    np.save(_CACHE, np.vstack(_vecs).astype("float32"))
+    print(f"[setup] cached → {_CACHE}")
+EXAMPLE_VECTORS = np.load(_CACHE)   # (200, 512) — real CLIP embeddings of robot scenes
 QUERY = EXAMPLE_VECTORS[0]
-DIM = EXAMPLE_VECTORS.shape[1]   # 64
-N = len(EXAMPLE_VECTORS)         # 1797
+DIM   = EXAMPLE_VECTORS.shape[1]    # 512  (CLIP ViT-B/32)
+N     = len(EXAMPLE_VECTORS)        # 200
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""

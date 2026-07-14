@@ -16,19 +16,39 @@ DONE WHEN:
 CAPSTONE TODAY:  Stub the vla-edge repo + env; get SmolVLA running on one sample observation.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day01.md
-Setup:  pip install pymilvus numpy scikit-learn pytest
+Setup:  pip install pymilvus numpy datasets transformers torch pillow pytest
 """
 from __future__ import annotations
 
 import os
-from sklearn.datasets import load_digits   # OPEN dataset: 1797 handwritten digits (64-d), bundled with scikit-learn
+import numpy as np
+import torch
+from datasets import load_dataset
+from transformers import CLIPModel, CLIPProcessor
 from pymilvus import MilvusClient
 
-_DIGITS = load_digits()
-EXAMPLE_VECTORS = _DIGITS.data.astype("float32")   # (1797, 64) REAL vectors — nothing to provide
+# Real CLIP embeddings of ALOHA robot manipulation scenes (LeRobot / HuggingFace).
+# 200 top-camera frames encoded with openai/clip-vit-base-patch32 → 512-d vectors.
+# First run: downloads CLIP model + computes embeddings (~1 min). Subsequent runs: instant.
+_CACHE = "clip_robot_embeddings.npy"
+if not os.path.exists(_CACHE):
+    print("[setup] computing CLIP embeddings of robot scenes — one-time, ~1 min…")
+    _ds   = load_dataset("lerobot/aloha_sim_insertion_human", split="train")
+    _imgs = [_ds[i]["observation.images.top"].convert("RGB") for i in range(200)]
+    _proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    _mdl  = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+    _mdl.eval()
+    _vecs = []
+    with torch.no_grad():
+        for i in range(0, len(_imgs), 32):
+            _b = _proc(images=_imgs[i:i+32], return_tensors="pt", padding=True)
+            _vecs.append(_mdl.get_image_features(**_b).cpu().numpy())
+    np.save(_CACHE, np.vstack(_vecs).astype("float32"))
+    print(f"[setup] cached → {_CACHE}")
+EXAMPLE_VECTORS = np.load(_CACHE)   # (200, 512) — real CLIP embeddings of robot scenes
 QUERY = EXAMPLE_VECTORS[0]
-DIM = EXAMPLE_VECTORS.shape[1]   # 64
-N = len(EXAMPLE_VECTORS)         # 1797
+DIM   = EXAMPLE_VECTORS.shape[1]    # 512  (CLIP ViT-B/32)
+N     = len(EXAMPLE_VECTORS)        # 200
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
@@ -42,19 +62,19 @@ DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 # ════ FILL IN — each function raises until you write it ════
 
 def create_collection(client):
-    """TODO 1: Create a collection named 'demo' with a vector field of dimension DIM (=64 for this dataset)."""
+    """TODO 1: Create a collection named 'demo' with a vector field of dimension DIM (=512)."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 1: create_collection() not written yet")
 
 
 def insert_vectors(client):
-    """TODO 2: Insert all EXAMPLE_VECTORS (N=1797 digit vectors, ids 0..N-1) into 'demo'. Return how many you inserted."""
+    """TODO 2: Insert all EXAMPLE_VECTORS (N=200 CLIP robot-scene embeddings, ids 0..N-1) into 'demo'. Return how many you inserted."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 2: insert_vectors() not written yet")
 
 
 def run_search(client):
-    """TODO 3: Search 'demo' for QUERY (the first digit) with limit=5. Return the list of result ids (length 5)."""
+    """TODO 3: Search 'demo' for QUERY (the first robot scene embedding) with limit=5. Return the list of result ids (length 5)."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 3: run_search() not written yet")
 

@@ -25,7 +25,7 @@ import torch
 from datasets import load_dataset   # OPEN dataset
 from transformers import CLIPModel, CLIPProcessor
 
-IMAGE = load_dataset("huggingface/cats-image", split="test")[0]["image"].convert("RGB")   # a REAL sample image
+IMAGE = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB")   # real robot scene image (ALOHA top-view camera)
 
 DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 

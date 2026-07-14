@@ -16,19 +16,51 @@ DONE WHEN:
 CAPSTONE TODAY:  Scale to ~200+ episodes in LeRobot format — the set you'll re-fine-tune on for robustness (baseline fine-tune was Day 14).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day16.md
-Setup:  pip install pymilvus numpy scikit-learn pytest
+Setup:  pip install pymilvus numpy datasets transformers torch pillow pytest
 """
 from __future__ import annotations
 
 import os
-from sklearn.datasets import load_digits   # OPEN dataset: 1797 handwritten digits (64-d), bundled with scikit-learn
+import numpy as np
+import torch
+from datasets import load_dataset
+from transformers import CLIPModel, CLIPProcessor
 from pymilvus import MilvusClient
 
-_DIGITS = load_digits()
-EXAMPLE_VECTORS = _DIGITS.data.astype("float32")   # (1797, 64) REAL vectors stand in for your embeddings
+# CLIP embeddings of SO-100 pick-place demo episode key-frames (lerobot/svla_so100_pickplace).
+# One frame per episode (frame_index==0) → 512-d CLIP vector = trajectory-level embedding.
+# First run: ~1 min. Subsequent runs: instant.
+_CACHE    = "demo_traj_embeddings.npy"
+_EP_CACHE = "demo_episode_ids.npy"
+if not os.path.exists(_CACHE):
+    print("[setup] encoding SO-100 demo episodes with CLIP — one-time, ~1 min…")
+    _ds  = load_dataset("lerobot/svla_so100_pickplace", split="train")
+    _cam = next(k for k in _ds.column_names if k.startswith("observation.images."))
+    _seen, _imgs, _eps = set(), [], []
+    for row in _ds:
+        ep = row["episode_index"]
+        if row["frame_index"] == 0 and ep not in _seen:
+            _seen.add(ep)
+            _imgs.append(row[_cam].convert("RGB"))
+            _eps.append(ep)
+        if len(_imgs) >= 100:
+            break
+    _proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    _mdl  = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+    _mdl.eval()
+    _vecs = []
+    with torch.no_grad():
+        for i in range(0, len(_imgs), 16):
+            _b = _proc(images=_imgs[i:i+16], return_tensors="pt", padding=True)
+            _vecs.append(_mdl.get_image_features(**_b).cpu().numpy())
+    np.save(_CACHE,    np.vstack(_vecs).astype("float32"))
+    np.save(_EP_CACHE, np.array(_eps[:len(np.vstack(_vecs))]))
+    print(f"[setup] cached {len(_eps)} demo embeddings → {_CACHE}")
+EXAMPLE_VECTORS = np.load(_CACHE)              # (≤100, 512) — CLIP of demo first frames
+EPISODE_IDS     = np.load(_EP_CACHE).tolist()  # matching SO-100 episode IDs
 QUERY = EXAMPLE_VECTORS[0]
-DIM = EXAMPLE_VECTORS.shape[1]   # 64
-N = len(EXAMPLE_VECTORS)         # 1797
+DIM   = EXAMPLE_VECTORS.shape[1]   # 512
+N     = len(EXAMPLE_VECTORS)       # ≤ 100
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
@@ -42,13 +74,13 @@ DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 # ════ FILL IN — each function raises until you write it ════
 
 def index_for_search(client):
-    """TODO 1: Create collection 'browser' and insert EXAMPLE_VECTORS (instruction+observation embeddings). Return the count."""
+    """TODO 1: Create collection 'browser' and insert EXAMPLE_VECTORS — CLIP embeddings of SO-100 demo key-frames (one per episode). Return the count."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 1: index_for_search() not written yet")
 
 
 def find_episodes(client, query=QUERY, k=5):
-    """TODO 2: Return ids of the k episodes best matching `query` — your CLI 'find' command."""
+    """TODO 2: Return ids of the k episodes whose CLIP embedding best matches `query` — your CLI 'find episodes where the arm grasps from the left' command."""
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("Step 2: find_episodes() not written yet")
 

@@ -28,7 +28,7 @@ from torchvision.models import resnet18
 from torchvision import transforms
 from datasets import load_dataset   # OPEN dataset
 
-_IMG = load_dataset("huggingface/cats-image", split="test")[0]["image"].convert("RGB")   # a REAL sample image
+_IMG = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB")   # real robot scene image (ALOHA top-view camera)
 EXAMPLE_INPUT = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])(_IMG).unsqueeze(0)  # (1,3,224,224)
 
 # WHERE the metrics get logged — one row per variant. (In the vla-edge capstone this is

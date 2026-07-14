@@ -34,12 +34,64 @@ def measure(module, example_input, runs: int = 50) -> dict:
     return {"params_M": round(n_params / 1e6, 2), "size_MB": round(size_mb, 1), "latency_ms": round(ms, 2)}
 
 
+def _get_example_obs():
+    """PROVIDED: load one real observation from lerobot/svla_so100_pickplace.
+
+    Returns a dict you can pass to `policy.predict(obs)` (and hence to measure()).
+    Uses the same dataset the LoRA fine-tune trains on, so the input distribution matches.
+
+    Example:
+        obs = _get_example_obs()
+        from policy import VLAPolicy
+        pol = VLAPolicy(); pol.load()
+        measure(pol.model, obs)   # 'before' numbers
+
+    The returned dict:
+        {
+          "observation.images.laptop": PIL.Image (640×480 tabletop scene),
+          "observation.state":         list[float] (6 joint angles),
+          "instruction":               "pick up the cube and place it in the box",
+        }
+    """
+    from datasets import load_dataset
+    ds  = load_dataset("lerobot/svla_so100_pickplace", split="train")
+    cam = next(k for k in ds.column_names if k.startswith("observation.images."))
+    row = ds[0]
+    return {
+        cam:                  row[cam].convert("RGB"),
+        "observation.state":  row["observation.state"],
+        "instruction":        CFG.task,
+    }
+
+
 def compress_model():
-    """TODO ⭐: compress your fine-tuned policy and record the delta:
-       1. load model fp16 -> measure(model, example_input)            # the 'before' numbers
-       2. reload 4-bit:  AutoModel.from_pretrained(..., quantization_config=bnb_4bit_config())
-       3. measure() again -> compare; log it with eval.log_row().
-    bnb_4bit_config() and measure() above are PROVIDED — call them."""
+    """TODO ⭐: compress your fine-tuned policy and record the delta.
+
+    Use _get_example_obs() (PROVIDED above) as your example_input for measure():
+
+        obs = _get_example_obs()
+
+        # ── BEFORE ────────────────────────────────────────────────────────
+        from policy import VLAPolicy
+        pol_fp16 = VLAPolicy(); pol_fp16.load()
+        before = measure(pol_fp16.model, obs)
+        from eval import log_row; log_row("fp16", before)
+
+        # ── AFTER (4-bit NF4) ─────────────────────────────────────────────
+        from transformers import AutoModelForVision2Seq
+        pol_4bit = AutoModelForVision2Seq.from_pretrained(
+            CFG.base_model,
+            quantization_config=bnb_4bit_config(),   # PROVIDED
+            device_map="auto",
+        )
+        after = measure(pol_4bit, obs)
+        log_row("4bit_nf4", after)
+
+        print(f"size  {before['size_MB']:.0f} MB  →  {after['size_MB']:.0f} MB")
+        print(f"speed {before['latency_ms']:.1f} ms →  {after['latency_ms']:.1f} ms")
+
+    bnb_4bit_config() and measure() above are PROVIDED — call them.
+    """
     # 👇 write your code here, then DELETE the line below
     raise NotImplementedError("TODO ⭐: compress the model and record before/after")
 

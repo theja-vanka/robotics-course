@@ -25,7 +25,7 @@ from PIL import Image
 from datasets import load_dataset   # OPEN dataset
 from diffusers import StableDiffusionControlNetPipeline, ControlNetModel
 
-CONDITION = load_dataset("huggingface/cats-image", split="test")[0]["image"].convert("RGB").resize((512, 512))   # a REAL image (ideally a depth/edge map)
+CONDITION = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB").resize((512, 512))   # real robot scene image — use a depth/edge map in production
 
 DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 

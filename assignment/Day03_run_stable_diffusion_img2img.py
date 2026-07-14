@@ -25,7 +25,7 @@ from PIL import Image
 from datasets import load_dataset   # OPEN dataset
 from diffusers import AutoPipelineForImage2Image
 
-INIT_IMAGE = load_dataset("huggingface/cats-image", split="test")[0]["image"].convert("RGB").resize((512, 512))   # a REAL image
+INIT_IMAGE = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB").resize((512, 512))   # real robot scene image
 
 DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 

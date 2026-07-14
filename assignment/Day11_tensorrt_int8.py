@@ -28,7 +28,7 @@ from torchvision.models import resnet18
 from torchvision import transforms
 from datasets import load_dataset   # OPEN dataset
 
-_IMG = load_dataset("huggingface/cats-image", split="test")[0]["image"].convert("RGB")
+_IMG = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB")
 EXAMPLE_INPUT = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])(_IMG).unsqueeze(0)
 
 DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
