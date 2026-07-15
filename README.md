@@ -1,297 +1,86 @@
-# 🚀 Self-Taught Robotics & Vision-Language-Action (VLA) Course
-
-> A comprehensive 30-day intensive roadmap to become an Applied Robotics AI Engineer through hands-on projects, Vision-Language-Action models, robot perception, multimodal AI, and production deployment.
-
 <p align="center">
-  <img src="banner.png" alt="Robotics Course Banner" width="100%">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Robotics and Vision-Language-Action in 30 days: a build-first curriculum ending in an edge-deployed VLA policy">
 </p>
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
-![Robotics](https://img.shields.io/badge/Robotics-VLA-green)
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-CV-orange)
-![License](https://img.shields.io/badge/License-MIT-blue)
+<p align="center"><a href="#start-here">Start here</a> · <a href="#the-capstone">Explore the capstone</a> · <a href="#curriculum">See the curriculum</a></p>
 
----
+## Build a robotics AI portfolio, one working system at a time
 
-## 📖 Overview
+This is a 30-day, self-directed curriculum for aspiring applied robotics AI engineers. Rather than separating theory from practice, each module adds a capability to a continuous capstone: a Vision-Language-Action (VLA) policy that can observe a scene, choose an action, be fine-tuned, compressed, evaluated, and prepared for edge deployment.
 
-This repository contains my complete **30-day self-taught robotics curriculum** focused on modern AI for robotics.
+<p align="center"><img src="./assets/readme/course-map.svg" width="100%" alt="Five-part course path: foundations, perception, VLA systems, deployment, and production"></p>
 
-Unlike traditional robotics courses that spend months on theory, this curriculum is designed around **building real systems**. Every day introduces a new concept and immediately applies it to practical robotics problems.
+## The capstone
 
-The end goal is to build, fine-tune, compress, and deploy a **Vision-Language-Action (VLA)** model capable of robotic reasoning.
+[`vla-edge/`](./vla-edge/) is the repository that turns the coursework into a concrete portfolio artifact. Its modules map directly to the pipeline you will build:
 
-The course combines:
-
-- 🤖 Robotics
-- 👁️ Computer Vision
-- 🧠 Vision-Language Models
-- 🚀 Vision-Language-Action Models
-- 📦 Model Compression
-- ☁️ Production Deployment
-- 🏗️ System Design
-- 💻 Coding Interviews
-
----
-
-# 🎯 Learning Goals
-
-By the end of this course you will understand how to:
-
-- Build robot perception pipelines
-- Work with modern Vision-Language Models
-- Fine-tune Vision-Language-Action models
-- Generate synthetic demonstrations
-- Train LoRA adapters
-- Deploy robotics models efficiently
-- Compress models for edge devices
-- Build production-ready robotics applications
-- Prepare for Robotics AI interviews
-
----
-
-# 🗓️ 30-Day Curriculum
-
-## Week 1 — Foundations
-
-- AI Landscape
-- Environment Setup
-- Vision-Language Models
-- Milvus
-- Diffusion Models
-- Vision Transformers
-- Segment Anything
-- NeRF & 3D Gaussian Splatting
-- Robot Perception
-
----
-
-## Week 2 — Robot Perception
-
-- Object Detection
-- Depth Estimation
-- Pose Estimation
-- Grasp Detection
-- SLAM
-- Spatial Mapping
-- Pipeline Integration
-
----
-
-## Week 3 — Vision-Language-Action
-
-- VLA Architecture
-- LoRA Fine-tuning
-- Synthetic Demonstrations
-- Data Generation
-- ControlNet
-- World Models
-
----
-
-## Week 4 — Deployment
-
-- Quantization
-- Compression
-- Edge Deployment
-- Evaluation
-- System Design
-- ML Fundamentals
-
----
-
-## Week 5 — Production
-
-- Interview Preparation
-- Product Building
-- Packaging
-- Documentation
-- Portfolio
-- Demo
-
----
-
-# 📂 Repository Structure
-
-```
-.
-├── obsidian_vault/
-│   ├── Day01.md
-│   ├── Day02.md
-│   ├── ...
-│   ├── Dashboard.md
-│   ├── Capstone_VLA.md
-│   └── Retention.md
-│
-├── assignment/
-│   ├── Day01_*.py
-│   ├── Day02_*.py
-│   ├── ...
-│   └── README.md
-│
-├── vla-edge/
-│   ├── src/
-│   ├── tests/
-│   ├── benchmarks/
-│   ├── demo/
-│   ├── checkpoints/
-│   └── requirements.txt
-│
-└── README.md
+```text
+camera frame → structured observation → VLA policy → fine-tune → compress → deploy → evaluate
 ```
 
----
+| Module | What you build |
+| --- | --- |
+| [`observe.py`](./vla-edge/src/observe.py) | Perception that turns frames into structured observations. |
+| [`policy.py`](./vla-edge/src/policy.py) | A runnable SmolVLA policy and action interface. |
+| [`train_lora.py`](./vla-edge/src/train_lora.py) | LoRA fine-tuning for a chosen task. |
+| [`compress.py`](./vla-edge/src/compress.py) | 4-bit / quantization experiments with measurements. |
+| [`deploy.py`](./vla-edge/src/deploy.py) | Edge-oriented inference and latency benchmarking. |
+| [`eval.py`](./vla-edge/src/eval.py) | Success-rate evaluation and benchmark output. |
 
-# 📚 Course Components
+The capstone README explains its problem, module order, validation approach, and results table: [open `vla-edge`](./vla-edge/README.md).
 
-## 📝 Obsidian Vault
+## Curriculum
 
-Contains all daily notes including
+The course moves from fundamentals to a production-minded robotics system. The notes live in the [`obsidian_vault/`](./obsidian_vault/) and the corresponding implementation exercises are in [`starter_code/`](./starter_code/).
 
-- Theory
-- Reading material
-- Daily tasks
-- Interview questions
-- Retention exercises
-- Progress dashboard
+| Phase | Focus | Representative topics |
+| --- | --- | --- |
+| Foundations | Establish the AI and robotics toolchain. | Python, VLMs, Milvus, diffusion, vision transformers, 3D scene representations. |
+| Robot perception | Give the system a usable model of its surroundings. | Detection, depth, pose estimation, grasping, SLAM, spatial mapping. |
+| Vision-Language-Action | Connect perception and language-guided control. | VLA architecture, LoRA, retrieval, synthetic demonstrations, world models. |
+| Deployment | Make the system measurable and practical. | Quantization, compression, latency, edge deployment, evaluation. |
+| Production | Turn the work into an interview-ready artifact. | Packaging, documentation, portfolio, demo, system design. |
 
----
-
-## 💻 Coding Assignments
-
-Every day includes hands-on coding exercises.
-
-Assignments are designed to reinforce concepts through implementation instead of passive reading.
-
-Topics include
-
-- Milvus
-- Vision Models
-- Diffusion
-- LoRA
-- Quantization
-- Robotics Pipelines
-- Attention
-- Anomaly Detection
-- DreamerV3
-
----
-
-## 🤖 VLA Edge Project
-
-The course culminates in a production-ready repository containing
-
-- Training
-- Evaluation
-- Compression
-- Deployment
-- Configuration
-- Benchmarks
-- Testing
-
-This project serves as the portfolio piece built throughout the course.
-
----
-
-# 🛠 Technologies
-
-- Python
-- PyTorch
-- Transformers
-- Hugging Face
-- LeRobot
-- Milvus
-- OpenCV
-- Vision Transformers
-- Diffusers
-- LoRA
-- GPTQ
-- AWQ
-- DreamerV3
-
----
-
-# 🚀 Getting Started
-
-Clone the repository
+## Start here
 
 ```bash
 git clone https://github.com/theja-vanka/robotics-course.git
 cd robotics-course
-```
-
-Install dependencies
-
-```bash
 pip install -r vla-edge/requirements.txt
 ```
 
-Open the learning materials
+Then open [`obsidian_vault/Day01.md`](./obsidian_vault/Day01.md), work through the daily material in sequence, and use [`starter_code/`](./starter_code/) to implement each exercise.
 
-```text
-obsidian_vault/
+To work on the capstone directly:
+
+```bash
+cd vla-edge
+pytest tests/ -q
 ```
 
-Begin with
+The supplied helpers pass first; the intentionally incomplete functions point to the next implementation milestone. See [`vla-edge/README.md`](./vla-edge/README.md) for the recommended order.
 
-```
-Day01.md
-```
+## What you will practice
 
-and progress sequentially through the curriculum.
+- Building robot perception pipelines with detection, depth, pose, grasping, and mapping.
+- Working with vision-language models and Vision-Language-Action policies.
+- Fine-tuning with LoRA and creating or augmenting demonstrations.
+- Evaluating trade-offs among task quality, model size, and latency.
+- Compressing and packaging a model for an edge-oriented deployment path.
+- Explaining the system clearly through benchmarks, documentation, and a portfolio demo.
 
----
+## Learning rhythm
 
-# 📈 Learning Philosophy
+Each day follows the same loop: learn the concept, implement a focused piece, test it, and connect it back to the capstone. The Obsidian vault includes the [progress dashboard](./obsidian_vault/Dashboard.md), retention exercises, a part-time roadmap, and the [capstone plan](./obsidian_vault/Capstone_VLA.md).
 
-This repository follows a simple principle:
+## Technology surface
 
-> Learn by building.
+Python · PyTorch · Transformers · Hugging Face · LeRobot · Milvus · OpenCV · Vision Transformers · Diffusers · LoRA · GPTQ · AWQ · DreamerV3
 
-Each day consists of
+## Contributing
 
-- 📖 Learn
-- 🧠 Understand
-- 💻 Implement
-- 🚀 Build
-- ✅ Test
-- 🔁 Review
+Suggestions, fixes, and learning resources are welcome. Please open an issue or pull request with enough context to help another learner use the improvement.
 
-Rather than watching hours of videos, you'll spend most of your time implementing real robotics systems.
+## License
 
----
-
-# 🎓 Capstone Project
-
-Throughout the course you'll progressively build a Vision-Language-Action system that includes:
-
-- Robot perception
-- VLM reasoning
-- LoRA fine-tuning
-- Synthetic demonstrations
-- Edge deployment
-- Model compression
-- Evaluation pipeline
-
-By the final week you'll have a complete robotics AI project suitable for your portfolio.
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-If you'd like to improve the curriculum, fix issues, or add new learning resources, feel free to open an issue or submit a pull request.
-
----
-
-# ⭐ Support
-
-If this repository helps you learn Robotics AI, consider giving it a ⭐ to support the project.
-
----
-
-# 📄 License
-
-This project is released under the MIT License.
+MIT
