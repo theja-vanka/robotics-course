@@ -24,7 +24,6 @@ import torch
 torch.manual_seed(0)
 W = torch.randn(256, 256)   # weights to quantize (GPTQ/AWQ operate per-layer like this)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

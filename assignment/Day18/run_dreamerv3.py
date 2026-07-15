@@ -23,7 +23,6 @@ from __future__ import annotations
 import pytest
 # World models: clone danijar/dreamerv3; run on DMControl.
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

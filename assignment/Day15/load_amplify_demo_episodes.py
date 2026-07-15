@@ -25,7 +25,6 @@ import pytest
 # OPEN robot dataset (LeRobot): real teleop episodes you amplify with MimicGen.
 DATASET_ID = "lerobot/svla_so100_pickplace"
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

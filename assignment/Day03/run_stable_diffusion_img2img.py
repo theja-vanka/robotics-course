@@ -25,9 +25,16 @@ from PIL import Image
 from datasets import load_dataset   # OPEN dataset
 from diffusers import AutoPipelineForImage2Image
 
-INIT_IMAGE = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB").resize((512, 512))   # real robot scene image
+_ds_r = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
+_cam_r = next(k for k in _ds_r.column_names if "images" in k)
+_raw_r = _ds_r[0][_cam_r]
+def _to_pil_r(_r):
+    from PIL import Image; import io
+    if hasattr(_r, "convert"): return _r.convert("RGB")
+    b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
+    return Image.open(io.BytesIO(b)).convert("RGB") if b else Image.open(_r["path"]).convert("RGB")
+INIT_IMAGE = _to_pil_r(_raw_r).resize((512, 512))   # real robot scene image
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

@@ -25,7 +25,6 @@ import torch.nn.functional as F
 torch.manual_seed(0)
 Q = torch.randn(1, 4, 8); K = torch.randn(1, 4, 8); V = torch.randn(1, 4, 8)   # (batch, seq, dim)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

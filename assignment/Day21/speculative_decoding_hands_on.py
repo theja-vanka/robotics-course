@@ -24,7 +24,6 @@ def target_next(seq):
     """PROVIDED: the large target model's 'true' next token (here: previous + 1)."""
     return seq[-1] + 1
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

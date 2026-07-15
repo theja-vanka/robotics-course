@@ -30,29 +30,38 @@ from pymilvus import MilvusClient
 # CLIP embeddings of SO-100 pick-place demo episode key-frames (lerobot/svla_so100_pickplace).
 # One frame per episode (frame_index==0) → 512-d CLIP vector = trajectory-level embedding.
 # First run: ~1 min. Subsequent runs: instant.
-_CACHE    = "demo_traj_embeddings.npy"
-_EP_CACHE = "demo_episode_ids.npy"
+_ROOT     = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+_CACHE    = os.path.join(_ROOT, "demo_traj_embeddings.npy")
+_EP_CACHE = os.path.join(_ROOT, "demo_episode_ids.npy")
 if not os.path.exists(_CACHE):
     print("[setup] encoding SO-100 demo episodes with CLIP — one-time, ~1 min…")
     _ds  = load_dataset("lerobot/svla_so100_pickplace", split="train")
     _cam = next(k for k in _ds.column_names if k.startswith("observation.images."))
+    def _to_pil(_r):
+        from PIL import Image; import io
+        if hasattr(_r, "convert"): return _r.convert("RGB")
+        b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
+        return Image.open(io.BytesIO(b)).convert("RGB") if b else Image.open(_r["path"]).convert("RGB")
     _seen, _imgs, _eps = set(), [], []
     for row in _ds:
         ep = row["episode_index"]
         if row["frame_index"] == 0 and ep not in _seen:
             _seen.add(ep)
-            _imgs.append(row[_cam].convert("RGB"))
+            _imgs.append(_to_pil(row[_cam]))
             _eps.append(ep)
         if len(_imgs) >= 100:
             break
     _proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-    _mdl  = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+    _device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
+    _mdl  = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(_device)
     _mdl.eval()
     _vecs = []
     with torch.no_grad():
         for i in range(0, len(_imgs), 16):
             _b = _proc(images=_imgs[i:i+16], return_tensors="pt", padding=True)
-            _vecs.append(_mdl.get_image_features(**_b).cpu().numpy())
+            _b = {k: v.to(_device) for k, v in _b.items()}
+            _feat = _mdl.get_image_features(**_b)
+            _vecs.append((_feat if isinstance(_feat, torch.Tensor) else _feat.pooler_output).cpu().numpy())
     np.save(_CACHE,    np.vstack(_vecs).astype("float32"))
     np.save(_EP_CACHE, np.array(_eps[:len(np.vstack(_vecs))]))
     print(f"[setup] cached {len(_eps)} demo embeddings → {_CACHE}")
@@ -64,11 +73,11 @@ N     = len(EXAMPLE_VECTORS)       # ≤ 100
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
-    if os.path.exists("milvus_demo.db"):
-        os.remove("milvus_demo.db")
-    return MilvusClient("milvus_demo.db")
+    _db = os.path.join(_ROOT, "milvus_demo.db")
+    if os.path.exists(_db):
+        os.remove(_db)
+    return MilvusClient(_db)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

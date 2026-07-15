@@ -23,7 +23,6 @@ from __future__ import annotations
 import pytest
 # 6-DoF pose: clone FoundationPose (NVIDIA) or MegaPose; follow its README.
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

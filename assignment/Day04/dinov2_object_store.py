@@ -31,18 +31,27 @@ from pymilvus import MilvusClient
 # 200 top-camera frames encoded with facebook/dinov2-base → 768-d CLS token.
 # In production feed real SAM-segmented object crops; the Milvus API is identical.
 # First run: ~1 min on CPU / ~20 s on MPS. Subsequent runs: instant.
-_CACHE = "dinov2_robot_embeddings.npy"
+_ROOT  = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+_CACHE = os.path.join(_ROOT, "dinov2_robot_embeddings.npy")
 if not os.path.exists(_CACHE):
     print("[setup] computing DINOv2 embeddings — one-time, ~1 min…")
-    _ds   = load_dataset("lerobot/aloha_sim_insertion_human", split="train")
-    _imgs = [_ds[i]["observation.images.top"].convert("RGB") for i in range(200)]
+    _ds   = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
+    _cam  = next(k for k in _ds.column_names if "images" in k)
+    def _to_pil(_r):
+        from PIL import Image; import io
+        if hasattr(_r, "convert"): return _r.convert("RGB")
+        b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
+        return Image.open(io.BytesIO(b)).convert("RGB") if b else Image.open(_r["path"]).convert("RGB")
+    _imgs = [_to_pil(_ds[i][_cam]) for i in range(200)]
     _proc = AutoImageProcessor.from_pretrained("facebook/dinov2-base")
-    _mdl  = AutoModel.from_pretrained("facebook/dinov2-base")
+    _device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
+    _mdl  = AutoModel.from_pretrained("facebook/dinov2-base").to(_device)
     _mdl.eval()
     _vecs = []
     with torch.no_grad():
         for i in range(0, len(_imgs), 16):
             _b = _proc(images=_imgs[i:i+16], return_tensors="pt")
+            _b = {k: v.to(_device) for k, v in _b.items()}
             _vecs.append(_mdl(**_b).last_hidden_state[:, 0].cpu().numpy())
     np.save(_CACHE, np.vstack(_vecs).astype("float32"))
     print(f"[setup] cached → {_CACHE}")
@@ -53,11 +62,11 @@ N     = len(EXAMPLE_VECTORS)        # 200
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
-    if os.path.exists("milvus_demo.db"):
-        os.remove("milvus_demo.db")
-    return MilvusClient("milvus_demo.db")
+    _db = os.path.join(_ROOT, "milvus_demo.db")
+    if os.path.exists(_db):
+        os.remove(_db)
+    return MilvusClient(_db)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

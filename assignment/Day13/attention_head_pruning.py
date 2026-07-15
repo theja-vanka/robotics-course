@@ -31,7 +31,6 @@ def make_mha():
     torch.manual_seed(0)
     return nn.MultiheadAttention(EMBED_DIM, NUM_HEADS, batch_first=True)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

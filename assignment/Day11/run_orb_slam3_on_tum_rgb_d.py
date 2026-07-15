@@ -23,7 +23,6 @@ from __future__ import annotations
 import pytest
 # SLAM is C++: build ORB-SLAM3, run on a TUM RGB-D sequence.
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

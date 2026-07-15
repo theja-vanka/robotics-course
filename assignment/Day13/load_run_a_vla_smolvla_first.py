@@ -24,7 +24,6 @@ import numpy as np
 # OPEN robot dataset (LeRobot): https://huggingface.co/datasets/lerobot/svla_so100_pickplace
 DATASET_ID = "lerobot/svla_so100_pickplace"   # real teleop episodes — see https://huggingface.co/blog/smolvla
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

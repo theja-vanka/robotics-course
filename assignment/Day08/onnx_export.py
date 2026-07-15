@@ -27,10 +27,19 @@ from torchvision.models import resnet18
 from torchvision import transforms
 from datasets import load_dataset   # OPEN dataset
 
-_IMG = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB")   # real robot scene image (ALOHA top-view camera)
-EXAMPLE_INPUT = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])(_IMG).unsqueeze(0)  # (1,3,224,224)
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
+_ds_r = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
+_cam_r = next(k for k in _ds_r.column_names if "images" in k)
+_raw_r = _ds_r[0][_cam_r]
+def _to_pil_r(_r):
+    from PIL import Image; import io
+    if hasattr(_r, "convert"): return _r.convert("RGB")
+    b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
+    return Image.open(io.BytesIO(b)).convert("RGB") if b else Image.open(_r["path"]).convert("RGB")
+_IMG = _to_pil_r(_raw_r)   # real robot scene image (ALOHA top-view camera)
+EXAMPLE_INPUT = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])(_IMG).unsqueeze(0).to(DEVICE)  # (1,3,224,224) on DEVICE
+
 
 
 # ════ FILL IN — each function raises until you write it ════

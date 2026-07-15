@@ -28,7 +28,6 @@ def make_base():
     torch.manual_seed(0)
     return nn.Linear(64, 64)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

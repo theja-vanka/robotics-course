@@ -25,7 +25,6 @@ import pytest
 DATASET_ID = "lerobot/svla_so100_pickplace"
 ADAPTER_DIR = "adapter"
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

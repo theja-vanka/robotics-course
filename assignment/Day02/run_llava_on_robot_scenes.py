@@ -25,9 +25,16 @@ import torch
 from datasets import load_dataset   # OPEN dataset
 from transformers import CLIPModel, CLIPProcessor
 
-IMAGE = load_dataset("lerobot/aloha_sim_insertion_human", split="train")[0]["observation.images.top"].convert("RGB")   # real robot scene image (ALOHA top-view camera)
+_ds_r = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
+_cam_r = next(k for k in _ds_r.column_names if "images" in k)
+_raw_r = _ds_r[0][_cam_r]
+def _to_pil_r(_r):
+    from PIL import Image; import io
+    if hasattr(_r, "convert"): return _r.convert("RGB")
+    b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
+    return Image.open(io.BytesIO(b)).convert("RGB") if b else Image.open(_r["path"]).convert("RGB")
+IMAGE = _to_pil_r(_raw_r)   # real robot scene image (ALOHA top-view camera)
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════

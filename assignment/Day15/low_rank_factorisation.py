@@ -24,7 +24,6 @@ import torch
 torch.manual_seed(0)
 W = torch.randn(128, 256)   # a conv/linear weight matrix to factor
 
-DEVICE = "cuda"  # change to "cpu" or "mps" if you have no NVIDIA GPU
 
 
 # ════ FILL IN — each function raises until you write it ════
