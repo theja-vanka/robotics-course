@@ -104,15 +104,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day03_run_stable_diffusion_img2img.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_stable_diffusion_img2img.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install diffusers transformers accelerate datasets pillow pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day03_run_stable_diffusion_img2img.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day03_run_stable_diffusion_img2img.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day03_run_stable_diffusion_img2img.py -q` until **everything is green**. That completes: Run Stable Diffusion v1.5 img2img (diffusers) on a workspace photo at strength 0.3 / 0.5 / 0.7. Deliverable: 3 output images + a note on the fidelity-vs-change tradeoff. Paper: Latent Diffusion (arXiv 2112.10752).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest run_stable_diffusion_img2img.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`run_stable_diffusion_img2img.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest run_stable_diffusion_img2img.py -q` until **everything is green**. That completes: Run Stable Diffusion v1.5 img2img (diffusers) on a workspace photo at strength 0.3 / 0.5 / 0.7. Deliverable: 3 output images + a note on the fidelity-vs-change tradeoff. Paper: Latent Diffusion (arXiv 2112.10752).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -140,15 +140,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day03_index_types.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`index_types.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day03_index_types.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day03_index_types.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day03_index_types.py -q` until **everything is green**. That completes: Learn IVF_FLAT, HNSW, IVF_PQ. Rebuild collection with HNSW. Compare speed vs recall.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest index_types.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`index_types.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest index_types.py -q` until **everything is green**. That completes: Learn IVF_FLAT, HNSW, IVF_PQ. Rebuild collection with HNSW. Compare speed vs recall.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -177,15 +177,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day03_int8_ptq.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`int8_ptq.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day03_int8_ptq.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day03_int8_ptq.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day03_int8_ptq.py -q` until **everything is green**. That completes: Apply torch.quantization.quantize_dynamic. Compare accuracy, size, latency vs FP32.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest int8_ptq.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`int8_ptq.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest int8_ptq.py -q` until **everything is green**. That completes: Apply torch.quantization.quantize_dynamic. Compare accuracy, size, latency vs FP32.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

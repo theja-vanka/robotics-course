@@ -105,15 +105,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day09_run_megapose_on_ycb_object.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_megapose_on_ycb_object.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install # clone the repo in the resources, then: pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day09_run_megapose_on_ycb_object.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day09_run_megapose_on_ycb_object.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day09_run_megapose_on_ycb_object.py -q` until **everything is green**. That completes: Run FoundationPose (or MegaPose) on a YCB object; overlay the 6-DoF axes. Deliverable: an axis-overlay image + the 4x4 pose matrix printed, reprojection aligned. Paper: FoundationPose (arXiv 2312.08344).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest run_megapose_on_ycb_object.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`run_megapose_on_ycb_object.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest run_megapose_on_ycb_object.py -q` until **everything is green**. That completes: Run FoundationPose (or MegaPose) on a YCB object; overlay the 6-DoF axes. Deliverable: an axis-overlay image + the 4x4 pose matrix printed, reprojection aligned. Paper: FoundationPose (arXiv 2312.08344).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -142,15 +142,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day09_object_pose_library.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`object_pose_library.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day09_object_pose_library.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day09_object_pose_library.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day09_object_pose_library.py -q` until **everything is green**. That completes: Store template embeddings + known poses. At inference: embed crop → find nearest template → retrieve pose.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest object_pose_library.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`object_pose_library.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest object_pose_library.py -q` until **everything is green**. That completes: Store template embeddings + known poses. At inference: embed crop → find nearest template → retrieve pose.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -179,15 +179,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day09_tensorrt_basics.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`tensorrt_basics.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install onnxruntime torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day09_tensorrt_basics.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day09_tensorrt_basics.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day09_tensorrt_basics.py -q` until **everything is green**. That completes: Install TensorRT. Convert ONNX → TRT engine. Run FP32 inference. Log latency.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest tensorrt_basics.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`tensorrt_basics.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest tensorrt_basics.py -q` until **everything is green**. That completes: Install TensorRT. Convert ONNX → TRT engine. Run FP32 inference. Log latency.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

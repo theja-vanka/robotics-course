@@ -149,15 +149,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day06_scene_retrieval_service.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`scene_retrieval_service.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day06/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day06_scene_retrieval_service.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day06_scene_retrieval_service.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day06_scene_retrieval_service.py -q` until **everything is green**. That completes: Build SceneRetriever class: encode frame with CLIP → query Milvus → return top-5 similar scenes.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest scene_retrieval_service.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`scene_retrieval_service.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest scene_retrieval_service.py -q` until **everything is green**. That completes: Build SceneRetriever class: encode frame with CLIP → query Milvus → return top-5 similar scenes.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

@@ -100,15 +100,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day11_run_orb_slam3_on_tum_rgb_d.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_orb_slam3_on_tum_rgb_d.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install # clone the repo in the resources, then: pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day11_run_orb_slam3_on_tum_rgb_d.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day11_run_orb_slam3_on_tum_rgb_d.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day11_run_orb_slam3_on_tum_rgb_d.py -q` until **everything is green**. That completes: Build ORB-SLAM3; run on the TUM RGB-D fr1/desk sequence. Deliverable: estimated trajectory vs ground truth (ATE RMSE reported) + a map screenshot. Paper: ORB-SLAM3 (arXiv 2007.11898).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest run_orb_slam3_on_tum_rgb_d.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`run_orb_slam3_on_tum_rgb_d.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest run_orb_slam3_on_tum_rgb_d.py -q` until **everything is green**. That completes: Build ORB-SLAM3; run on the TUM RGB-D fr1/desk sequence. Deliverable: estimated trajectory vs ground truth (ATE RMSE reported) + a map screenshot. Paper: ORB-SLAM3 (arXiv 2007.11898).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -136,15 +136,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day11_semantic_slam_map.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`semantic_slam_map.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day11_semantic_slam_map.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day11_semantic_slam_map.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day11_semantic_slam_map.py -q` until **everything is green**. That completes: Store SLAM keyframe position + CLIP embedding in Milvus. Query: find all keyframes showing the red mug.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest semantic_slam_map.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`semantic_slam_map.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest semantic_slam_map.py -q` until **everything is green**. That completes: Store SLAM keyframe position + CLIP embedding in Milvus. Query: find all keyframes showing the red mug.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -172,15 +172,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day11_tensorrt_int8.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`tensorrt_int8.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install onnxruntime torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day11_tensorrt_int8.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day11_tensorrt_int8.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day11_tensorrt_int8.py -q` until **everything is green**. That completes: INT8 calibration with calibration dataset. Compare INT8 vs FP16 vs FP32 accuracy and speed.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest tensorrt_int8.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`tensorrt_int8.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest tensorrt_int8.py -q` until **everything is green**. That completes: INT8 calibration with calibration dataset. Compare INT8 vs FP16 vs FP32 accuracy and speed.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

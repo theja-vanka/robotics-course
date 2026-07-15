@@ -103,15 +103,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day15_load_amplify_demo_episodes.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`load_amplify_demo_episodes.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install lerobot transformers numpy pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day15_load_amplify_demo_episodes.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day15_load_amplify_demo_episodes.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day15_load_amplify_demo_episodes.py -q` until **everything is green**. That completes: Load a LeRobot/LIBERO demo set; visualise 3 episodes; map the (image, instruction, action) schema; run MimicGen to amplify ~10 demos → ~100. Deliverable: 100 episodes in LeRobot format + the schema printed. Paper: MimicGen (arXiv 2310.17596).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest load_amplify_demo_episodes.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`load_amplify_demo_episodes.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest load_amplify_demo_episodes.py -q` until **everything is green**. That completes: Load a LeRobot/LIBERO demo set; visualise 3 episodes; map the (image, instruction, action) schema; run MimicGen to amplify ~10 demos → ~100. Deliverable: 100 episodes in LeRobot format + the schema printed. Paper: MimicGen (arXiv 2310.17596).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -139,15 +139,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day15_demo_episode_deduplication.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`demo_episode_deduplication.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day15_demo_episode_deduplication.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day15_demo_episode_deduplication.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day15_demo_episode_deduplication.py -q` until **everything is green**. That completes: Embed each demo episode (CLIP on key frames or a trajectory summary). Insert into Milvus. Flag near-duplicate episodes (cosine > 0.98) so your synthetic set stays diverse.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest demo_episode_deduplication.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`demo_episode_deduplication.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest demo_episode_deduplication.py -q` until **everything is green**. That completes: Embed each demo episode (CLIP on key frames or a trajectory summary). Insert into Milvus. Flag near-duplicate episodes (cosine > 0.98) so your synthetic set stays diverse.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -175,15 +175,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day15_low_rank_factorisation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`low_rank_factorisation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day15_low_rank_factorisation.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day15_low_rank_factorisation.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day15_low_rank_factorisation.py -q` until **everything is green**. That completes: SVD decomposition of conv layer weight tensor. Measure accuracy vs compression rate.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest low_rank_factorisation.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`low_rank_factorisation.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest low_rank_factorisation.py -q` until **everything is green**. That completes: SVD decomposition of conv layer weight tensor. Measure accuracy vs compression rate.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

@@ -105,15 +105,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day13_load_run_a_vla_smolvla_first.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`load_run_a_vla_smolvla_first.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install lerobot transformers numpy pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day13_load_run_a_vla_smolvla_first.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day13_load_run_a_vla_smolvla_first.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day13_load_run_a_vla_smolvla_first.py -q` until **everything is green**. That completes: Load SmolVLA-450M via LeRobot; run inference on one frame from the SO-100 pick-place dataset; print the 7-DoF action + decode the action tokens. Deliverable: an action vector + a 2-sentence note on the VLM→action flow. Paper: π0 (arXiv 2410.24164).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest load_run_a_vla_smolvla_first.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`load_run_a_vla_smolvla_first.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest load_run_a_vla_smolvla_first.py -q` until **everything is green**. That completes: Load SmolVLA-450M via LeRobot; run inference on one frame from the SO-100 pick-place dataset; print the 7-DoF action + decode the action tokens. Deliverable: an action vector + a 2-sentence note on the VLM→action flow. Paper: π0 (arXiv 2410.24164).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -144,15 +144,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day13_retrieval_augmented_vla.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`retrieval_augmented_vla.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day13_retrieval_augmented_vla.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day13_retrieval_augmented_vla.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day13_retrieval_augmented_vla.py -q` until **everything is green**. That completes: Store robot demo trajectories as embeddings. At inference: encode observation → retrieve top-3 demos → prepend as context.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest retrieval_augmented_vla.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`retrieval_augmented_vla.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest retrieval_augmented_vla.py -q` until **everything is green**. That completes: Store robot demo trajectories as embeddings. At inference: encode observation → retrieve top-3 demos → prepend as context.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -180,15 +180,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day13_attention_head_pruning.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`attention_head_pruning.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day13_attention_head_pruning.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day13_attention_head_pruning.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day13_attention_head_pruning.py -q` until **everything is green**. That completes: Remove least-important heads in ViT using Taylor expansion importance scores.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest attention_head_pruning.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`attention_head_pruning.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest attention_head_pruning.py -q` until **everything is green**. That completes: Remove least-important heads in ViT using Taylor expansion importance scores.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

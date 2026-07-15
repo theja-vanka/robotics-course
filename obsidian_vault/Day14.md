@@ -103,15 +103,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day14_fine_tune_a_vla_smolvla_with_lora.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`fine_tune_a_vla_smolvla_with_lora.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day14/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install lerobot transformers numpy pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day14_fine_tune_a_vla_smolvla_with_lora.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day14_fine_tune_a_vla_smolvla_with_lora.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day14_fine_tune_a_vla_smolvla_with_lora.py -q` until **everything is green**. That completes: LoRA fine-tune SmolVLA (r=16, target q_proj/v_proj) on the SO-100 pick-place set for ~2k steps. Deliverable: a saved adapter + train-loss curve; success-rate lift vs zero-shot reported (target at least +10pp). Paper: LoRA (arXiv 2106.09685).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest fine_tune_a_vla_smolvla_with_lora.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`fine_tune_a_vla_smolvla_with_lora.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest fine_tune_a_vla_smolvla_with_lora.py -q` until **everything is green**. That completes: LoRA fine-tune SmolVLA (r=16, target q_proj/v_proj) on the SO-100 pick-place set for ~2k steps. Deliverable: a saved adapter + train-loss curve; success-rate lift vs zero-shot reported (target at least +10pp). Paper: LoRA (arXiv 2106.09685).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -142,15 +142,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day14_demo_replay_buffer.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`demo_replay_buffer.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day14/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day14_demo_replay_buffer.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day14_demo_replay_buffer.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day14_demo_replay_buffer.py -q` until **everything is green**. That completes: After fine-tuning, index new demo embeddings. Build retrieval for hardest negative examples.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest demo_replay_buffer.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`demo_replay_buffer.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest demo_replay_buffer.py -q` until **everything is green**. That completes: After fine-tuning, index new demo embeddings. Build retrieval for hardest negative examples.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -178,15 +178,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day14_lora_qlora.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`lora_qlora.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day14/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day14_lora_qlora.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day14_lora_qlora.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day14_lora_qlora.py -q` until **everything is green**. That completes: Apply 4-bit QLoRA to OpenVLA with bitsandbytes. Compare memory vs full fine-tune.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest lora_qlora.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`lora_qlora.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest lora_qlora.py -q` until **everything is green**. That completes: Apply 4-bit QLoRA to OpenVLA with bitsandbytes. Compare memory vs full fine-tune.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

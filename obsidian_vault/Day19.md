@@ -99,15 +99,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day19_3dgs_scene_grasp_poses.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`3dgs_scene_grasp_poses.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day19/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install # clone the repo in the resources, then: pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day19_3dgs_scene_grasp_poses.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day19_3dgs_scene_grasp_poses.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day19_3dgs_scene_grasp_poses.py -q` until **everything is green**. That completes: Reconstruct a tabletop with 3DGS; export Gaussians; compute grasp poses on the geometry. Deliverable: a .ply + top-5 grasps overlaid. Paper: 3D Gaussian Splatting (arXiv 2308.04079).
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest 3dgs_scene_grasp_poses.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`3dgs_scene_grasp_poses.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest 3dgs_scene_grasp_poses.py -q` until **everything is green**. That completes: Reconstruct a tabletop with 3DGS; export Gaussians; compute grasp poses on the geometry. Deliverable: a .ply + top-5 grasps overlaid. Paper: 3D Gaussian Splatting (arXiv 2308.04079).
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -135,15 +135,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day19_3dgs_object_index.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`3dgs_object_index.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day19/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install pymilvus numpy scikit-learn pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day19_3dgs_object_index.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day19_3dgs_object_index.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day19_3dgs_object_index.py -q` until **everything is green**. That completes: Compute shape descriptor per Gaussian cluster. Store in Milvus. Query: given new scene, retrieve similar past object + known grasp.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest 3dgs_object_index.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`3dgs_object_index.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest 3dgs_object_index.py -q` until **everything is green**. That completes: Compute shape descriptor per Gaussian cluster. Store in Milvus. Query: given new scene, retrieve similar past object + known grasp.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 
@@ -171,15 +171,15 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`Day19_4_bit_quantisation_gptq_awq.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from your `intensive study/starter_code` folder. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`4_bit_quantisation_gptq_awq.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day19/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
 !pip install torch torchvision pytest   # ← or whatever the file's own Setup line lists
 ```
 
-**Step 5.** Run the tests — new cell, **▶**:  `!pytest Day19_4_bit_quantisation_gptq_awq.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
-**Step 6.** Double-click **`Day19_4_bit_quantisation_gptq_awq.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest Day19_4_bit_quantisation_gptq_awq.py -q` until **everything is green**. That completes: Apply GPTQ to OpenVLA. Compare 4-bit vs 8-bit vs 16-bit speed and action quality.
+**Step 5.** Run the tests — new cell, **▶**:  `!pytest 4_bit_quantisation_gptq_awq.py -q`  →  the **red / FAILED** tests are your to-do list (each one names the function to write).
+**Step 6.** Double-click **`4_bit_quantisation_gptq_awq.py`** in the 📁 panel to edit it. Fill in each function and DELETE its `raise` line, then re-run `!pytest 4_bit_quantisation_gptq_awq.py -q` until **everything is green**. That completes: Apply GPTQ to OpenVLA. Compare 4-bit vs 8-bit vs 16-bit speed and action quality.
    ❌ `ModuleNotFoundError: X` → new cell, run `!pip install X`, then retry.  ❌ `CUDA out of memory` → **Runtime → Disconnect and delete runtime**, reconnect with GPU, use the smaller model in `src/config.py`.  ❌ Anything else for >90 min → write down where you're stuck and move on (that's not 'behind').
 **Step 7.** All tests green? Tick the ✅ boxes below and check **Block complete**.
 

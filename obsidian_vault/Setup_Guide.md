@@ -30,16 +30,16 @@
 
 ## 2½. Checking your work with a starter file's tests
 
-Every per-day starter (`starter_code/DayNN_*.py`) **loads an open dataset for you** (scikit-learn digits, the HF `cats-image`, a LeRobot set — nothing to provide) and ships its own **pytest tests**. In Colab:
+Every per-day starter (inside `starter_code/DayNN/`) **loads an open dataset for you** (scikit-learn digits, the HF `cats-image`, a LeRobot set — nothing to provide) and ships its own **pytest tests**. In Colab:
 
-1. Upload it: left sidebar **📁 → Upload** → pick the file from `intensive study/starter_code`.
+1. Upload it: left sidebar **📁 → Upload** → navigate into `intensive study/starter_code/DayNN/` and pick the file.
 2. Install its tools (the file's `Setup:` line lists them — they include **pytest**, often `datasets` / `scikit-learn`):
    ```python
    !pip install -q torch torchvision datasets pytest   # ← use the file's own Setup line
    ```
 3. Run the tests:
    ```python
-   !pytest DayNN_whatever.py -q
+   !pytest whatever.py -q
    ```
    **Red / FAILED** tests are your to-do list — each names the function to write. Double-click the file in the 📁 panel to edit it, fill the function, delete its `raise` line, and re-run until **all green**.
 
@@ -67,7 +67,7 @@ Then in any Colab notebook:
 
 **Option B — upload (no GitHub):** in Colab, click the **📁 folder icon** on the left → **upload** → drag your `vla-edge` folder in. Slower, but works.
 
-> The per-day **starter files** (`starter_code/DayXX_*.py`) are NOT in the repo. When a block points to one, open it on your Mac (in Obsidian or TextEdit), **copy all of it**, and **paste it into a Colab cell**.
+> The per-day **starter files** (inside `starter_code/DayXX/`) are NOT in the repo. When a block points to one, open it on your Mac (in Obsidian or TextEdit), **copy all of it**, and **paste it into a Colab cell**.
 
 ---
 
