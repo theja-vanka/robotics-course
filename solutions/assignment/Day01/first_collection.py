@@ -34,49 +34,56 @@ from transformers import CLIPModel, CLIPProcessor
 # First run: downloads CLIP model + computes embeddings (~1 min). Subsequent runs: instant.
 _ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 _CACHE = os.path.join(_ROOT, "clip_robot_embeddings.npy")
-if not os.path.exists(_CACHE):
-    print("[setup] computing CLIP embeddings of robot scenes — one-time, ~1 min…")
-    _ds = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
-    _cam = next(k for k in _ds.column_names if "images" in k)
 
-    def _to_pil(_r):
-        import io
 
-        from PIL import Image
+def _build_clip_cache(path: str, n: int = 200) -> None:
+    """Compute CLIP embeddings of ALOHA robot scenes and save to `path`."""
+    import io
 
-        if hasattr(_r, "convert"):
-            return _r.convert("RGB")
-        b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
+    from PIL import Image
+
+    print("[setup] computing CLIP embeddings — one-time, ~1 min…")
+    ds = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
+    cam = next(k for k in ds.column_names if "images" in k)
+
+    def to_pil(r):
+        if hasattr(r, "convert"):
+            return r.convert("RGB")
+        b = (r.get("bytes") or r.get("data")) if isinstance(r, dict) else None
         return (
             Image.open(io.BytesIO(b)).convert("RGB")
             if b
-            else Image.open(_r["path"]).convert("RGB")
+            else Image.open(r["path"]).convert("RGB")
         )
 
-    _imgs = [_to_pil(_ds[i][_cam]) for i in range(200)]
-    _proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-    _device = torch.device(
+    imgs = [to_pil(ds[i][cam]) for i in range(n)]
+    proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    device = torch.device(
         "cuda"
         if torch.cuda.is_available()
         else "mps"
         if torch.backends.mps.is_available()
         else "cpu"
     )
-    _mdl = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(_device)
-    _mdl.eval()
-    _vecs = []
+    mdl = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(device)
+    mdl.eval()
+    vecs = []
     with torch.no_grad():
-        for i in range(0, len(_imgs), 32):
-            _b = _proc(images=_imgs[i : i + 32], return_tensors="pt", padding=True)
-            _b = {k: v.to(_device) for k, v in _b.items()}
-            _feat = _mdl.get_image_features(**_b)
-            _vecs.append(
-                (_feat if isinstance(_feat, torch.Tensor) else _feat.pooler_output)
+        for i in range(0, len(imgs), 32):
+            b = proc(images=imgs[i : i + 32], return_tensors="pt", padding=True)
+            b = {k: v.to(device) for k, v in b.items()}
+            feat = mdl.get_image_features(**b)
+            vecs.append(
+                (feat if isinstance(feat, torch.Tensor) else feat.pooler_output)
                 .cpu()
                 .numpy()
             )
-    np.save(_CACHE, np.vstack(_vecs).astype("float32"))
-    print(f"[setup] cached → {_CACHE}")
+    np.save(path, np.vstack(vecs).astype("float32"))
+    print(f"[setup] cached {n} embeddings → {path}")
+
+
+if not os.path.exists(_CACHE):
+    _build_clip_cache(_CACHE)
 EXAMPLE_VECTORS = np.load(_CACHE)  # (200, 512) — real CLIP embeddings of robot scenes
 QUERY = EXAMPLE_VECTORS[0]
 DIM = EXAMPLE_VECTORS.shape[1]  # 512  (CLIP ViT-B/32)
@@ -85,7 +92,7 @@ N = len(EXAMPLE_VECTORS)  # 200
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
-    _db = os.path.join(_ROOT, "milvus_demo.db")
+    _db = os.path.join(_ROOT, "./milvus_demo.db")
     if os.path.exists(_db):
         os.remove(_db)
     return MilvusClient(_db)
@@ -97,19 +104,49 @@ def fresh_client():
 def create_collection(client):
     """TODO 1: Create a collection named 'demo' with a vector field of dimension DIM (=512)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: create_collection() not written yet")
+    if client.has_collection(collection_name="demo_collection"):
+        client.drop_collection(collection_name="demo_collection")
+    client.create_collection(
+        collection_name="demo_collection",
+        dimension=DIM,  # The vectors we will use in this demo has 768 dimensions
+    )
+    # raise NotImplementedError("Step 1: create_collection() not written yet")
 
 
 def insert_vectors(client):
     """TODO 2: Insert all EXAMPLE_VECTORS (N=200 CLIP robot-scene embeddings, ids 0..N-1) into 'demo'. Return how many you inserted."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: insert_vectors() not written yet")
+    import time
+
+    data = [
+        {
+            "id": i,
+            "vector": EXAMPLE_VECTORS[i].tolist(),
+            "dataset": "aloha_sim_insertion_human_image",
+            "embeddings": "openai/clip-vit-base-patch32",
+        }
+        for i in range(N)
+    ]
+    res = client.insert(collection_name="demo_collection", data=data)
+    time.sleep(1)
+
+    return len(res["ids"])
+
+    # raise NotImplementedError("Step 2: insert_vectors() not written yet")
 
 
 def run_search(client):
     """TODO 3: Search 'demo' for QUERY (the first robot scene embedding) with limit=5. Return the list of result ids (length 5)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 3: run_search() not written yet")
+    res = client.search(
+        collection_name="demo_collection",  # target collection
+        data=[QUERY.tolist()],  # query vectors
+        limit=5,  # number of returned entities
+        output_fields=["id", "vector"],  # specifies fields to be returned
+    )
+    res = [hit["id"] for hit in res[0]]
+    return res
+    # raise NotImplementedError("Step 3: run_search() not written yet")
 
 
 # ════ TESTS — run `pytest Day01_first_collection.py` (or `python Day01_first_collection.py`). All green = you're done. ════

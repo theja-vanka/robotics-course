@@ -28,16 +28,26 @@ import torch
 # ════ FILL IN — each function raises until you write it ════
 
 
-def report_env():
-    """TODO 1: Return a dict like {'cuda': torch.cuda.is_available(), 'torch': torch.__version__}."""
-    # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: report_env() not written yet")
+def report_env() -> dict:
+    """Return {'cuda': bool, 'mps': bool, 'torch': version_str}."""
+    return {
+        "cuda": torch.cuda.is_available(),
+        "mps": torch.backends.mps.is_available(),
+        "torch": torch.__version__,
+    }
 
 
-def check_libraries():
-    """TODO 2: Return {name: version_or_None} for ['torch','transformers','diffusers','pymilvus','ultralytics']. Use importlib.import_module + getattr(m,'__version__',None); None if it isn't installed."""
-    # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: check_libraries() not written yet")
+def check_libraries() -> dict:
+    """Return {name: version_or_None} for the core CV/robotics stack."""
+    libs = ["torch", "transformers", "diffusers", "pymilvus", "ultralytics"]
+    result = {}
+    for name in libs:
+        try:
+            m = importlib.import_module(name)
+            result[name] = getattr(m, "__version__", "installed")
+        except ImportError:
+            result[name] = None
+    return result
 
 
 # ════ TESTS — run `pytest Day01_python_tooling.py` (or `python Day01_python_tooling.py`). All green = you're done. ════
