@@ -110,13 +110,24 @@ def log_metrics(tag: str, metrics: dict) -> str:
 def load_model():
     """TODO 1: Return ResNet-18 in fp32, eval mode:  resnet18(weights='DEFAULT').eval()  (weights download once). (Day 19+ on the VLA: load your fine-tuned SmolVLA like vla-edge/src/policy.py instead.)"""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: load_model() not written yet")
+    model = resnet18(weights="DEFAULT")
+    model = model.eval()
+    model = model.to(DEVICE)
+    return model
+    # raise NotImplementedError("Step 1: load_model() not written yet")
 
 
 def compress(model):
     """TODO 2: Apply THIS block's technique and return the new model. fp16 -> model.half(); int8 -> torch.quantization.quantize_dynamic(model, dtype=torch.qint8); prune -> torch.nn.utils.prune.l1_unstructured(...); 4-bit -> bitsandbytes. (The Task line says which.)"""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: compress() not written yet")
+    import copy
+
+    compressed_model = copy.deepcopy(model)
+    compressed_model = compressed_model.to(DEVICE)
+    compressed_model = compressed_model.half()
+    compressed_model = compressed_model.eval()
+    return compressed_model
+    # raise NotImplementedError("Step 2: compress() not written yet")
 
 
 def compare(model, compressed):
@@ -128,7 +139,13 @@ def compare(model, compressed):
     Return (before, after).
     """
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 3: compare() not written yet")
+    before = measure(model)
+    log_metrics("baseline", before)
+    after = measure(compressed, example_input=EXAMPLE_INPUT.half())
+    log_metrics("compressed", after)
+    print("baseline:", before, "-> compressed:", after)
+    return before, after
+    # raise NotImplementedError("Step 3: compare() not written yet")
 
 
 # ════ TESTS — run `pytest Day02_fp16.py` (or `python Day02_fp16.py`). All green = you're done. ════

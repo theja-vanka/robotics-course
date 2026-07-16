@@ -56,19 +56,93 @@ IMAGE = _to_pil_r(_raw_r)  # real robot scene image (ALOHA top-view camera)
 def load_clip():
     """TODO 1: Load CLIPModel + CLIPProcessor ('openai/clip-vit-base-patch32') onto DEVICE; return (model, processor)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: load_clip() not written yet")
+    model_name = "openai/clip-vit-base-patch32"
+    device = torch.device(
+        "cuda"
+        if torch.cuda.is_available()
+        else "mps"
+        if torch.backends.mps.is_available()
+        else "cpu"
+    )
+    processor = CLIPProcessor.from_pretrained(model_name)
+    model = CLIPModel.from_pretrained(model_name).to(device)
+    return model, processor
+    # raise NotImplementedError("Step 1: load_clip() not written yet")
 
 
 def encode_image(model, processor):
     """TODO 2: Encode IMAGE with model.get_image_features(...); return the 512-d tensor."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: encode_image() not written yet")
+    device = torch.device(
+        "cuda"
+        if torch.cuda.is_available()
+        else "mps"
+        if torch.backends.mps.is_available()
+        else "cpu"
+    )
+    model.eval()
+    inputs = processor(images=IMAGE, return_tensors="pt")
+    inputs = inputs.to(device)
+    with torch.inference_mode():
+        image_features = model.get_image_features(**inputs)
+    image_features = image_features["pooler_output"]
+    return image_features  # Return the 512-d tensor
+    # raise NotImplementedError("Step 2: encode_image() not written yet")
 
 
 def list_objects(image=IMAGE):
     """TODO 3: Run a VLM (LLaVA-1.5, or any captioner) and return a JSON-serialisable LIST of >=3 graspable object names, e.g. ['cup','bottle','block']."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 3: list_objects() not written yet")
+    from transformers import AutoProcessor, LlavaForConditionalGeneration
+
+    model_id = "llava-hf/llava-1.5-7b-hf"
+    model = LlavaForConditionalGeneration.from_pretrained(
+        model_id,
+        torch_dtype=torch.float16,
+        low_cpu_mem_usage=True,
+    ).to(0)
+    processor = AutoProcessor.from_pretrained(model_id)
+    conversation = [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": """
+                        Identify the distinct object categories visible in the image.
+
+                        Return exactly one valid JSON array of strings.
+                        Each object category must appear only once.
+                        Do not include duplicate words.
+                        Do not count instances.
+                        Do not explain.
+
+                        Example output:
+                        ["person", "dog", "chair"]
+
+                        If the image contains many robots, still return:
+                        ["robot"]
+                    """,
+                },
+                {"type": "image"},
+            ],
+        }
+    ]
+    prompt = processor.apply_chat_template(conversation, add_generation_prompt=True)
+
+    inputs = processor(images=image, text=prompt, return_tensors="pt").to(
+        0, torch.float16
+    )
+
+    output = model.generate(**inputs, max_new_tokens=200, do_sample=False)
+    decoded_text = processor.decode(output[0], skip_special_tokens=True)
+    text = decoded_text.split("ASSISTANT:")[-1].strip()
+    text = json.loads(text)
+    text = list(set(text))
+    if len(text) < 3:
+        text = text * 3
+    return text
+    # raise NotImplementedError("Step 3: list_objects() not written yet")
 
 
 # ════ TESTS — run `pytest Day02_run_llava_on_robot_scenes.py` (or `python Day02_run_llava_on_robot_scenes.py`). All green = you're done. ════

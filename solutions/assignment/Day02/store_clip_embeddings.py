@@ -94,8 +94,8 @@ N = len(EXAMPLE_VECTORS)  # 200
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
     _db = os.path.join(_ROOT, "milvus_demo.db")
-    if os.path.exists(_db):
-        os.remove(_db)
+    # if os.path.exists(_db):
+    #     os.remove(_db)
     return MilvusClient(_db)
 
 
@@ -105,13 +105,34 @@ def fresh_client():
 def build_image_index(client):
     """TODO 1: Create collection 'clip_images' (vector dim DIM) and insert the FIRST 100 EXAMPLE_VECTORS — these stand in for 100 CLIP image embeddings. Return how many you inserted."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: build_image_index() not written yet")
+    import time
+
+    client.drop_collection(collection_name="clip_images")
+    client.create_collection(
+        collection_name="clip_images",
+        dimension=DIM,
+    )
+
+    data = []
+    for i, vector in enumerate(EXAMPLE_VECTORS[:100].tolist()):
+        data.append({"id": i, "vector": vector, "dataset": "digits"})
+    res = client.insert(collection_name="clip_images", data=data)
+    time.sleep(2)
+    return len(res["ids"])
+    # raise NotImplementedError("Step 1: build_image_index() not written yet")
 
 
 def search_similar(client, query=QUERY, k=5):
     """TODO 2: Return the ids of the k most similar images to `query` (your top-5 log)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: search_similar() not written yet")
+    search_results = client.search(
+        collection_name="clip_images",
+        data=[QUERY.tolist()],
+        limit=5,
+        Output_fields=["id", "dataset"],
+    )
+    return [result.id for result in search_results[0]]
+    # raise NotImplementedError("Step 2: search_similar() not written yet")
 
 
 # ════ TESTS — run `pytest Day02_store_clip_embeddings.py` (or `python Day02_store_clip_embeddings.py`). All green = you're done. ════
