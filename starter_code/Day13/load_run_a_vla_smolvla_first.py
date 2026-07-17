@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Load & Run a VLA (SmolVLA-first).
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day13_load_run_a_vla_smolvla_first.py     (or just:  python Day13_load_run_a_vla_smolvla_first.py)
+  2. Check yourself:   pytest load_run_a_vla_smolvla_first.py     (or just:  python load_run_a_vla_smolvla_first.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ policy.py: understand the VLA you'll fine-tune (action tokens, VLM backbone).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day13.md
-Setup:  pip install lerobot transformers numpy pytest
+Setup:  pip install lerobot transformers numpy pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def predict_action(policy):
     raise NotImplementedError("Step 2: predict_action() not written yet")
 
 
-# ════ TESTS — run `pytest Day13_load_run_a_vla_smolvla_first.py` (or `python Day13_load_run_a_vla_smolvla_first.py`). All green = you're done. ════
+# ════ TESTS — run `pytest load_run_a_vla_smolvla_first.py` (or `python load_run_a_vla_smolvla_first.py`). All green = you're done. ════
 
 def test_action_is_vector():
     import numpy as np, torch

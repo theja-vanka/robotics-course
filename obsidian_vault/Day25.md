@@ -82,8 +82,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [ML Interview Q&A — Chip Huyen](https://www.google.com/search?q=ML+Interview+Q%26A+%E2%80%94+Chip+Huyen) — ⏱️ ~15 min
-- [ ] 📝 [CV Interview Questions — LearnOpenCV](https://www.google.com/search?q=CV+Interview+Questions+%E2%80%94+LearnOpenCV) — ⏱️ ~15 min
+- [ ] 📝 [ML Interview Q&A — Chip Huyen](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
+- [ ] 📝 [CV Interview Questions — LearnOpenCV](https://learnopencv.com/interview-questions/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -108,8 +108,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [LeetCode](https://www.google.com/search?q=LeetCode) — ⏱️ ~15 min
-- [ ] 📝 [Coding Patterns Guide](https://www.google.com/search?q=Coding+Patterns+Guide) — ⏱️ ~15 min
+- [ ] 📝 [LeetCode](https://leetcode.com) — ⏱️ ~15 min
+- [ ] 📝 [Coding Patterns Guide](https://www.educative.io/courses/grokking-the-coding-interview) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -134,8 +134,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [System Design Primer](https://www.google.com/search?q=System+Design+Primer) — ⏱️ ~15 min
-- [ ] 📝 [ML System Design Guide](https://www.google.com/search?q=ML+System+Design+Guide) — ⏱️ ~15 min
+- [ ] 📝 [System Design Primer](https://github.com/donnemartin/system-design-primer) — ⏱️ ~15 min
+- [ ] 📝 [ML System Design Guide](https://huyenchip.com/machine-learning-systems-design/toc.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -160,9 +160,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [TensorRT INT8 vs FP16](https://www.google.com/search?q=TensorRT+INT8+vs+FP16) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📄 [TensorRT INT8 vs FP16](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#reduced-precision) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -204,9 +204,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -232,9 +232,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

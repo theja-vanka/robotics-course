@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~345 min (~5.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 openpi — π0 / π0.5 open VLA (Physical Intelligence) — [open](https://www.google.com/search?q=open)
-- 🔥 Run GR00T N1.5 in LeRobot — hands-on — [open](https://www.google.com/search?q=open)
+- 🔥 openpi — π0 / π0.5 open VLA (Physical Intelligence) — [open](https://github.com/Physical-Intelligence/openpi)
+- 🔥 Run GR00T N1.5 in LeRobot — hands-on — [open](https://huggingface.co/blog/nvidia/nvidia-isaac-gr00t-in-lerobot)
 
 ---
 
@@ -86,12 +86,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [RT-2 Paper (Brohan et al.)](https://www.google.com/search?q=RT-2+Paper+%28Brohan+et+al.%29) — ⏱️ ~15 min
-- [ ] 📄 [OpenVLA Paper](https://www.google.com/search?q=OpenVLA+Paper) — ⏱️ ~15 min
-- [ ] 📄 [π0 Paper — Physical Intelligence](https://www.google.com/search?q=%CF%800+Paper+%E2%80%94+Physical+Intelligence) — ⏱️ ~15 min
-- [ ] 📄 [State of VLA at ICLR 2026](https://www.google.com/search?q=State+of+VLA+at+ICLR+2026) — ⏱️ ~15 min
-- [ ] 🎥 [VLA Models Explained](https://www.youtube.com/results?search_query=VLA+Models+Explained) — ⏱️ ~25 min
-- [ ] 🔥 📦 [openpi — π0 / π0.5 open VLA (Physical Intelligence)](https://www.google.com/search?q=openpi+%E2%80%94+%CF%800+%2F+%CF%800.5+open+VLA+%28Physical+Intelligence%29) — ⏱️ ~10 min
+- [ ] 📄 [RT-2 Paper (Brohan et al.)](https://arxiv.org/abs/2307.15818) — ⏱️ ~15 min
+- [ ] 📄 [OpenVLA Paper](https://arxiv.org/abs/2406.09246) — ⏱️ ~15 min
+- [ ] 📄 [π0 Paper — Physical Intelligence](https://www.physicalintelligence.company/blog/pi0) — ⏱️ ~15 min
+- [ ] 📄 [State of VLA at ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html) — ⏱️ ~15 min
+- [ ] 🎥 [VLA Models Explained](https://www.youtube.com/watch?v=Ow1_k5ysM6A) — ⏱️ ~25 min
+- [ ] 🔥 📦 [openpi — π0 / π0.5 open VLA (Physical Intelligence)](https://github.com/Physical-Intelligence/openpi) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -105,7 +105,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`load_run_a_vla_smolvla_first.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`load_run_a_vla_smolvla_first.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -125,12 +125,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [SmolVLA — 450M VLA, start here](https://www.google.com/search?q=SmolVLA+%E2%80%94+450M+VLA%2C+start+here) — ⏱️ ~15 min
-- [ ] 📦 [OpenVLA GitHub](https://www.google.com/search?q=OpenVLA+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [OpenVLA-7B HuggingFace (heavier alt)](https://www.google.com/search?q=OpenVLA-7B+HuggingFace+%28heavier+alt%29) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📝 [LeRobot Quickstart](https://www.google.com/search?q=LeRobot+Quickstart) — ⏱️ ~15 min
-- [ ] 🔥 📝 [Run GR00T N1.5 in LeRobot — hands-on](https://www.google.com/search?q=Run+GR00T+N1.5+in+LeRobot+%E2%80%94+hands-on) — ⏱️ ~15 min
+- [ ] 📝 [SmolVLA — 450M VLA, start here](https://huggingface.co/blog/smolvla) — ⏱️ ~15 min
+- [ ] 📦 [OpenVLA GitHub](https://github.com/openvla/openvla) — ⏱️ ~10 min
+- [ ] 📄 [OpenVLA-7B HuggingFace (heavier alt)](https://huggingface.co/openvla/openvla-7b) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📝 [LeRobot Quickstart](https://github.com/huggingface/lerobot#quick-start) — ⏱️ ~15 min
+- [ ] 🔥 📝 [Run GR00T N1.5 in LeRobot — hands-on](https://huggingface.co/blog/nvidia/nvidia-isaac-gr00t-in-lerobot) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~80 min*
 
@@ -144,7 +144,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`retrieval_augmented_vla.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`retrieval_augmented_vla.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -164,9 +164,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
-- [ ] 📝 [RAG with Milvus — Tutorial](https://www.google.com/search?q=RAG+with+Milvus+%E2%80%94+Tutorial) — ⏱️ ~15 min
-- [ ] 📝 [Retrieval-Augmented Robot Learning](https://www.google.com/search?q=Retrieval-Augmented+Robot+Learning) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📝 [RAG with Milvus — Tutorial](https://milvus.io/docs/integrate_with_langchain.md) — ⏱️ ~15 min
+- [ ] 📝 [Retrieval-Augmented Robot Learning](https://zilliz.com/blog) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -180,7 +180,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`attention_head_pruning.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`attention_head_pruning.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day13/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -200,9 +200,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Are Sixteen Heads Really Better Than One?](https://www.google.com/search?q=Are+Sixteen+Heads+Really+Better+Than+One%3F) — ⏱️ ~15 min
-- [ ] 📝 [Attention Head Pruning Tutorial](https://www.google.com/search?q=Attention+Head+Pruning+Tutorial) — ⏱️ ~15 min
-- [ ] 📦 [transformers GitHub](https://www.google.com/search?q=transformers+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Are Sixteen Heads Really Better Than One?](https://arxiv.org/abs/1905.10650) — ⏱️ ~15 min
+- [ ] 📝 [Attention Head Pruning Tutorial](https://towardsdatascience.com/pruning-attention-heads-dba4d8aa9db4) — ⏱️ ~15 min
+- [ ] 📦 [transformers GitHub](https://github.com/huggingface/transformers) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -244,9 +244,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -272,9 +272,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

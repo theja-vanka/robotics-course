@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~300 min (~5.0 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Cosmos-Predict 2.5 — improved world simulation (NVIDIA) — [open](https://www.google.com/search?q=open)
+- 🔥 Cosmos-Predict 2.5 — improved world simulation (NVIDIA) — [open](https://research.nvidia.com/labs/cosmos-lab/cosmos-predict2.5/)
 
 ---
 
@@ -85,11 +85,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [NVIDIA GR00T-Dreams (DreamGen)](https://www.google.com/search?q=NVIDIA+GR00T-Dreams+%28DreamGen%29) — ⏱️ ~10 min
-- [ ] 📄 [NVIDIA Isaac GR00T — Synthetic Manipulation Blueprint](https://www.google.com/search?q=NVIDIA+Isaac+GR00T+%E2%80%94+Synthetic+Manipulation+Blueprint) — ⏱️ ~15 min
-- [ ] 📝 [NVIDIA — Synthetic Trajectory Data via World Foundation Models](https://www.google.com/search?q=NVIDIA+%E2%80%94+Synthetic+Trajectory+Data+via+World+Foundation+Models) — ⏱️ ~15 min
-- [ ] 📄 [Isaac Lab — GPU robot-learning sim (paper)](https://www.google.com/search?q=Isaac+Lab+%E2%80%94+GPU+robot-learning+sim+%28paper%29) — ⏱️ ~15 min
-- [ ] 🔥 📄 [Cosmos-Predict 2.5 — improved world simulation (NVIDIA)](https://www.google.com/search?q=Cosmos-Predict+2.5+%E2%80%94+improved+world+simulation+%28NVIDIA%29) — ⏱️ ~15 min
+- [ ] 📦 [NVIDIA GR00T-Dreams (DreamGen)](https://github.com/nvidia/gr00t-dreams) — ⏱️ ~10 min
+- [ ] 📄 [NVIDIA Isaac GR00T — Synthetic Manipulation Blueprint](https://build.nvidia.com/nvidia/isaac-gr00t-synthetic-manipulation/blueprintcard) — ⏱️ ~15 min
+- [ ] 📝 [NVIDIA — Synthetic Trajectory Data via World Foundation Models](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) — ⏱️ ~15 min
+- [ ] 📄 [Isaac Lab — GPU robot-learning sim (paper)](https://arxiv.org/abs/2511.04831) — ⏱️ ~15 min
+- [ ] 🔥 📄 [Cosmos-Predict 2.5 — improved world simulation (NVIDIA)](https://research.nvidia.com/labs/cosmos-lab/cosmos-predict2.5/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~70 min*
 
@@ -131,9 +131,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [MimicGen — code & docs](https://www.google.com/search?q=MimicGen+%E2%80%94+code+%26+docs) — ⏱️ ~10 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [RoboCasa365 — large-scale sim demos](https://www.google.com/search?q=RoboCasa365+%E2%80%94+large-scale+sim+demos) — ⏱️ ~15 min
+- [ ] 📦 [MimicGen — code & docs](https://mimicgen.github.io) — ⏱️ ~10 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [RoboCasa365 — large-scale sim demos](https://arxiv.org/abs/2603.04356) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~35 min*
 
@@ -147,7 +147,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`demo_episode_browser.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day16/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`demo_episode_browser.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day16/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -167,9 +167,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Text Search Tutorial](https://www.google.com/search?q=Milvus+Text+Search+Tutorial) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
-- [ ] 📝 [Build a Semantic Search Engine](https://www.google.com/search?q=Build+a+Semantic+Search+Engine) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Text Search Tutorial](https://milvus.io/docs/full-text-search.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📝 [Build a Semantic Search Engine](https://milvus.io/docs/build-rag-with-milvus.md) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -196,10 +196,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [EfficientDet Paper](https://www.google.com/search?q=EfficientDet+Paper) — ⏱️ ~15 min
-- [ ] 📄 [EfficientNet Paper](https://www.google.com/search?q=EfficientNet+Paper) — ⏱️ ~15 min
-- [ ] 🎥 [EfficientDet Explained](https://www.youtube.com/results?search_query=EfficientDet+Explained) — ⏱️ ~25 min
-- [ ] 📦 [EfficientDet PyTorch](https://www.google.com/search?q=EfficientDet+PyTorch) — ⏱️ ~10 min
+- [ ] 📄 [EfficientDet Paper](https://arxiv.org/abs/1911.09070) — ⏱️ ~15 min
+- [ ] 📄 [EfficientNet Paper](https://arxiv.org/abs/1905.11946) — ⏱️ ~15 min
+- [ ] 🎥 [EfficientDet Explained](https://www.youtube.com/watch?v=voFRgzMBdQE) — ⏱️ ~25 min
+- [ ] 📦 [EfficientDet PyTorch](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -241,9 +241,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -269,9 +269,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

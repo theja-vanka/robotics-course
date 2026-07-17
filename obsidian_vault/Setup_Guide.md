@@ -30,13 +30,15 @@
 
 ## 2½. Checking your work with a starter file's tests
 
-Every per-day starter (inside `starter_code/DayNN/`) **loads an open dataset for you** (scikit-learn digits, the HF `cats-image`, a LeRobot set — nothing to provide) and ships its own **pytest tests**. In Colab:
+Every per-day starter (inside `starter_code/DayNN/`) **loads an open dataset for you** (BridgeData V2 robot scenes via `jesbu1/bridge_v2_lerobot`, SO-100 demos via `lerobot/svla_so100_pickplace` — nothing to provide) and ships its own **pytest tests**. In Colab:
 
 1. Upload it: left sidebar **📁 → Upload** → navigate into `intensive study/starter_code/DayNN/` and pick the file.
-2. Install its tools (the file's `Setup:` line lists them — they include **pytest**, often `datasets` / `scikit-learn`):
+2. Install its tools — the quickest is the shared, pinned list (covers every day); or use the file's own `Setup:` line:
    ```python
-   !pip install -q torch torchvision datasets pytest   # ← use the file's own Setup line
+   !pip install -q -r intensive\ study/starter_code/requirements.txt   # ← everything, pinned
+   # ...or just the file's Setup line, e.g.:  !pip install -q pymilvus transformers torch pillow av huggingface_hub pytest
    ```
+   *(The shared setup — dataset download, CLIP/DINOv2, Milvus client — lives in `starter_code/helpers/`; the day files just import it.)*
 3. Run the tests:
    ```python
    !pytest whatever.py -q

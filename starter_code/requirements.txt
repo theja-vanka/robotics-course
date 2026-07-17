@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Starter-code requirements — Gen AI × Robotics 30-day intensive
+#
+# Everything the day-to-day exercises need:
+#     cd starter_code
+#     pip install -r requirements.txt
+#
+# Versions are PINNED for reproducibility (a known-good, mutually compatible set).
+#  • On a Mac the default wheels below are correct (torch uses MPS/CPU).
+#  • On an NVIDIA box install the CUDA build of torch FIRST
+#    (https://pytorch.org/get-started/locally/), then run this file.
+# The "per-track extras" at the bottom are heavy / GPU-only / repo-clone tools you
+# only need on specific days — leave them commented until that day comes.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core — used by helpers/ and almost every day ───────────────────────────────
+torch==2.3.1
+torchvision==0.18.1
+numpy==1.26.4
+pillow==10.4.0
+pytest==8.3.2
+
+# ── Robot-scene frame reader (helpers/datasets.py) ─────────────────────────────
+# The datasets store camera frames as AV1 MP4s, so we download + decode them here.
+huggingface-hub==0.24.6      # fetches the dataset MP4s + meta/info.json (cached)
+av==12.3.0                   # PyAV — ships its own ffmpeg incl. the AV1 decoder
+
+# ── Embeddings + vector DB (Build + Milvus days) ───────────────────────────────
+transformers==4.44.2         # CLIP / DINOv2 encoders (also the depth-anything pipeline)
+pymilvus==3.0.0              # milvus-lite: file-based vector DB, no Docker needed
+
+# ── Compression / export track (onnx · tensorrt stand-in) ──────────────────────
+onnxruntime==1.18.1
+
+# ── Vision hands-on days (SAM · YOLO · diffusion) ──────────────────────────────
+ultralytics==8.3.0           # SAM 2.1 + YOLO11  (Day04, Day07, Day08 …)
+diffusers==0.30.2            # Stable Diffusion img2img + ControlNet (Day03, Day17)
+accelerate==0.33.0           # device placement for diffusers / transformers
+
+# ── Fine-tuning helper (Day14 LoRA) ────────────────────────────────────────────
+peft==0.12.0
+
+# ══ Per-track EXTRAS — install only when that day needs them ═══════════════════
+# VLA capstone track (Days 13–15) — load / run / fine-tune SmolVLA via LeRobot:
+#   pip install "lerobot @ git+https://github.com/huggingface/lerobot.git"
+#
+# 4-bit / QLoRA (Day14, Day19) — NVIDIA GPU only; on Mac/CPU stay in fp16:
+#   bitsandbytes==0.43.3
+#
+# 3D Gaussian Splatting / NeRF (Day05, Day19) — needs CUDA:
+#   nerfstudio          # https://docs.nerf.studio/quickstart/installation.html
+#
+# TensorRT fast path (Days 09–11) — Jetson / NVIDIA. The starters fall back to
+# onnxruntime on CPU, so this is optional:
+#   tensorrt            # or: onnxruntime-gpu
+#
+# API-serving block (optional):
+#   fastapi==0.111.1
+#   uvicorn==0.30.3

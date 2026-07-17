@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~370 min (~6.2 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Depth Anything 3 — geometry from any views (ICLR 2026) — [open](https://www.google.com/search?q=open)
-- 🔥 Apple Depth Pro — sharp metric depth in <1s — [open](https://www.google.com/search?q=open)
+- 🔥 Depth Anything 3 — geometry from any views (ICLR 2026) — [open](https://github.com/bytedance-seed/depth-anything-3)
+- 🔥 Apple Depth Pro — sharp metric depth in <1s — [open](https://learnopencv.com/depth-pro-monocular-metric-depth/)
 
 ---
 
@@ -86,11 +86,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Depth Anything v2 Paper](https://www.google.com/search?q=Depth+Anything+v2+Paper) — ⏱️ ~15 min
-- [ ] 📦 [Depth Anything v2 GitHub](https://www.google.com/search?q=Depth+Anything+v2+GitHub) — ⏱️ ~10 min
-- [ ] 🎥 [Monocular Depth Estimation Explained](https://www.youtube.com/results?search_query=Monocular+Depth+Estimation+Explained) — ⏱️ ~25 min
-- [ ] 📝 [Stereo Vision Guide — LearnOpenCV](https://www.google.com/search?q=Stereo+Vision+Guide+%E2%80%94+LearnOpenCV) — ⏱️ ~15 min
-- [ ] 🔥 📦 [Depth Anything 3 — geometry from any views (ICLR 2026)](https://www.google.com/search?q=Depth+Anything+3+%E2%80%94+geometry+from+any+views+%28ICLR+2026%29) — ⏱️ ~10 min
+- [ ] 📄 [Depth Anything v2 Paper](https://arxiv.org/abs/2406.09414) — ⏱️ ~15 min
+- [ ] 📦 [Depth Anything v2 GitHub](https://github.com/DepthAnything/Depth-Anything-V2) — ⏱️ ~10 min
+- [ ] 🎥 [Monocular Depth Estimation Explained](https://www.youtube.com/watch?v=XGi9_Zt5m0A) — ⏱️ ~25 min
+- [ ] 📝 [Stereo Vision Guide — LearnOpenCV](https://learnopencv.com/introduction-to-epipolar-geometry-and-stereo-vision/) — ⏱️ ~15 min
+- [ ] 🔥 📦 [Depth Anything 3 — geometry from any views (ICLR 2026)](https://github.com/bytedance-seed/depth-anything-3) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~75 min*
 
@@ -104,7 +104,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`run_depth_anything_v2_point_cloud.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day08/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_depth_anything_v2_point_cloud.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day08/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -124,10 +124,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Depth Anything v2 HuggingFace](https://www.google.com/search?q=Depth+Anything+v2+HuggingFace) — ⏱️ ~15 min
-- [ ] 📦 [Open3D GitHub](https://www.google.com/search?q=Open3D+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [Open3D Point Cloud Tutorial](https://www.google.com/search?q=Open3D+Point+Cloud+Tutorial) — ⏱️ ~15 min
-- [ ] 🔥 📝 [Apple Depth Pro — sharp metric depth in <1s](https://www.google.com/search?q=Apple+Depth+Pro+%E2%80%94+sharp+metric+depth+in+%3C1s) — ⏱️ ~15 min
+- [ ] 📄 [Depth Anything v2 HuggingFace](https://huggingface.co/depth-anything/Depth-Anything-V2-Large) — ⏱️ ~15 min
+- [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
+- [ ] 📄 [Open3D Point Cloud Tutorial](http://www.open3d.org/docs/release/tutorial/geometry/pointcloud.html) — ⏱️ ~15 min
+- [ ] 🔥 📝 [Apple Depth Pro — sharp metric depth in <1s](https://learnopencv.com/depth-pro-monocular-metric-depth/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -141,7 +141,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`multi_modal_rgb_depth.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day08/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`multi_modal_rgb_depth.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day08/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -161,9 +161,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Multi-Vector Fields](https://www.google.com/search?q=Milvus+Multi-Vector+Fields) — ⏱️ ~15 min
-- [ ] 📝 [Multi-modal Search with Milvus](https://www.google.com/search?q=Multi-modal+Search+with+Milvus) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Multi-Vector Fields](https://milvus.io/docs/multi-vector-search.md) — ⏱️ ~15 min
+- [ ] 📝 [Multi-modal Search with Milvus](https://zilliz.com/blog/multimodal-semantic-search) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -177,7 +177,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`onnx_export.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day08/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`onnx_export.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day08/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -197,10 +197,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [ONNX Export Docs — Ultralytics](https://www.google.com/search?q=ONNX+Export+Docs+%E2%80%94+Ultralytics) — ⏱️ ~15 min
-- [ ] 📦 [ONNX Runtime GitHub](https://www.google.com/search?q=ONNX+Runtime+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [ONNX Runtime Python Docs](https://www.google.com/search?q=ONNX+Runtime+Python+Docs) — ⏱️ ~15 min
-- [ ] 🎥 [ONNX Export Tutorial](https://www.youtube.com/results?search_query=ONNX+Export+Tutorial) — ⏱️ ~25 min
+- [ ] 📄 [ONNX Export Docs — Ultralytics](https://docs.ultralytics.com/modes/export/) — ⏱️ ~15 min
+- [ ] 📦 [ONNX Runtime GitHub](https://github.com/microsoft/onnxruntime) — ⏱️ ~10 min
+- [ ] 📄 [ONNX Runtime Python Docs](https://onnxruntime.ai/docs/get-started/with-python.html) — ⏱️ ~15 min
+- [ ] 🎥 [ONNX Export Tutorial](https://www.youtube.com/watch?v=7n5HW2Vp1vI) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -226,9 +226,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [ROS2 C++ Pub/Sub Tutorial](https://www.google.com/search?q=ROS2+C%2B%2B+Pub%2FSub+Tutorial) — ⏱️ ~15 min
-- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Plus+%28Intermediate%29) — ⏱️ ~45 min
-- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/results?search_query=HelloC%2B%2B+YouTube+Channel) — ⏱️ ~25 min
+- [ ] 📄 [ROS2 C++ Pub/Sub Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) — ⏱️ ~15 min
+- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.hellocpp.dev/course/cpp-plus) — ⏱️ ~45 min
+- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/@HelloCppOrg) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -254,9 +254,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

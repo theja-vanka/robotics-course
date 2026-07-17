@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — Flash Attention & Specul
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day18_flash_attention_speculative_decoding.py     (or just:  python Day18_flash_attention_speculative_decoding.py)
+  2. Check yourself:   pytest flash_attention_speculative_decoding.py     (or just:  python flash_attention_speculative_decoding.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,12 +16,12 @@ DONE WHEN:
 CAPSTONE TODAY:  World models + Jetson context → fixes your deploy target and latency budget.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day18.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
 import torch
-import torch.nn.functional as F
+import torch.nn.functional as F  # noqa: F401
 torch.manual_seed(0)
 Q = torch.randn(1, 4, 8); K = torch.randn(1, 4, 8); V = torch.randn(1, 4, 8)   # (batch, seq, dim)
 
@@ -47,7 +47,7 @@ def speculative_accept(draft_tokens, target_tokens):
     raise NotImplementedError("Step 3: speculative_accept() not written yet")
 
 
-# ════ TESTS — run `pytest Day18_flash_attention_speculative_decoding.py` (or `python Day18_flash_attention_speculative_decoding.py`). All green = you're done. ════
+# ════ TESTS — run `pytest flash_attention_speculative_decoding.py` (or `python flash_attention_speculative_decoding.py`). All green = you're done. ════
 
 def test_flash_matches_naive():
     import torch

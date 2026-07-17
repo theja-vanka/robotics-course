@@ -217,18 +217,18 @@
 
 | Resource | Link |
 |---|---|
-| HelloC++ Fundamentals | [hellocpp.dev/course/cpp-programming-fundamentals](https://www.google.com/search?q=hellocpp.dev%2Fcourse%2Fcpp-programming-fundamentals) |
-| HelloC++ C++ Plus | [hellocpp.dev/course/cpp-plus](https://www.google.com/search?q=hellocpp.dev%2Fcourse%2Fcpp-plus) |
-| HelloC++ Advanced | [hellocpp.dev/course/advanced-cpp-programming](https://www.google.com/search?q=hellocpp.dev%2Fcourse%2Fadvanced-cpp-programming) |
-| HelloC++ YouTube | [youtube.com/@HelloCppOrg](https://www.youtube.com/results?search_query=youtube.com%2F%40HelloCppOrg) |
-| HelloC++ DSA | [hellocpp.dev/data-structures-algorithms](https://www.google.com/search?q=hellocpp.dev%2Fdata-structures-algorithms) |
-| Milvus Docs | [milvus.io/docs](https://www.google.com/search?q=milvus.io%2Fdocs) |
-| pymilvus GitHub | [github.com/milvus-io/pymilvus](https://www.google.com/search?q=github.com%2Fmilvus-io%2Fpymilvus) |
-| HuggingFace LeRoBot | [github.com/huggingface/lerobot](https://www.google.com/search?q=github.com%2Fhuggingface%2Flerobot) |
-| Nerfstudio | [github.com/nerfstudio-project/nerfstudio](https://www.google.com/search?q=github.com%2Fnerfstudio-project%2Fnerfstudio) |
-| Diffusers | [github.com/huggingface/diffusers](https://www.google.com/search?q=github.com%2Fhuggingface%2Fdiffusers) |
-| TensorRT | [developer.nvidia.com/tensorrt](https://www.google.com/search?q=developer.nvidia.com%2Ftensorrt) |
-| VLA Survey | [vla-survey.github.io](https://www.google.com/search?q=vla-survey.github.io) |
+| HelloC++ Fundamentals | [hellocpp.dev/course/cpp-programming-fundamentals](https://www.hellocpp.dev/course/cpp-programming-fundamentals) |
+| HelloC++ C++ Plus | [hellocpp.dev/course/cpp-plus](https://www.hellocpp.dev/course/cpp-plus) |
+| HelloC++ Advanced | [hellocpp.dev/course/advanced-cpp-programming](https://www.hellocpp.dev/course/advanced-cpp-programming) |
+| HelloC++ YouTube | [youtube.com/@HelloCppOrg](https://www.youtube.com/@HelloCppOrg) |
+| HelloC++ DSA | [hellocpp.dev/data-structures-algorithms](https://www.hellocpp.dev/data-structures-algorithms) |
+| Milvus Docs | [milvus.io/docs](https://milvus.io/docs) |
+| pymilvus GitHub | [github.com/milvus-io/pymilvus](https://github.com/milvus-io/pymilvus) |
+| HuggingFace LeRoBot | [github.com/huggingface/lerobot](https://github.com/huggingface/lerobot) |
+| Nerfstudio | [github.com/nerfstudio-project/nerfstudio](https://github.com/nerfstudio-project/nerfstudio) |
+| Diffusers | [github.com/huggingface/diffusers](https://github.com/huggingface/diffusers) |
+| TensorRT | [developer.nvidia.com/tensorrt](https://developer.nvidia.com/tensorrt) |
+| VLA Survey | [vla-survey.github.io](https://vla-survey.github.io/) |
 
 ---
 
@@ -239,34 +239,34 @@
 ### 🤖 VLA / Robot Foundation Models
 | What's new | Link |
 |---|---|
-| GR00T N1.5 (NVIDIA open humanoid FM) | [research.nvidia.com](https://www.google.com/search?q=research.nvidia.com) · [run in LeRobot](https://www.google.com/search?q=GR00T+N1.5+%28NVIDIA+open+humanoid+FM%29+run+in+LeRobot) |
-| π0 / π0.5 (Physical Intelligence) | [openpi GitHub](https://www.google.com/search?q=openpi+GitHub) · [π0.5 on Jetson Thor (NVFP4)](https://www.google.com/search?q=%CF%800.5+on+Jetson+Thor+%28NVFP4%29) |
-| Gemini Robotics 1.5 (DeepMind) | [deepmind.google](https://www.google.com/search?q=deepmind.google) |
-| SmolVLA — 450M, runs on consumer HW | [huggingface.co/blog/smolvla](https://www.google.com/search?q=huggingface.co%2Fblog%2Fsmolvla) |
-| VLA landscape compare + awesome list | [VLA Comparison 2026](https://www.google.com/search?q=VLA+Comparison+2026) · [Awesome Physical AI](https://www.google.com/search?q=Awesome+Physical+AI) |
+| GR00T N1.5 (NVIDIA open humanoid FM) | [research.nvidia.com](https://research.nvidia.com/labs/gear/gr00t-n1_5/) · [run in LeRobot](https://huggingface.co/blog/nvidia/nvidia-isaac-gr00t-in-lerobot) |
+| π0 / π0.5 (Physical Intelligence) | [openpi GitHub](https://github.com/Physical-Intelligence/openpi) · [π0.5 on Jetson Thor (NVFP4)](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/) |
+| Gemini Robotics 1.5 (DeepMind) | [deepmind.google](https://deepmind.google/models/gemini-robotics/) |
+| SmolVLA — 450M, runs on consumer HW | [huggingface.co/blog/smolvla](https://huggingface.co/blog/smolvla) |
+| VLA landscape compare + awesome list | [VLA Comparison 2026](https://www.roboticscenter.ai/tools/vla-models-comparison) · [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) |
 
 ### 🧠 Generative + World Models
 | What's new | Link |
 |---|---|
-| Genie 3 — real-time interactive world model | [deepmind.google](https://www.google.com/search?q=deepmind.google) |
-| NVIDIA Cosmos-Predict 2.5 (synthetic data) | [GitHub](https://www.google.com/search?q=NVIDIA+Cosmos-Predict+2.5+%28synthetic+data%29+GitHub) · [research](https://www.google.com/search?q=NVIDIA+Cosmos-Predict+2.5+%28synthetic+data%29+research) |
-| FLUX.1 — frontier open-weight diffusion | [GitHub](https://www.google.com/search?q=FLUX.1+%E2%80%94+frontier+open-weight+diffusion+GitHub) |
+| Genie 3 — real-time interactive world model | [deepmind.google](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) |
+| NVIDIA Cosmos-Predict 2.5 (synthetic data) | [GitHub](https://github.com/nvidia-cosmos/cosmos-predict2.5) · [research](https://research.nvidia.com/labs/cosmos-lab/cosmos-predict2.5/) |
+| FLUX.1 — frontier open-weight diffusion | [GitHub](https://github.com/black-forest-labs/flux) |
 
 ### 👁️ Perception + 3D
 | What's new | Link |
 |---|---|
-| SAM 3 — segment anything with concepts | [GitHub](https://www.google.com/search?q=SAM+3+%E2%80%94+segment+anything+with+concepts+GitHub) · [paper](https://www.google.com/search?q=SAM+3+%E2%80%94+segment+anything+with+concepts+paper) |
-| YOLO26 — NMS-free real-time detector | [ultralytics.com/yolo/yolo26](https://www.google.com/search?q=ultralytics.com%2Fyolo%2Fyolo26) · [on Jetson](https://www.google.com/search?q=YOLO26+%E2%80%94+NMS-free+real-time+detector+on+Jetson) |
-| Depth Anything 3 + Apple Depth Pro | [DA3 GitHub](https://www.google.com/search?q=Depth+Anything+3+%2B+Apple+Depth+Pro+DA3+GitHub) · [Depth Pro](https://www.google.com/search?q=Depth+Anything+3+%2B+Apple+Depth+Pro+Depth+Pro) |
-| DINOv3 — SOTA self-supervised features | [arxiv.org/abs/2508.10104](https://www.google.com/search?q=arxiv.org%2Fabs%2F2508.10104) |
-| FoundationPose — 6D pose for novel objects | [research](https://www.google.com/search?q=FoundationPose+%E2%80%94+6D+pose+for+novel+objects+research) · [Isaac ROS](https://www.google.com/search?q=FoundationPose+%E2%80%94+6D+pose+for+novel+objects+Isaac+ROS) |
+| SAM 3 — segment anything with concepts | [GitHub](https://github.com/facebookresearch/sam3) · [paper](https://arxiv.org/abs/2511.16719) |
+| YOLO26 — NMS-free real-time detector | [ultralytics.com/yolo/yolo26](https://www.ultralytics.com/yolo/yolo26) · [on Jetson](https://docs.ultralytics.com/guides/nvidia-jetson) |
+| Depth Anything 3 + Apple Depth Pro | [DA3 GitHub](https://github.com/bytedance-seed/depth-anything-3) · [Depth Pro](https://learnopencv.com/depth-pro-monocular-metric-depth/) |
+| DINOv3 — SOTA self-supervised features | [arxiv.org/abs/2508.10104](https://arxiv.org/abs/2508.10104) |
+| FoundationPose — 6D pose for novel objects | [research](https://research.nvidia.com/publication/2024-06_foundationpose-unified-6d-pose-estimation-and-tracking-novel-objects) · [Isaac ROS](https://nvidia-isaac-ros.github.io/concepts/pose_estimation/foundationpose/index.html) |
 
 ### 🗜️ Compression + Edge Inference
 | What's new | Link |
 |---|---|
-| FP4 (NVFP4 / MXFP4) on Blackwell | [spheron.network](https://www.google.com/search?q=spheron.network) |
-| FlashAttention-3 — async + FP8 attention | [GitHub](https://www.google.com/search?q=FlashAttention-3+%E2%80%94+async+%2B+FP8+attention+GitHub) |
-| Edge VLA: π0.5 on Jetson Thor (NVFP4) | [jetson-ai-lab](https://www.google.com/search?q=jetson-ai-lab) |
+| FP4 (NVFP4 / MXFP4) on Blackwell | [spheron.network](https://www.spheron.network/blog/fp4-quantization-blackwell-gpu-cost/) |
+| FlashAttention-3 — async + FP8 attention | [GitHub](https://github.com/Dao-AILab/flash-attention) |
+| Edge VLA: π0.5 on Jetson Thor (NVFP4) | [jetson-ai-lab](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/) |
 
 ---
 

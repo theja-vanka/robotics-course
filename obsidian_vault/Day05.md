@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~375 min (~6.2 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 Depth Anything 3 — geometry from any views (ICLR 2026) — [open](https://www.google.com/search?q=open)
+- 🔥 Depth Anything 3 — geometry from any views (ICLR 2026) — [open](https://github.com/bytedance-seed/depth-anything-3)
 
 ---
 
@@ -85,11 +85,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [NeRF Paper (Mildenhall et al.)](https://www.google.com/search?q=NeRF+Paper+%28Mildenhall+et+al.%29) — ⏱️ ~15 min
-- [ ] 📄 [3DGS Paper (Kerbl et al.)](https://www.google.com/search?q=3DGS+Paper+%28Kerbl+et+al.%29) — ⏱️ ~15 min
-- [ ] 📄 [3DGS in Robotics Survey](https://www.google.com/search?q=3DGS+in+Robotics+Survey) — ⏱️ ~15 min
-- [ ] 🎥 [NeRF Explained — Two Minute Papers](https://www.youtube.com/results?search_query=NeRF+Explained+%E2%80%94+Two+Minute+Papers) — ⏱️ ~25 min
-- [ ] 🎥 [3D Gaussian Splatting Explained](https://www.youtube.com/results?search_query=3D+Gaussian+Splatting+Explained) — ⏱️ ~25 min
+- [ ] 📄 [NeRF Paper (Mildenhall et al.)](https://arxiv.org/abs/2003.08934) — ⏱️ ~15 min
+- [ ] 📄 [3DGS Paper (Kerbl et al.)](https://arxiv.org/abs/2308.04079) — ⏱️ ~15 min
+- [ ] 📄 [3DGS in Robotics Survey](https://arxiv.org/abs/2410.12262) — ⏱️ ~15 min
+- [ ] 🎥 [NeRF Explained — Two Minute Papers](https://www.youtube.com/watch?v=CRlN-cYFxTk) — ⏱️ ~25 min
+- [ ] 🎥 [3D Gaussian Splatting Explained](https://www.youtube.com/watch?v=HVv_IschId8) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -103,7 +103,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`train_3dgs_with_nerfstudio.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day05/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`train_3dgs_with_nerfstudio.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day05/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -123,10 +123,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [Nerfstudio GitHub](https://www.google.com/search?q=Nerfstudio+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [Nerfstudio Getting Started](https://www.google.com/search?q=Nerfstudio+Getting+Started) — ⏱️ ~15 min
-- [ ] 🎥 [Nerfstudio Tutorial](https://www.youtube.com/results?search_query=Nerfstudio+Tutorial) — ⏱️ ~25 min
-- [ ] 🔥 📦 [Depth Anything 3 — geometry from any views (ICLR 2026)](https://www.google.com/search?q=Depth+Anything+3+%E2%80%94+geometry+from+any+views+%28ICLR+2026%29) — ⏱️ ~10 min
+- [ ] 📦 [Nerfstudio GitHub](https://github.com/nerfstudio-project/nerfstudio) — ⏱️ ~10 min
+- [ ] 📄 [Nerfstudio Getting Started](https://docs.nerf.studio/quickstart/installation.html) — ⏱️ ~15 min
+- [ ] 🎥 [Nerfstudio Tutorial](https://www.youtube.com/watch?v=nSFsugarWzk) — ⏱️ ~25 min
+- [ ] 🔥 📦 [Depth Anything 3 — geometry from any views (ICLR 2026)](https://github.com/bytedance-seed/depth-anything-3) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~60 min*
 
@@ -140,7 +140,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`production_schema_design.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day05/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`production_schema_design.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day05/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -160,9 +160,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Schema Design Guide](https://www.google.com/search?q=Milvus+Schema+Design+Guide) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Data Types Reference](https://www.google.com/search?q=Milvus+Data+Types+Reference) — ⏱️ ~15 min
-- [ ] 📝 [Milvus Best Practices — Zilliz](https://www.google.com/search?q=Milvus+Best+Practices+%E2%80%94+Zilliz) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Schema Design Guide](https://milvus.io/docs/schema.md) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Data Types Reference](https://milvus.io/docs/schema.md#Supported-data-types) — ⏱️ ~15 min
+- [ ] 📝 [Milvus Best Practices — Zilliz](https://zilliz.com/blog/milvus-best-practices) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -176,7 +176,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`pruning_hands_on.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day05/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`pruning_hands_on.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day05/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -196,9 +196,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch Pruning Tutorial](https://www.google.com/search?q=PyTorch+Pruning+Tutorial) — ⏱️ ~15 min
-- [ ] 📦 [torchvision Models](https://www.google.com/search?q=torchvision+Models) — ⏱️ ~10 min
-- [ ] 📝 [Structured Pruning Guide](https://www.google.com/search?q=Structured+Pruning+Guide) — ⏱️ ~15 min
+- [ ] 📄 [PyTorch Pruning Tutorial](https://pytorch.org/tutorials/intermediate/pruning_tutorial.html) — ⏱️ ~15 min
+- [ ] 📦 [torchvision Models](https://github.com/pytorch/vision) — ⏱️ ~10 min
+- [ ] 📝 [Structured Pruning Guide](https://towardsdatascience.com/neural-network-pruning-101-af816aaea61) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -224,9 +224,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Fundamentals+Course) — ⏱️ ~45 min
-- [ ] 📝 [Modern CMake (read)](https://www.google.com/search?q=Modern+CMake+%28read%29) — ⏱️ ~15 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
+- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.hellocpp.dev/course/cpp-programming-fundamentals) — ⏱️ ~45 min
+- [ ] 📝 [Modern CMake (read)](https://cliutils.gitlab.io/modern-cmake/) — ⏱️ ~15 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -252,9 +252,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

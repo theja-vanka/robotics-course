@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Run MegaPose on YCB Object.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day09_run_megapose_on_ycb_object.py     (or just:  python Day09_run_megapose_on_ycb_object.py)
+  2. Check yourself:   pytest run_megapose_on_ycb_object.py     (or just:  python run_megapose_on_ycb_object.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  6-DoF pose — optional observation enrichment; awareness-level for your target.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day09.md
-Setup:  pip install # clone the pose repo (see resources) pytest
+Setup:  pip install # clone the pose repo (see resources) pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def run_pose():
     raise NotImplementedError("Step 1: run_pose() not written yet")
 
 
-# ════ TESTS — run `pytest Day09_run_megapose_on_ycb_object.py` (or `python Day09_run_megapose_on_ycb_object.py`). All green = you're done. ════
+# ════ TESTS — run `pytest run_megapose_on_ycb_object.py` (or `python run_megapose_on_ycb_object.py`). All green = you're done. ════
 
 @pytest.mark.skip(reason="needs an external repo + GPU — verify by hand, see the Day note")
 def test_run_pose():

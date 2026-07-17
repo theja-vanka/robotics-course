@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~270 min (~4.5 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 NVIDIA Cosmos-Predict 2.5 — world model for synthetic data — [open](https://www.google.com/search?q=open)
+- 🔥 NVIDIA Cosmos-Predict 2.5 — world model for synthetic data — [open](https://github.com/nvidia-cosmos/cosmos-predict2.5)
 
 ---
 
@@ -85,11 +85,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [MimicGen — amplify a few demos into thousands](https://www.google.com/search?q=MimicGen+%E2%80%94+amplify+a+few+demos+into+thousands) — ⏱️ ~15 min
-- [ ] 📝 [NVIDIA — Synthetic Trajectory Data via World Foundation Models](https://www.google.com/search?q=NVIDIA+%E2%80%94+Synthetic+Trajectory+Data+via+World+Foundation+Models) — ⏱️ ~15 min
-- [ ] 📦 [NVIDIA GR00T-Dreams (DreamGen)](https://www.google.com/search?q=NVIDIA+GR00T-Dreams+%28DreamGen%29) — ⏱️ ~10 min
-- [ ] 📝 [Domain Randomisation Paper (OpenAI)](https://www.google.com/search?q=Domain+Randomisation+Paper+%28OpenAI%29) — ⏱️ ~15 min
-- [ ] 🔥 📦 [NVIDIA Cosmos-Predict 2.5 — world model for synthetic data](https://www.google.com/search?q=NVIDIA+Cosmos-Predict+2.5+%E2%80%94+world+model+for+synthetic+data) — ⏱️ ~10 min
+- [ ] 📄 [MimicGen — amplify a few demos into thousands](https://mimicgen.github.io/docs/introduction/overview.html) — ⏱️ ~15 min
+- [ ] 📝 [NVIDIA — Synthetic Trajectory Data via World Foundation Models](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) — ⏱️ ~15 min
+- [ ] 📦 [NVIDIA GR00T-Dreams (DreamGen)](https://github.com/nvidia/gr00t-dreams) — ⏱️ ~10 min
+- [ ] 📝 [Domain Randomisation Paper (OpenAI)](https://arxiv.org/abs/1703.06907) — ⏱️ ~15 min
+- [ ] 🔥 📦 [NVIDIA Cosmos-Predict 2.5 — world model for synthetic data](https://github.com/nvidia-cosmos/cosmos-predict2.5) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -103,7 +103,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`load_amplify_demo_episodes.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`load_amplify_demo_episodes.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -123,9 +123,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [MimicGen — code & docs](https://www.google.com/search?q=MimicGen+%E2%80%94+code+%26+docs) — ⏱️ ~10 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📦 [MimicLabs — tabletop demo collection & generation](https://www.google.com/search?q=MimicLabs+%E2%80%94+tabletop+demo+collection+%26+generation) — ⏱️ ~10 min
+- [ ] 📦 [MimicGen — code & docs](https://mimicgen.github.io) — ⏱️ ~10 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📦 [MimicLabs — tabletop demo collection & generation](https://github.com/Gatech-RL2/mimiclabs) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -139,7 +139,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`demo_episode_deduplication.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`demo_episode_deduplication.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -159,9 +159,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Cosine Similarity Search](https://www.google.com/search?q=Milvus+Cosine+Similarity+Search) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
-- [ ] 📝 [Dataset Deduplication with Vector DBs](https://www.google.com/search?q=Dataset+Deduplication+with+Vector+DBs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Cosine Similarity Search](https://milvus.io/docs/metric.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📝 [Dataset Deduplication with Vector DBs](https://zilliz.com/blog) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -175,7 +175,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`low_rank_factorisation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`low_rank_factorisation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day15/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -195,9 +195,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Low-Rank Factorisation Paper](https://www.google.com/search?q=Low-Rank+Factorisation+Paper) — ⏱️ ~15 min
-- [ ] 📝 [Weight Matrix Decomposition Tutorial](https://www.google.com/search?q=Weight+Matrix+Decomposition+Tutorial) — ⏱️ ~15 min
-- [ ] 📄 [torch.linalg.svd Docs](https://www.google.com/search?q=torch.linalg.svd+Docs) — ⏱️ ~15 min
+- [ ] 📄 [Low-Rank Factorisation Paper](https://arxiv.org/abs/1404.0736) — ⏱️ ~15 min
+- [ ] 📝 [Weight Matrix Decomposition Tutorial](https://towardsdatascience.com/matrix-factorization-for-model-compression) — ⏱️ ~15 min
+- [ ] 📄 [torch.linalg.svd Docs](https://pytorch.org/docs/stable/generated/torch.linalg.svd.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -239,9 +239,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -267,9 +267,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for 3DGS Scene + Grasp Poses.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day19_3dgs_scene_grasp_poses.py     (or just:  python Day19_3dgs_scene_grasp_poses.py)
+  2. Check yourself:   pytest 3dgs_scene_grasp_poses.py     (or just:  python 3dgs_scene_grasp_poses.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ compress.py: 4-bit (GPTQ/AWQ) on the fine-tuned policy — measure the deltas.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day19.md
-Setup:  pip install nerfstudio pytest
+Setup:  pip install nerfstudio pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def train_splat():
     raise NotImplementedError("Step 1: train_splat() not written yet")
 
 
-# ════ TESTS — run `pytest Day19_3dgs_scene_grasp_poses.py` (or `python Day19_3dgs_scene_grasp_poses.py`). All green = you're done. ════
+# ════ TESTS — run `pytest 3dgs_scene_grasp_poses.py` (or `python 3dgs_scene_grasp_poses.py`). All green = you're done. ════
 
 @pytest.mark.skip(reason="needs an external repo + GPU — verify by hand, see the Day note")
 def test_train_splat():

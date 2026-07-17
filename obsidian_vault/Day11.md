@@ -82,11 +82,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [ORB-SLAM3 GitHub](https://www.google.com/search?q=ORB-SLAM3+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [ORB-SLAM3 Paper](https://www.google.com/search?q=ORB-SLAM3+Paper) — ⏱️ ~15 min
-- [ ] 🎥 [SLAM Explained — Cyrill Stachniss](https://www.youtube.com/results?search_query=SLAM+Explained+%E2%80%94+Cyrill+Stachniss) — ⏱️ ~25 min
-- [ ] 📝 [3DGS-SLAM Survey](https://www.google.com/search?q=3DGS-SLAM+Survey) — ⏱️ ~15 min
-- [ ] 🎥 [Loop Closure in SLAM](https://www.youtube.com/results?search_query=Loop+Closure+in+SLAM) — ⏱️ ~25 min
+- [ ] 📦 [ORB-SLAM3 GitHub](https://github.com/UZ-SLAMLab/ORB_SLAM3) — ⏱️ ~10 min
+- [ ] 📄 [ORB-SLAM3 Paper](https://arxiv.org/abs/2007.11898) — ⏱️ ~15 min
+- [ ] 🎥 [SLAM Explained — Cyrill Stachniss](https://www.youtube.com/watch?v=saVZtgPyyJQ) — ⏱️ ~25 min
+- [ ] 📝 [3DGS-SLAM Survey](https://github.com/3D-Vision-World/awesome-NeRF-and-3DGS-SLAM) — ⏱️ ~15 min
+- [ ] 🎥 [Loop Closure in SLAM](https://www.youtube.com/watch?v=NH-DC8STxeo) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~90 min*
 
@@ -100,7 +100,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`run_orb_slam3_on_tum_rgb_d.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_orb_slam3_on_tum_rgb_d.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -120,9 +120,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [ORB-SLAM3 GitHub](https://www.google.com/search?q=ORB-SLAM3+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [TUM RGB-D Dataset](https://www.google.com/search?q=TUM+RGB-D+Dataset) — ⏱️ ~15 min
-- [ ] 📝 [ORB-SLAM3 Setup Guide](https://www.google.com/search?q=ORB-SLAM3+Setup+Guide) — ⏱️ ~15 min
+- [ ] 📦 [ORB-SLAM3 GitHub](https://github.com/UZ-SLAMLab/ORB_SLAM3) — ⏱️ ~10 min
+- [ ] 📄 [TUM RGB-D Dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) — ⏱️ ~15 min
+- [ ] 📝 [ORB-SLAM3 Setup Guide](https://github.com/UZ-SLAMLab/ORB_SLAM3#getting-started) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -136,7 +136,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`semantic_slam_map.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`semantic_slam_map.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -156,9 +156,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Metadata Filtering](https://www.google.com/search?q=Milvus+Metadata+Filtering) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Query Docs](https://www.google.com/search?q=Milvus+Query+Docs) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Metadata Filtering](https://milvus.io/docs/boolean.md) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Query Docs](https://milvus.io/docs/query.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -172,7 +172,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`tensorrt_int8.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`tensorrt_int8.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day11/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -192,9 +192,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [TensorRT INT8 Calibration Guide](https://www.google.com/search?q=TensorRT+INT8+Calibration+Guide) — ⏱️ ~15 min
-- [ ] 🎥 [INT8 Calibration with TensorRT](https://www.youtube.com/results?search_query=INT8+Calibration+with+TensorRT) — ⏱️ ~25 min
-- [ ] 📦 [TensorRT GitHub](https://www.google.com/search?q=TensorRT+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [TensorRT INT8 Calibration Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#optimizing_int8) — ⏱️ ~15 min
+- [ ] 🎥 [INT8 Calibration with TensorRT](https://www.youtube.com/watch?v=AOHkAh3fj_M) — ⏱️ ~25 min
+- [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -220,9 +220,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [TensorRT C++ samples — read the flow](https://www.google.com/search?q=TensorRT+C%2B%2B+samples+%E2%80%94+read+the+flow) — ⏱️ ~10 min
-- [ ] 📦 [ONNX Runtime](https://www.google.com/search?q=ONNX+Runtime) — ⏱️ ~10 min
-- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/results?search_query=HelloC%2B%2B+YouTube+Channel) — ⏱️ ~25 min
+- [ ] 📦 [TensorRT C++ samples — read the flow](https://github.com/NVIDIA/TensorRT/tree/main/samples) — ⏱️ ~10 min
+- [ ] 📦 [ONNX Runtime](https://github.com/microsoft/onnxruntime) — ⏱️ ~10 min
+- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/@HelloCppOrg) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~45 min*
 
@@ -248,9 +248,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — Speculative Decoding Han
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day21_speculative_decoding_hands_on.py     (or just:  python Day21_speculative_decoding_hands_on.py)
+  2. Check yourself:   pytest speculative_decoding_hands_on.py     (or just:  python speculative_decoding_hands_on.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ML refresh (skim) — solidify the eval math behind your benchmarks.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day21.md
-Setup:  pip install  pytest
+Setup:  pip install  pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def speculative_decode(prefix, steps=3):
     raise NotImplementedError("Step 2: speculative_decode() not written yet")
 
 
-# ════ TESTS — run `pytest Day21_speculative_decoding_hands_on.py` (or `python Day21_speculative_decoding_hands_on.py`). All green = you're done. ════
+# ════ TESTS — run `pytest speculative_decoding_hands_on.py` (or `python speculative_decoding_hands_on.py`). All green = you're done. ════
 
 def test_decode_matches_autoregressive():
     # draft (+1) agrees with the target rule (+1), so speculation reproduces plain decoding.

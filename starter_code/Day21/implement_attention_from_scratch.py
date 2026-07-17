@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Implement Attention from Scratch.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day21_implement_attention_from_scratch.py     (or just:  python Day21_implement_attention_from_scratch.py)
+  2. Check yourself:   pytest implement_attention_from_scratch.py     (or just:  python implement_attention_from_scratch.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ML refresh (skim) — solidify the eval math behind your benchmarks.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day21.md
-Setup:  pip install torch numpy pytest
+Setup:  pip install torch numpy pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ def self_test():
     raise NotImplementedError("Step 2: self_test() not written yet")
 
 
-# ════ TESTS — run `pytest Day21_implement_attention_from_scratch.py` (or `python Day21_implement_attention_from_scratch.py`). All green = you're done. ════
+# ════ TESTS — run `pytest implement_attention_from_scratch.py` (or `python implement_attention_from_scratch.py`). All green = you're done. ════
 
 def test_self_test_passes():
     assert self_test() is True, "your own self_test() should return True once implement() is correct"

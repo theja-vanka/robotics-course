@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Add Latency Profiler.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day22_add_latency_profiler.py     (or just:  python Day22_add_latency_profiler.py)
+  2. Check yourself:   pytest add_latency_profiler.py     (or just:  python add_latency_profiler.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  System-design the vla-edge service; write the architecture section of the README.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day22.md
-Setup:  pip install  pytest
+Setup:  pip install  pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -46,7 +46,7 @@ def bottleneck(timings):
     raise NotImplementedError("Step 3: bottleneck() not written yet")
 
 
-# ════ TESTS — run `pytest Day22_add_latency_profiler.py` (or `python Day22_add_latency_profiler.py`). All green = you're done. ════
+# ════ TESTS — run `pytest add_latency_profiler.py` (or `python add_latency_profiler.py`). All green = you're done. ════
 
 def test_finds_bottleneck():
     stages = [("fast", lambda: None), ("slow", lambda: time.sleep(0.02))]

@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~405 min (~6.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 FLUX.1 — frontier open-weight diffusion (Black Forest Labs) — [open](https://www.google.com/search?q=open)
+- 🔥 FLUX.1 — frontier open-weight diffusion (Black Forest Labs) — [open](https://github.com/black-forest-labs/flux)
 
 ---
 
@@ -85,12 +85,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [DDPM Paper (Ho et al.)](https://www.google.com/search?q=DDPM+Paper+%28Ho+et+al.%29) — ⏱️ ~15 min
-- [ ] 📄 [DDIM Paper](https://www.google.com/search?q=DDIM+Paper) — ⏱️ ~15 min
-- [ ] 📝 [The Illustrated Stable Diffusion — Jay Alammar](https://www.google.com/search?q=The+Illustrated+Stable+Diffusion+%E2%80%94+Jay+Alammar) — ⏱️ ~15 min
-- [ ] 🎥 [Diffusion Models Explained — Yannic Kilcher](https://www.youtube.com/results?search_query=Diffusion+Models+Explained+%E2%80%94+Yannic+Kilcher) — ⏱️ ~25 min
-- [ ] 🎥 [Stable Diffusion Deep Dive — Fast.ai](https://www.youtube.com/results?search_query=Stable+Diffusion+Deep+Dive+%E2%80%94+Fast.ai) — ⏱️ ~25 min
-- [ ] 🔥 📦 [FLUX.1 — frontier open-weight diffusion (Black Forest Labs)](https://www.google.com/search?q=FLUX.1+%E2%80%94+frontier+open-weight+diffusion+%28Black+Forest+Labs%29) — ⏱️ ~10 min
+- [ ] 📄 [DDPM Paper (Ho et al.)](https://arxiv.org/abs/2006.11239) — ⏱️ ~15 min
+- [ ] 📄 [DDIM Paper](https://arxiv.org/abs/2010.02502) — ⏱️ ~15 min
+- [ ] 📝 [The Illustrated Stable Diffusion — Jay Alammar](https://jalammar.github.io/illustrated-stable-diffusion/) — ⏱️ ~15 min
+- [ ] 🎥 [Diffusion Models Explained — Yannic Kilcher](https://www.youtube.com/watch?v=W-O7AZNzbzQ) — ⏱️ ~25 min
+- [ ] 🎥 [Stable Diffusion Deep Dive — Fast.ai](https://www.youtube.com/watch?v=_7rMfsA24Ls) — ⏱️ ~25 min
+- [ ] 🔥 📦 [FLUX.1 — frontier open-weight diffusion (Black Forest Labs)](https://github.com/black-forest-labs/flux) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~105 min*
 
@@ -104,7 +104,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`run_stable_diffusion_img2img.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_stable_diffusion_img2img.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -124,9 +124,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [HuggingFace Diffusers GitHub](https://www.google.com/search?q=HuggingFace+Diffusers+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [Diffusers img2img Pipeline](https://www.google.com/search?q=Diffusers+img2img+Pipeline) — ⏱️ ~15 min
-- [ ] 🎥 [Diffusers Library Tutorial](https://www.youtube.com/results?search_query=Diffusers+Library+Tutorial) — ⏱️ ~25 min
+- [ ] 📦 [HuggingFace Diffusers GitHub](https://github.com/huggingface/diffusers) — ⏱️ ~10 min
+- [ ] 📄 [Diffusers img2img Pipeline](https://huggingface.co/docs/diffusers/using-diffusers/img2img) — ⏱️ ~15 min
+- [ ] 🎥 [Diffusers Library Tutorial](https://www.youtube.com/watch?v=cS_7mFPWifA) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -140,7 +140,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`index_types.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`index_types.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -160,10 +160,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Index Guide](https://www.google.com/search?q=Milvus+Index+Guide) — ⏱️ ~15 min
-- [ ] 📝 [HNSW Explained — Zilliz](https://www.google.com/search?q=HNSW+Explained+%E2%80%94+Zilliz) — ⏱️ ~15 min
-- [ ] 📝 [ANN Benchmarks — ann-benchmarks.com](https://www.google.com/search?q=ANN+Benchmarks+%E2%80%94+ann-benchmarks.com) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Index Guide](https://milvus.io/docs/index.md) — ⏱️ ~15 min
+- [ ] 📝 [HNSW Explained — Zilliz](https://zilliz.com/learn/hierarchical-navigable-small-worlds-HNSW) — ⏱️ ~15 min
+- [ ] 📝 [ANN Benchmarks — ann-benchmarks.com](https://ann-benchmarks.com/) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~60 min*
 
@@ -177,7 +177,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`int8_ptq.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`int8_ptq.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day03/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -197,9 +197,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PyTorch PTQ Tutorial](https://www.google.com/search?q=PyTorch+PTQ+Tutorial) — ⏱️ ~15 min
-- [ ] 📝 [Intro to Quantization — PyTorch Blog](https://www.google.com/search?q=Intro+to+Quantization+%E2%80%94+PyTorch+Blog) — ⏱️ ~15 min
-- [ ] 🎥 [INT8 Quantization Explained](https://www.youtube.com/results?search_query=INT8+Quantization+Explained) — ⏱️ ~25 min
+- [ ] 📄 [PyTorch PTQ Tutorial](https://pytorch.org/tutorials/advanced/static_quantization_tutorial.html) — ⏱️ ~15 min
+- [ ] 📝 [Intro to Quantization — PyTorch Blog](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) — ⏱️ ~15 min
+- [ ] 🎥 [INT8 Quantization Explained](https://www.youtube.com/watch?v=ShZAeLkXeqw) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -225,9 +225,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Fundamentals+Course) — ⏱️ ~45 min
-- [ ] 📄 [cppreference — read C++](https://www.google.com/search?q=cppreference+%E2%80%94+read+C%2B%2B) — ⏱️ ~15 min
-- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/results?search_query=C%2B%2B+%E2%80%94+The+Cherno+%28read-along%29) — ⏱️ ~25 min
+- [ ] 🎓 [HelloC++ — C++ Fundamentals Course](https://www.hellocpp.dev/course/cpp-programming-fundamentals) — ⏱️ ~45 min
+- [ ] 📄 [cppreference — read C++](https://en.cppreference.com/w/) — ⏱️ ~15 min
+- [ ] 🎥 [C++ — The Cherno (read-along)](https://www.youtube.com/@TheCherno) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -253,9 +253,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

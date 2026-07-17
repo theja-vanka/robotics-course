@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~405 min (~6.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 FoundationPose — unified 6D pose for novel objects (NVIDIA) — [open](https://www.google.com/search?q=open)
-- 🔥 FoundationPose in Isaac ROS — deploy on a robot — [open](https://www.google.com/search?q=open)
+- 🔥 FoundationPose — unified 6D pose for novel objects (NVIDIA) — [open](https://research.nvidia.com/publication/2024-06_foundationpose-unified-6d-pose-estimation-and-tracking-novel-objects)
+- 🔥 FoundationPose in Isaac ROS — deploy on a robot — [open](https://nvidia-isaac-ros.github.io/concepts/pose_estimation/foundationpose/index.html)
 
 ---
 
@@ -86,12 +86,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [MegaPose Paper](https://www.google.com/search?q=MegaPose+Paper) — ⏱️ ~15 min
-- [ ] 📦 [MegaPose GitHub](https://www.google.com/search?q=MegaPose+GitHub) — ⏱️ ~10 min
-- [ ] 🎥 [6-DoF Pose Estimation Explained](https://www.youtube.com/results?search_query=6-DoF+Pose+Estimation+Explained) — ⏱️ ~25 min
-- [ ] 📝 [PnP Algorithm — LearnOpenCV](https://www.google.com/search?q=PnP+Algorithm+%E2%80%94+LearnOpenCV) — ⏱️ ~15 min
-- [ ] 📄 [FoundPose Paper](https://www.google.com/search?q=FoundPose+Paper) — ⏱️ ~15 min
-- [ ] 🔥 📄 [FoundationPose — unified 6D pose for novel objects (NVIDIA)](https://www.google.com/search?q=FoundationPose+%E2%80%94+unified+6D+pose+for+novel+objects+%28NVIDIA%29) — ⏱️ ~15 min
+- [ ] 📄 [MegaPose Paper](https://arxiv.org/abs/2212.06870) — ⏱️ ~15 min
+- [ ] 📦 [MegaPose GitHub](https://github.com/megapose6d/megapose6d) — ⏱️ ~10 min
+- [ ] 🎥 [6-DoF Pose Estimation Explained](https://www.youtube.com/watch?v=FYgHYtCp570) — ⏱️ ~25 min
+- [ ] 📝 [PnP Algorithm — LearnOpenCV](https://learnopencv.com/head-pose-estimation-using-opencv-and-dlib/) — ⏱️ ~15 min
+- [ ] 📄 [FoundPose Paper](https://arxiv.org/abs/2311.18809) — ⏱️ ~15 min
+- [ ] 🔥 📄 [FoundationPose — unified 6D pose for novel objects (NVIDIA)](https://research.nvidia.com/publication/2024-06_foundationpose-unified-6d-pose-estimation-and-tracking-novel-objects) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -105,7 +105,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`run_megapose_on_ycb_object.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`run_megapose_on_ycb_object.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -125,10 +125,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [MegaPose GitHub](https://www.google.com/search?q=MegaPose+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [MegaPose HuggingFace Demo](https://www.google.com/search?q=MegaPose+HuggingFace+Demo) — ⏱️ ~15 min
-- [ ] 📄 [YCB Dataset Download](https://www.google.com/search?q=YCB+Dataset+Download) — ⏱️ ~15 min
-- [ ] 🔥 📄 [FoundationPose in Isaac ROS — deploy on a robot](https://www.google.com/search?q=FoundationPose+in+Isaac+ROS+%E2%80%94+deploy+on+a+robot) — ⏱️ ~15 min
+- [ ] 📦 [MegaPose GitHub](https://github.com/megapose6d/megapose6d) — ⏱️ ~10 min
+- [ ] 📄 [MegaPose HuggingFace Demo](https://huggingface.co/spaces/nv-nguyen/megapose) — ⏱️ ~15 min
+- [ ] 📄 [YCB Dataset Download](https://www.ycbbenchmarks.com/) — ⏱️ ~15 min
+- [ ] 🔥 📄 [FoundationPose in Isaac ROS — deploy on a robot](https://nvidia-isaac-ros.github.io/concepts/pose_estimation/foundationpose/index.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -142,7 +142,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`object_pose_library.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`object_pose_library.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -162,10 +162,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Metadata Filtering](https://www.google.com/search?q=Milvus+Metadata+Filtering) — ⏱️ ~15 min
-- [ ] 📝 [Build a Pose Retrieval System](https://www.google.com/search?q=Build+a+Pose+Retrieval+System) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [Milvus Official Docs](https://www.google.com/search?q=Milvus+Official+Docs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Metadata Filtering](https://milvus.io/docs/boolean.md) — ⏱️ ~15 min
+- [ ] 📝 [Build a Pose Retrieval System](https://zilliz.com/blog) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Official Docs](https://milvus.io/docs) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -179,7 +179,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`tensorrt_basics.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`tensorrt_basics.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day09/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -199,10 +199,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [TensorRT Python Quickstart](https://www.google.com/search?q=TensorRT+Python+Quickstart) — ⏱️ ~15 min
-- [ ] 📦 [TensorRT GitHub](https://www.google.com/search?q=TensorRT+GitHub) — ⏱️ ~10 min
-- [ ] 🎥 [TensorRT Tutorial — NVIDIA](https://www.youtube.com/results?search_query=TensorRT+Tutorial+%E2%80%94+NVIDIA) — ⏱️ ~25 min
-- [ ] 📄 [TensorRT ONNX Workflow](https://www.google.com/search?q=TensorRT+ONNX+Workflow) — ⏱️ ~15 min
+- [ ] 📄 [TensorRT Python Quickstart](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html) — ⏱️ ~15 min
+- [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
+- [ ] 🎥 [TensorRT Tutorial — NVIDIA](https://www.youtube.com/watch?v=dM5bhHJEtIE) — ⏱️ ~25 min
+- [ ] 📄 [TensorRT ONNX Workflow](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#import_onnx_c) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~65 min*
 
@@ -228,9 +228,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [ROS2 Custom Interfaces Tutorial](https://www.google.com/search?q=ROS2+Custom+Interfaces+Tutorial) — ⏱️ ~15 min
-- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Plus+%28Intermediate%29) — ⏱️ ~45 min
-- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/results?search_query=HelloC%2B%2B+YouTube+Channel) — ⏱️ ~25 min
+- [ ] 📄 [ROS2 Custom Interfaces Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html) — ⏱️ ~15 min
+- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.hellocpp.dev/course/cpp-plus) — ⏱️ ~45 min
+- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/@HelloCppOrg) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -256,9 +256,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

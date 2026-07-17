@@ -29,21 +29,29 @@ from datasets import load_dataset
 from pymilvus import MilvusClient
 from transformers import CLIPModel, CLIPProcessor
 
-# Real CLIP embeddings of ALOHA robot manipulation scenes (LeRobot / HuggingFace).
-# 200 top-camera frames encoded with openai/clip-vit-base-patch32 → 512-d vectors.
+DEVICE = torch.device(
+    "cuda"
+    if torch.cuda.is_available()
+    else "mps"
+    if torch.backends.mps.is_available()
+    else "cpu"
+)
+
+# Real CLIP embeddings of BridgeData V2 robot manipulation scenes (WidowX arm, real robot).
+# 200 frames encoded with openai/clip-vit-base-patch32 → 512-d vectors.
 # First run: downloads CLIP model + computes embeddings (~1 min). Subsequent runs: instant.
 _ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-_CACHE = os.path.join(_ROOT, "clip_robot_embeddings.npy")
+_CACHE = os.path.join(_ROOT, "clip_bridge_embeddings.npy")
 
 
 def _build_clip_cache(path: str, n: int = 200) -> None:
-    """Compute CLIP embeddings of ALOHA robot scenes and save to `path`."""
+    """Compute CLIP embeddings of BridgeData V2 (WidowX) robot scenes and save to `path`."""
     import io
 
     from PIL import Image
 
     print("[setup] computing CLIP embeddings — one-time, ~1 min…")
-    ds = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
+    ds = load_dataset("jesbu1/bridge_v2_lerobot", split="train")
     cam = next(k for k in ds.column_names if "images" in k)
 
     def to_pil(r):
@@ -58,20 +66,13 @@ def _build_clip_cache(path: str, n: int = 200) -> None:
 
     imgs = [to_pil(ds[i][cam]) for i in range(n)]
     proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-    device = torch.device(
-        "cuda"
-        if torch.cuda.is_available()
-        else "mps"
-        if torch.backends.mps.is_available()
-        else "cpu"
-    )
-    mdl = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(device)
+    mdl = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(DEVICE)
     mdl.eval()
     vecs = []
     with torch.no_grad():
         for i in range(0, len(imgs), 32):
             b = proc(images=imgs[i : i + 32], return_tensors="pt", padding=True)
-            b = {k: v.to(device) for k, v in b.items()}
+            b = {k: v.to(DEVICE) for k, v in b.items()}
             feat = mdl.get_image_features(**b)
             vecs.append(
                 (feat if isinstance(feat, torch.Tensor) else feat.pooler_output)
@@ -82,19 +83,23 @@ def _build_clip_cache(path: str, n: int = 200) -> None:
     print(f"[setup] cached {n} embeddings → {path}")
 
 
-if not os.path.exists(_CACHE):
-    _build_clip_cache(_CACHE)
-EXAMPLE_VECTORS = np.load(_CACHE)  # (200, 512) — real CLIP embeddings of robot scenes
-QUERY = EXAMPLE_VECTORS[0]
-DIM = EXAMPLE_VECTORS.shape[1]  # 512  (CLIP ViT-B/32)
-N = len(EXAMPLE_VECTORS)  # 200
+def _load_embeddings():
+    if not os.path.exists(_CACHE):
+        _build_clip_cache(_CACHE)
+    vecs = np.load(_CACHE)
+    return vecs, vecs[0], vecs.shape[1], len(vecs)
+
+
+EXAMPLE_VECTORS, QUERY, DIM, N = _load_embeddings()  # (N,512) CLIP vectors; N≈200
 
 
 def fresh_client():
     """PROVIDED: a clean local Milvus (file-based, no Docker)."""
-    _db = os.path.join(_ROOT, "./milvus_demo.db")
+    import shutil
+
+    _db = os.path.join(_ROOT, "milvus_demo.db")
     if os.path.exists(_db):
-        os.remove(_db)
+        shutil.rmtree(_db)  # MilvusClient stores data as a folder, not a file
     return MilvusClient(_db)
 
 
@@ -104,11 +109,10 @@ def fresh_client():
 def create_collection(client):
     """TODO 1: Create a collection named 'demo' with a vector field of dimension DIM (=512)."""
     # 👇 write your code here, then DELETE the line below
-    if client.has_collection(collection_name="demo_collection"):
-        client.drop_collection(collection_name="demo_collection")
+    client.drop_collection(collection_name="demo")
     client.create_collection(
-        collection_name="demo_collection",
-        dimension=DIM,  # The vectors we will use in this demo has 768 dimensions
+        collection_name="demo",
+        dimension=DIM,
     )
     # raise NotImplementedError("Step 1: create_collection() not written yet")
 
@@ -118,34 +122,25 @@ def insert_vectors(client):
     # 👇 write your code here, then DELETE the line below
     import time
 
-    data = [
-        {
-            "id": i,
-            "vector": EXAMPLE_VECTORS[i].tolist(),
-            "dataset": "aloha_sim_insertion_human_image",
-            "embeddings": "openai/clip-vit-base-patch32",
-        }
-        for i in range(N)
-    ]
-    res = client.insert(collection_name="demo_collection", data=data)
-    time.sleep(1)
-
+    data = []
+    for i, vector in enumerate(EXAMPLE_VECTORS.tolist()):
+        data.append({"id": i, "vector": vector, "dataset": "digits"})
+    res = client.insert(collection_name="demo", data=data)
+    time.sleep(2)
     return len(res["ids"])
-
     # raise NotImplementedError("Step 2: insert_vectors() not written yet")
 
 
 def run_search(client):
     """TODO 3: Search 'demo' for QUERY (the first robot scene embedding) with limit=5. Return the list of result ids (length 5)."""
     # 👇 write your code here, then DELETE the line below
-    res = client.search(
-        collection_name="demo_collection",  # target collection
-        data=[QUERY.tolist()],  # query vectors
-        limit=5,  # number of returned entities
-        output_fields=["id", "vector"],  # specifies fields to be returned
+    search_results = client.search(
+        collection_name="demo",
+        data=[QUERY.tolist()],
+        limit=5,
+        Output_fields=["id", "dataset"],
     )
-    res = [hit["id"] for hit in res[0]]
-    return res
+    return [result.id for result in search_results[0]]
     # raise NotImplementedError("Step 3: run_search() not written yet")
 
 

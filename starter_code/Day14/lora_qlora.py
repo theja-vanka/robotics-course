@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — LoRA + QLoRA.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day14_lora_qlora.py     (or just:  python Day14_lora_qlora.py)
+  2. Check yourself:   pytest lora_qlora.py     (or just:  python lora_qlora.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ train_lora.py: LoRA fine-tune SmolVLA on a public LeRobot dataset — beat the zero-shot baseline (your own synthetic demos come Days 15–16).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day14.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -50,7 +50,7 @@ def compare_trainable(base, lora):
     raise NotImplementedError("Step 3: compare_trainable() not written yet")
 
 
-# ════ TESTS — run `pytest Day14_lora_qlora.py` (or `python Day14_lora_qlora.py`). All green = you're done. ════
+# ════ TESTS — run `pytest lora_qlora.py` (or `python lora_qlora.py`). All green = you're done. ════
 
 def test_lora_has_fewer_trainable():
     base = make_base()

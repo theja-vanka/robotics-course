@@ -80,8 +80,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Freelance ML Engineering Guide](https://www.google.com/search?q=Freelance+ML+Engineering+Guide) — ⏱️ ~15 min
-- [ ] 📝 [Upwork ML Profile Best Practices](https://www.google.com/search?q=Upwork+ML+Profile+Best+Practices) — ⏱️ ~15 min
+- [ ] 📝 [Freelance ML Engineering Guide](https://www.toptal.com/machine-learning/guide) — ⏱️ ~15 min
+- [ ] 📝 [Upwork ML Profile Best Practices](https://www.upwork.com/resources/how-to-create-an-upwork-profile) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -106,8 +106,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Loom Screen Recorder](https://www.google.com/search?q=Loom+Screen+Recorder) — ⏱️ ~15 min
-- [ ] 📝 [LinkedIn Post Best Practices for Engineers](https://www.google.com/search?q=LinkedIn+Post+Best+Practices+for+Engineers) — ⏱️ ~15 min
+- [ ] 📝 [Loom Screen Recorder](https://www.loom.com) — ⏱️ ~15 min
+- [ ] 📝 [LinkedIn Post Best Practices for Engineers](https://www.linkedin.com/pulse/how-write-technical-linkedin-post) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -132,7 +132,7 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Productising Freelance Services](https://www.google.com/search?q=Productising+Freelance+Services) — ⏱️ ~15 min
+- [ ] 📝 [Productising Freelance Services](https://cushionapp.com/blog/productized-services) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~15 min*
 
@@ -157,8 +157,8 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [TensorRT Performance Guide](https://www.google.com/search?q=TensorRT+Performance+Guide) — ⏱️ ~15 min
-- [ ] 📝 [Technical Writing for Engineers](https://www.google.com/search?q=Technical+Writing+for+Engineers) — ⏱️ ~15 min
+- [ ] 📄 [TensorRT Performance Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/) — ⏱️ ~15 min
+- [ ] 📝 [Technical Writing for Engineers](https://developers.google.com/tech-writing) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -200,9 +200,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -228,9 +228,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

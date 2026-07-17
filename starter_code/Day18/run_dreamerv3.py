@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Run DreamerV3.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day18_run_dreamerv3.py     (or just:  python Day18_run_dreamerv3.py)
+  2. Check yourself:   pytest run_dreamerv3.py     (or just:  python run_dreamerv3.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  World models + Jetson context → fixes your deploy target and latency budget.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day18.md
-Setup:  pip install # clone DreamerV3 (see resources) pytest
+Setup:  pip install # clone DreamerV3 (see resources) pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def run_dreamer():
     raise NotImplementedError("Step 1: run_dreamer() not written yet")
 
 
-# ════ TESTS — run `pytest Day18_run_dreamerv3.py` (or `python Day18_run_dreamerv3.py`). All green = you're done. ════
+# ════ TESTS — run `pytest run_dreamerv3.py` (or `python run_dreamerv3.py`). All green = you're done. ════
 
 @pytest.mark.skip(reason="needs an external repo + GPU — verify by hand, see the Day note")
 def test_run_dreamer():

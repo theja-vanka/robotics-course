@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Run Stable Diffusion img2img.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day03_run_stable_diffusion_img2img.py     (or just:  python Day03_run_stable_diffusion_img2img.py)
+  2. Check yourself:   pytest run_stable_diffusion_img2img.py     (or just:  python run_stable_diffusion_img2img.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,24 +16,18 @@ DONE WHEN:
 CAPSTONE TODAY:  Diffusion literacy — context for diffusion policies + synthetic aug (no repo code today).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day03.md
-Setup:  pip install diffusers transformers accelerate datasets pillow pytest
+Setup:  pip install diffusers transformers accelerate pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
-import torch
-from PIL import Image
-from datasets import load_dataset   # OPEN dataset
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from PIL import Image  # noqa: F401
+from helpers.runtime import DEVICE  # noqa: F401
+from helpers.images import load_scene_image
 from diffusers import AutoPipelineForImage2Image
 
-_ds_r = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
-_cam_r = next(k for k in _ds_r.column_names if "images" in k)
-_raw_r = _ds_r[0][_cam_r]
-def _to_pil_r(_r):
-    from PIL import Image; import io
-    if hasattr(_r, "convert"): return _r.convert("RGB")
-    b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
-    return Image.open(io.BytesIO(b)).convert("RGB") if b else Image.open(_r["path"]).convert("RGB")
-INIT_IMAGE = _to_pil_r(_raw_r).resize((512, 512))   # real robot scene image
+INIT_IMAGE = load_scene_image((512, 512))   # real robot scene, resized for SD
 
 
 
@@ -51,7 +45,7 @@ def run_img2img(pipe):
     raise NotImplementedError("Step 2: run_img2img() not written yet")
 
 
-# ════ TESTS — run `pytest Day03_run_stable_diffusion_img2img.py` (or `python Day03_run_stable_diffusion_img2img.py`). All green = you're done. ════
+# ════ TESTS — run `pytest run_stable_diffusion_img2img.py` (or `python run_stable_diffusion_img2img.py`). All green = you're done. ════
 
 def test_output_is_image():
     out = run_img2img(load_pipeline())

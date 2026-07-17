@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Load & Amplify Demo Episodes.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day15_load_amplify_demo_episodes.py     (or just:  python Day15_load_amplify_demo_episodes.py)
+  2. Check yourself:   pytest load_amplify_demo_episodes.py     (or just:  python load_amplify_demo_episodes.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  Generate & inspect your first synthetic demo episodes (MimicGen) — the (obs, instruction, action) data train_lora.py will consume.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day15.md
-Setup:  pip install lerobot numpy pytest
+Setup:  pip install lerobot numpy pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ def amplify(ds):
     raise NotImplementedError("Step 3: amplify() not written yet")
 
 
-# ════ TESTS — run `pytest Day15_load_amplify_demo_episodes.py` (or `python Day15_load_amplify_demo_episodes.py`). All green = you're done. ════
+# ════ TESTS — run `pytest load_amplify_demo_episodes.py` (or `python load_amplify_demo_episodes.py`). All green = you're done. ════
 
 def test_schema_has_action():
     if importlib.util.find_spec("lerobot") is None:

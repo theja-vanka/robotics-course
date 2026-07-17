@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — 4-bit Quantisation (GPTQ
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day19_4_bit_quantisation_gptq_awq.py     (or just:  python Day19_4_bit_quantisation_gptq_awq.py)
+  2. Check yourself:   pytest 4_bit_quantisation_gptq_awq.py     (or just:  python 4_bit_quantisation_gptq_awq.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ compress.py: 4-bit (GPTQ/AWQ) on the fine-tuned policy — measure the deltas.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day19.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -46,7 +46,7 @@ def compare_bits(weight, bits_list=(16, 8, 4)):
     raise NotImplementedError("Step 3: compare_bits() not written yet")
 
 
-# ════ TESTS — run `pytest Day19_4_bit_quantisation_gptq_awq.py` (or `python Day19_4_bit_quantisation_gptq_awq.py`). All green = you're done. ════
+# ════ TESTS — run `pytest 4_bit_quantisation_gptq_awq.py` (or `python 4_bit_quantisation_gptq_awq.py`). All green = you're done. ════
 
 def test_more_bits_less_error():
     assert quant_error(W, 8) < quant_error(W, 4), "8-bit is finer than 4-bit"

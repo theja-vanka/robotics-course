@@ -38,8 +38,8 @@
 **⏱️ Estimated resource time today:** ~395 min (~6.6 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 YOLO26 — NMS-free real-time detector (Jan 2026) — [open](https://www.google.com/search?q=open)
-- 🔥 YOLO26 on NVIDIA Jetson — setup & benchmarks — [open](https://www.google.com/search?q=open)
+- 🔥 YOLO26 — NMS-free real-time detector (Jan 2026) — [open](https://www.ultralytics.com/yolo/yolo26)
+- 🔥 YOLO26 on NVIDIA Jetson — setup & benchmarks — [open](https://docs.ultralytics.com/guides/nvidia-jetson)
 
 ---
 
@@ -86,12 +86,12 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [YOLOv8 Docs — Ultralytics](https://www.google.com/search?q=YOLOv8+Docs+%E2%80%94+Ultralytics) — ⏱️ ~15 min
-- [ ] 📄 [FCOS Paper](https://www.google.com/search?q=FCOS+Paper) — ⏱️ ~15 min
-- [ ] 📄 [Focal Loss Paper (RetinaNet)](https://www.google.com/search?q=Focal+Loss+Paper+%28RetinaNet%29) — ⏱️ ~15 min
-- [ ] 🎥 [YOLOv8 Explained](https://www.youtube.com/results?search_query=YOLOv8+Explained) — ⏱️ ~25 min
-- [ ] 📝 [Anchor-Free Detection Overview](https://www.google.com/search?q=Anchor-Free+Detection+Overview) — ⏱️ ~15 min
-- [ ] 🔥 📝 [YOLO26 — NMS-free real-time detector (Jan 2026)](https://www.google.com/search?q=YOLO26+%E2%80%94+NMS-free+real-time+detector+%28Jan+2026%29) — ⏱️ ~15 min
+- [ ] 📝 [YOLOv8 Docs — Ultralytics](https://docs.ultralytics.com/) — ⏱️ ~15 min
+- [ ] 📄 [FCOS Paper](https://arxiv.org/abs/1904.01355) — ⏱️ ~15 min
+- [ ] 📄 [Focal Loss Paper (RetinaNet)](https://arxiv.org/abs/1708.02002) — ⏱️ ~15 min
+- [ ] 🎥 [YOLOv8 Explained](https://www.youtube.com/watch?v=ag3DLKsl2vk) — ⏱️ ~25 min
+- [ ] 📝 [Anchor-Free Detection Overview](https://towardsdatascience.com/anchor-free-object-detection-b8a4c3f9dc7c) — ⏱️ ~15 min
+- [ ] 🔥 📝 [YOLO26 — NMS-free real-time detector (Jan 2026)](https://www.ultralytics.com/yolo/yolo26) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~100 min*
 
@@ -105,7 +105,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`fine_tune_yolov8_on_ycb_dataset.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day07/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`fine_tune_yolov8_on_ycb_dataset.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day07/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -125,11 +125,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://www.google.com/search?q=Ultralytics+YOLOv8+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [YCB Object Dataset](https://www.google.com/search?q=YCB+Object+Dataset) — ⏱️ ~15 min
-- [ ] 📄 [YOLOv8 Training Docs](https://www.google.com/search?q=YOLOv8+Training+Docs) — ⏱️ ~15 min
-- [ ] 🎥 [YOLOv8 Custom Training Tutorial](https://www.youtube.com/results?search_query=YOLOv8+Custom+Training+Tutorial) — ⏱️ ~25 min
-- [ ] 🔥 📄 [YOLO26 on NVIDIA Jetson — setup & benchmarks](https://www.google.com/search?q=YOLO26+on+NVIDIA+Jetson+%E2%80%94+setup+%26+benchmarks) — ⏱️ ~15 min
+- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
+- [ ] 📄 [YCB Object Dataset](https://www.ycbbenchmarks.com/) — ⏱️ ~15 min
+- [ ] 📄 [YOLOv8 Training Docs](https://docs.ultralytics.com/modes/train/) — ⏱️ ~15 min
+- [ ] 🎥 [YOLOv8 Custom Training Tutorial](https://www.youtube.com/watch?v=gRAyOPjQ9_s) — ⏱️ ~25 min
+- [ ] 🔥 📄 [YOLO26 on NVIDIA Jetson — setup & benchmarks](https://docs.ultralytics.com/guides/nvidia-jetson) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~80 min*
 
@@ -143,7 +143,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`detection_embedding_store.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day07/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`detection_embedding_store.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day07/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -163,9 +163,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Upsert Docs](https://www.google.com/search?q=Milvus+Upsert+Docs) — ⏱️ ~15 min
-- [ ] 📝 [Milvus with Object Detection — Tutorial](https://www.google.com/search?q=Milvus+with+Object+Detection+%E2%80%94+Tutorial) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Milvus Upsert Docs](https://milvus.io/docs/upsert_entities.md) — ⏱️ ~15 min
+- [ ] 📝 [Milvus with Object Detection — Tutorial](https://milvus.io/docs/integrate_with_pytorch.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -179,7 +179,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`distillation_hands_on.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day07/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`distillation_hands_on.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day07/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -199,9 +199,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Knowledge Distillation PyTorch Tutorial](https://www.google.com/search?q=Knowledge+Distillation+PyTorch+Tutorial) — ⏱️ ~15 min
-- [ ] 📝 [Distilling YOLOv8 — Blog](https://www.google.com/search?q=Distilling+YOLOv8+%E2%80%94+Blog) — ⏱️ ~15 min
-- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://www.google.com/search?q=Ultralytics+YOLOv8+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Knowledge Distillation PyTorch Tutorial](https://pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html) — ⏱️ ~15 min
+- [ ] 📝 [Distilling YOLOv8 — Blog](https://learnopencv.com/knowledge-distillation/) — ⏱️ ~15 min
+- [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -227,9 +227,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [ROS2 C++ Pub/Sub Tutorial](https://www.google.com/search?q=ROS2+C%2B%2B+Pub%2FSub+Tutorial) — ⏱️ ~15 min
-- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.google.com/search?q=HelloC%2B%2B+%E2%80%94+C%2B%2B+Plus+%28Intermediate%29) — ⏱️ ~45 min
-- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/results?search_query=HelloC%2B%2B+YouTube+Channel) — ⏱️ ~25 min
+- [ ] 📄 [ROS2 C++ Pub/Sub Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html) — ⏱️ ~15 min
+- [ ] 🎓 [HelloC++ — C++ Plus (Intermediate)](https://www.hellocpp.dev/course/cpp-plus) — ⏱️ ~45 min
+- [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/@HelloCppOrg) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~85 min*
 
@@ -255,9 +255,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

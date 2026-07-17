@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — Low-rank Factorisation.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day15_low_rank_factorisation.py     (or just:  python Day15_low_rank_factorisation.py)
+  2. Check yourself:   pytest low_rank_factorisation.py     (or just:  python low_rank_factorisation.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  Generate & inspect your first synthetic demo episodes (MimicGen) — the (obs, instruction, action) data train_lora.py will consume.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day15.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -46,7 +46,7 @@ def reconstruction_error(weight, rank):
     raise NotImplementedError("Step 3: reconstruction_error() not written yet")
 
 
-# ════ TESTS — run `pytest Day15_low_rank_factorisation.py` (or `python Day15_low_rank_factorisation.py`). All green = you're done. ════
+# ════ TESTS — run `pytest low_rank_factorisation.py` (or `python low_rank_factorisation.py`). All green = you're done. ════
 
 def test_shape_preserved():
     assert low_rank_approx(W, 8).shape == W.shape

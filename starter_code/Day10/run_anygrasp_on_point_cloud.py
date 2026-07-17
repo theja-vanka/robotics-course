@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Run AnyGrasp on Point Cloud.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day10_run_anygrasp_on_point_cloud.py     (or just:  python Day10_run_anygrasp_on_point_cloud.py)
+  2. Check yourself:   pytest run_anygrasp_on_point_cloud.py     (or just:  python run_anygrasp_on_point_cloud.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  Grasp detection — awareness; see how a policy's action could ground to a grasp.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day10.md
-Setup:  pip install # clone the grasp repo (see resources) pytest
+Setup:  pip install # clone the grasp repo (see resources) pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def run_grasp():
     raise NotImplementedError("Step 1: run_grasp() not written yet")
 
 
-# ════ TESTS — run `pytest Day10_run_anygrasp_on_point_cloud.py` (or `python Day10_run_anygrasp_on_point_cloud.py`). All green = you're done. ════
+# ════ TESTS — run `pytest run_anygrasp_on_point_cloud.py` (or `python run_anygrasp_on_point_cloud.py`). All green = you're done. ════
 
 @pytest.mark.skip(reason="needs an external repo + GPU — verify by hand, see the Day note")
 def test_run_grasp():

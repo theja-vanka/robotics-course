@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Run ORB-SLAM3 on TUM RGB-D.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day11_run_orb_slam3_on_tum_rgb_d.py     (or just:  python Day11_run_orb_slam3_on_tum_rgb_d.py)
+  2. Check yourself:   pytest run_orb_slam3_on_tum_rgb_d.py     (or just:  python run_orb_slam3_on_tum_rgb_d.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  SLAM — awareness only, don't build. It's the 'where am I' layer, noted for context.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day11.md
-Setup:  pip install # mostly C++ (ORB-SLAM3) pytest
+Setup:  pip install # mostly C++ (ORB-SLAM3) pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def run_slam():
     raise NotImplementedError("Step 1: run_slam() not written yet")
 
 
-# ════ TESTS — run `pytest Day11_run_orb_slam3_on_tum_rgb_d.py` (or `python Day11_run_orb_slam3_on_tum_rgb_d.py`). All green = you're done. ════
+# ════ TESTS — run `pytest run_orb_slam3_on_tum_rgb_d.py` (or `python run_orb_slam3_on_tum_rgb_d.py`). All green = you're done. ════
 
 @pytest.mark.skip(reason="needs an external repo + GPU — verify by hand, see the Day note")
 def test_run_slam():

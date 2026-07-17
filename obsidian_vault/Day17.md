@@ -38,7 +38,7 @@
 **⏱️ Estimated resource time today:** ~290 min (~4.8 hr)
 
 **🔥 Bleeding-edge picks today:**
-- 🔥 FLUX.1 — frontier open-weight diffusion (Black Forest Labs) — [open](https://www.google.com/search?q=open)
+- 🔥 FLUX.1 — frontier open-weight diffusion (Black Forest Labs) — [open](https://github.com/black-forest-labs/flux)
 
 ---
 
@@ -85,11 +85,11 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [ControlNet Paper](https://www.google.com/search?q=ControlNet+Paper) — ⏱️ ~15 min
-- [ ] 📦 [ControlNet GitHub](https://www.google.com/search?q=ControlNet+GitHub) — ⏱️ ~10 min
-- [ ] 🎥 [ControlNet Explained — Yannic Kilcher](https://www.youtube.com/results?search_query=ControlNet+Explained+%E2%80%94+Yannic+Kilcher) — ⏱️ ~25 min
-- [ ] 📝 [ControlNet Tutorial — HuggingFace](https://www.google.com/search?q=ControlNet+Tutorial+%E2%80%94+HuggingFace) — ⏱️ ~15 min
-- [ ] 🔥 📦 [FLUX.1 — frontier open-weight diffusion (Black Forest Labs)](https://www.google.com/search?q=FLUX.1+%E2%80%94+frontier+open-weight+diffusion+%28Black+Forest+Labs%29) — ⏱️ ~10 min
+- [ ] 📄 [ControlNet Paper](https://arxiv.org/abs/2302.05543) — ⏱️ ~15 min
+- [ ] 📦 [ControlNet GitHub](https://github.com/lllyasviel/ControlNet) — ⏱️ ~10 min
+- [ ] 🎥 [ControlNet Explained — Yannic Kilcher](https://www.youtube.com/watch?v=WmYiA_bpLts) — ⏱️ ~25 min
+- [ ] 📝 [ControlNet Tutorial — HuggingFace](https://huggingface.co/docs/diffusers/using-diffusers/controlnet) — ⏱️ ~15 min
+- [ ] 🔥 📦 [FLUX.1 — frontier open-weight diffusion (Black Forest Labs)](https://github.com/black-forest-labs/flux) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~75 min*
 
@@ -103,7 +103,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`depth_conditioned_controlnet_augmentation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day17/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`depth_conditioned_controlnet_augmentation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day17/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -123,9 +123,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📦 [ControlNet GitHub](https://www.google.com/search?q=ControlNet+GitHub) — ⏱️ ~10 min
-- [ ] 📦 [HuggingFace Diffusers GitHub](https://www.google.com/search?q=HuggingFace+Diffusers+GitHub) — ⏱️ ~10 min
-- [ ] 📄 [Diffusers ControlNet Docs](https://www.google.com/search?q=Diffusers+ControlNet+Docs) — ⏱️ ~15 min
+- [ ] 📦 [ControlNet GitHub](https://github.com/lllyasviel/ControlNet) — ⏱️ ~10 min
+- [ ] 📦 [HuggingFace Diffusers GitHub](https://github.com/huggingface/diffusers) — ⏱️ ~10 min
+- [ ] 📄 [Diffusers ControlNet Docs](https://huggingface.co/docs/diffusers/api/pipelines/controlnet) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~35 min*
 
@@ -139,7 +139,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`diversity_guided_augmentation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day17/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`diversity_guided_augmentation.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day17/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -159,9 +159,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Milvus Distance Metrics](https://www.google.com/search?q=Milvus+Distance+Metrics) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
-- [ ] 📝 [Active Learning + Vector DBs](https://www.google.com/search?q=Active+Learning+%2B+Vector+DBs) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Distance Metrics](https://milvus.io/docs/metric.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
+- [ ] 📝 [Active Learning + Vector DBs](https://zilliz.com/blog) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -188,9 +188,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [Once-for-All Paper](https://www.google.com/search?q=Once-for-All+Paper) — ⏱️ ~15 min
-- [ ] 🎥 [Neural Architecture Search Explained](https://www.youtube.com/results?search_query=Neural+Architecture+Search+Explained) — ⏱️ ~25 min
-- [ ] 📦 [Once-for-All GitHub](https://www.google.com/search?q=Once-for-All+GitHub) — ⏱️ ~10 min
+- [ ] 📄 [Once-for-All Paper](https://arxiv.org/abs/1908.09791) — ⏱️ ~15 min
+- [ ] 🎥 [Neural Architecture Search Explained](https://www.youtube.com/watch?v=9OFiRB1wE_M) — ⏱️ ~25 min
+- [ ] 📦 [Once-for-All GitHub](https://github.com/mit-han-lab/once-for-all) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -232,9 +232,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -260,9 +260,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

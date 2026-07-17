@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Run LLaVA on Robot Scenes.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day02_run_llava_on_robot_scenes.py     (or just:  python Day02_run_llava_on_robot_scenes.py)
+  2. Check yourself:   pytest run_llava_on_robot_scenes.py     (or just:  python run_llava_on_robot_scenes.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,42 +16,23 @@ DONE WHEN:
 CAPSTONE TODAY:  Add CLIP→Milvus retrieval over observations (the policy's memory).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day02.md
-Setup:  pip install transformers datasets torch pillow pytest
+Setup:  pip install transformers torch pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
-
 from __future__ import annotations
 
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import json
-
 import torch
-from datasets import load_dataset  # OPEN dataset
+from helpers.runtime import DEVICE
+from helpers.images import load_scene_image
 from transformers import CLIPModel, CLIPProcessor
 
-_ds_r = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
-_cam_r = next(k for k in _ds_r.column_names if "images" in k)
-_raw_r = _ds_r[0][_cam_r]
+IMAGE = load_scene_image()   # real BridgeData V2 / WidowX robot scene (PIL)
 
-
-def _to_pil_r(_r):
-    import io
-
-    from PIL import Image
-
-    if hasattr(_r, "convert"):
-        return _r.convert("RGB")
-    b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
-    return (
-        Image.open(io.BytesIO(b)).convert("RGB")
-        if b
-        else Image.open(_r["path"]).convert("RGB")
-    )
-
-
-IMAGE = _to_pil_r(_raw_r)  # real robot scene image (ALOHA top-view camera)
 
 
 # ════ FILL IN — each function raises until you write it ════
-
 
 def load_clip():
     """TODO 1: Load CLIPModel + CLIPProcessor ('openai/clip-vit-base-patch32') onto DEVICE; return (model, processor)."""
@@ -71,26 +52,21 @@ def list_objects(image=IMAGE):
     raise NotImplementedError("Step 3: list_objects() not written yet")
 
 
-# ════ TESTS — run `pytest Day02_run_llava_on_robot_scenes.py` (or `python Day02_run_llava_on_robot_scenes.py`). All green = you're done. ════
-
+# ════ TESTS — run `pytest run_llava_on_robot_scenes.py` (or `python run_llava_on_robot_scenes.py`). All green = you're done. ════
 
 def test_embedding_is_512d():
     model, proc = load_clip()
     emb = encode_image(model, proc)
     assert emb.shape[-1] == 512 and torch.isfinite(emb).all()
 
-
 def test_objects_are_json_list():
     objs = list_objects()
-    json.dumps(objs)  # must be JSON-serialisable
-    assert isinstance(objs, list) and len(objs) >= 3, (
-        "LLaVA should list at least 3 graspable objects"
-    )
+    json.dumps(objs)   # must be JSON-serialisable
+    assert isinstance(objs, list) and len(objs) >= 3, "LLaVA should list at least 3 graspable objects"
 
 
 if __name__ == "__main__":
     import sys
-
     try:
         import pytest as _pt
     except ImportError:

@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Python Tooling.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day01_python_tooling.py     (or just:  python Day01_python_tooling.py)
+  2. Check yourself:   pytest python_tooling.py     (or just:  python python_tooling.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,17 +16,16 @@ DONE WHEN:
 CAPSTONE TODAY:  Stub the vla-edge repo + env; get SmolVLA running on one sample observation.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day01.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
-
 from __future__ import annotations
 
 import importlib
-
 import torch
 
-# ════ FILL IN — each function raises until you write it ════
 
+
+# ════ FILL IN — each function raises until you write it ════
 
 def report_env():
     """TODO 1: Return a dict like {'cuda': torch.cuda.is_available(), 'torch': torch.__version__}."""
@@ -40,24 +39,19 @@ def check_libraries():
     raise NotImplementedError("Step 2: check_libraries() not written yet")
 
 
-# ════ TESTS — run `pytest Day01_python_tooling.py` (or `python Day01_python_tooling.py`). All green = you're done. ════
-
+# ════ TESTS — run `pytest python_tooling.py` (or `python python_tooling.py`). All green = you're done. ════
 
 def test_report_env():
     e = report_env()
     assert isinstance(e, dict) and "cuda" in e and "torch" in e
 
-
 def test_torch_present():
     libs = check_libraries()
-    assert isinstance(libs, dict) and libs.get("torch") is not None, (
-        "torch should be installed"
-    )
+    assert isinstance(libs, dict) and libs.get("torch") is not None, "torch should be installed"
 
 
 if __name__ == "__main__":
     import sys
-
     try:
         import pytest as _pt
     except ImportError:

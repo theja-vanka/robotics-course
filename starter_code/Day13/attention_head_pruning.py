@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — Attention Head Pruning.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day13_attention_head_pruning.py     (or just:  python Day13_attention_head_pruning.py)
+  2. Check yourself:   pytest attention_head_pruning.py     (or just:  python attention_head_pruning.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ policy.py: understand the VLA you'll fine-tune (action tokens, VLM backbone).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day13.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ def prune_heads(mha, importance, k):
     raise NotImplementedError("Step 2: prune_heads() not written yet")
 
 
-# ════ TESTS — run `pytest Day13_attention_head_pruning.py` (or `python Day13_attention_head_pruning.py`). All green = you're done. ════
+# ════ TESTS — run `pytest attention_head_pruning.py` (or `python attention_head_pruning.py`). All green = you're done. ════
 
 def test_importance_one_per_head():
     imp = head_importance(make_mha())

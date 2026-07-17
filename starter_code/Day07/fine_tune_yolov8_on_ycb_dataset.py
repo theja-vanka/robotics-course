@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Fine-tune YOLOv8 on YCB Dataset.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day07_fine_tune_yolov8_on_ycb_dataset.py     (or just:  python Day07_fine_tune_yolov8_on_ycb_dataset.py)
+  2. Check yourself:   pytest fine_tune_yolov8_on_ycb_dataset.py     (or just:  python fine_tune_yolov8_on_ycb_dataset.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  observe.py: plug in YOLO26 detection → an object list the policy can use.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day07.md
-Setup:  pip install ultralytics pytest pytest
+Setup:  pip install ultralytics pytest pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -45,7 +45,7 @@ def evaluate(model):
     raise NotImplementedError("Step 3: evaluate() not written yet")
 
 
-# ════ TESTS — run `pytest Day07_fine_tune_yolov8_on_ycb_dataset.py` (or `python Day07_fine_tune_yolov8_on_ycb_dataset.py`). All green = you're done. ════
+# ════ TESTS — run `pytest fine_tune_yolov8_on_ycb_dataset.py` (or `python fine_tune_yolov8_on_ycb_dataset.py`). All green = you're done. ════
 
 def test_model_loads_pretrained():
     assert len(load_model().names) == 80, "yolo11n starts COCO-pretrained (80 classes)"

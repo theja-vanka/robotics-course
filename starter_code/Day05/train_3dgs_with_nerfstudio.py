@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Train 3DGS with Nerfstudio.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day05_train_3dgs_with_nerfstudio.py     (or just:  python Day05_train_3dgs_with_nerfstudio.py)
+  2. Check yourself:   pytest train_3dgs_with_nerfstudio.py     (or just:  python train_3dgs_with_nerfstudio.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  3D representations — awareness; note where 3DGS could enrich observations later.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day05.md
-Setup:  pip install nerfstudio pytest
+Setup:  pip install nerfstudio pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def train_splat():
     raise NotImplementedError("Step 1: train_splat() not written yet")
 
 
-# ════ TESTS — run `pytest Day05_train_3dgs_with_nerfstudio.py` (or `python Day05_train_3dgs_with_nerfstudio.py`). All green = you're done. ════
+# ════ TESTS — run `pytest train_3dgs_with_nerfstudio.py` (or `python train_3dgs_with_nerfstudio.py`). All green = you're done. ════
 
 @pytest.mark.skip(reason="needs an external repo + GPU — verify by hand, see the Day note")
 def test_train_splat():

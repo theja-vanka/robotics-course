@@ -82,10 +82,10 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎥 [Backpropagation Calculus — 3Blue1Brown](https://www.youtube.com/results?search_query=Backpropagation+Calculus+%E2%80%94+3Blue1Brown) — ⏱️ ~25 min
-- [ ] 📝 [Adam Optimizer Explained](https://www.google.com/search?q=Adam+Optimizer+Explained) — ⏱️ ~15 min
-- [ ] 🎥 [Loss Functions in Deep Learning](https://www.youtube.com/results?search_query=Loss+Functions+in+Deep+Learning) — ⏱️ ~25 min
-- [ ] 📄 [Diffusion ELBO Derivation](https://www.google.com/search?q=Diffusion+ELBO+Derivation) — ⏱️ ~15 min
+- [ ] 🎥 [Backpropagation Calculus — 3Blue1Brown](https://www.youtube.com/watch?v=tIeHLnjs5U8) — ⏱️ ~25 min
+- [ ] 📝 [Adam Optimizer Explained](https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization) — ⏱️ ~15 min
+- [ ] 🎥 [Loss Functions in Deep Learning](https://www.youtube.com/watch?v=IVVVjBSk9N0) — ⏱️ ~25 min
+- [ ] 📄 [Diffusion ELBO Derivation](https://arxiv.org/abs/2208.11970) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~80 min*
 
@@ -99,7 +99,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`implement_attention_from_scratch.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day21/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`implement_attention_from_scratch.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day21/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -119,9 +119,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 🎥 [Attention from Scratch — Andrej Karpathy](https://www.youtube.com/results?search_query=Attention+from+Scratch+%E2%80%94+Andrej+Karpathy) — ⏱️ ~25 min
-- [ ] 📄 [Attention is All You Need Paper](https://www.google.com/search?q=Attention+is+All+You+Need+Paper) — ⏱️ ~15 min
-- [ ] 📝 [Illustrated Transformer — Jay Alammar](https://www.google.com/search?q=Illustrated+Transformer+%E2%80%94+Jay+Alammar) — ⏱️ ~15 min
+- [ ] 🎥 [Attention from Scratch — Andrej Karpathy](https://www.youtube.com/watch?v=kCc8FmEb1nY) — ⏱️ ~25 min
+- [ ] 📄 [Attention is All You Need Paper](https://arxiv.org/abs/1706.03762) — ⏱️ ~15 min
+- [ ] 📝 [Illustrated Transformer — Jay Alammar](https://jalammar.github.io/illustrated-transformer/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -135,7 +135,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`ann_benchmarking.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day21/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`ann_benchmarking.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day21/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -155,9 +155,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [ANN Benchmarks Site](https://www.google.com/search?q=ANN+Benchmarks+Site) — ⏱️ ~15 min
-- [ ] 📄 [Milvus Benchmark Docs](https://www.google.com/search?q=Milvus+Benchmark+Docs) — ⏱️ ~15 min
-- [ ] 📦 [pymilvus GitHub](https://www.google.com/search?q=pymilvus+GitHub) — ⏱️ ~10 min
+- [ ] 📝 [ANN Benchmarks Site](https://ann-benchmarks.com/) — ⏱️ ~15 min
+- [ ] 📄 [Milvus Benchmark Docs](https://milvus.io/docs/benchmark.md) — ⏱️ ~15 min
+- [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -171,7 +171,7 @@
 
 **Step 1.** In your browser, open **https://colab.research.google.com** → click **New notebook**. *(First time? Read [[Setup_Guide]] once — it explains every tool below.)*
 **Step 2.** Turn on the free GPU: top menu **Runtime → Change runtime type → T4 GPU → Save**.
-**Step 3.** Get the starter file **`speculative_decoding_hands_on.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day21/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions.)*
+**Step 3.** Get the starter file **`speculative_decoding_hands_on.py`** into Colab: click the **📁 folder icon** (left sidebar) → **Upload**, and pick it from `intensive study/starter_code/Day21/`. *(It's pre-written — a specific model + an open-source dataset are loaded for you; you only fill the functions. Its shared setup lives in `starter_code/helpers/`.)*
 **Step 4.** Install its tools — new cell, **▶** (the file's `Setup:` line lists the exact ones):
 
 ```python
@@ -191,9 +191,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Speculative Decoding — HuggingFace Blog](https://www.google.com/search?q=Speculative+Decoding+%E2%80%94+HuggingFace+Blog) — ⏱️ ~15 min
-- [ ] 📄 [Speculative Decoding Paper](https://www.google.com/search?q=Speculative+Decoding+Paper) — ⏱️ ~15 min
-- [ ] 📦 [transformers assisted generation](https://www.google.com/search?q=transformers+assisted+generation) — ⏱️ ~10 min
+- [ ] 📝 [Speculative Decoding — HuggingFace Blog](https://huggingface.co/blog/assisted-generation) — ⏱️ ~15 min
+- [ ] 📄 [Speculative Decoding Paper](https://arxiv.org/abs/2211.17192) — ⏱️ ~15 min
+- [ ] 📦 [transformers assisted generation](https://huggingface.co/docs/transformers/generation_strategies) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -235,9 +235,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [PEFT / LoRA docs](https://www.google.com/search?q=PEFT+%2F+LoRA+docs) — ⏱️ ~15 min
-- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://www.google.com/search?q=LeRoBot+GitHub+%28HuggingFace%29) — ⏱️ ~10 min
-- [ ] 📄 [PyTorch benchmark utils](https://www.google.com/search?q=PyTorch+benchmark+utils) — ⏱️ ~15 min
+- [ ] 📄 [PEFT / LoRA docs](https://huggingface.co/docs/peft) — ⏱️ ~15 min
+- [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
+- [ ] 📄 [PyTorch benchmark utils](https://pytorch.org/docs/stable/benchmark_utils.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~40 min*
 
@@ -263,9 +263,9 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📄 [HelloC++ DSA Roadmap](https://www.google.com/search?q=HelloC%2B%2B+DSA+Roadmap) — ⏱️ ~15 min
-- [ ] 🎥 [NeetCode — patterns & solutions](https://www.youtube.com/results?search_query=NeetCode+%E2%80%94+patterns+%26+solutions) — ⏱️ ~25 min
-- [ ] 📦 [LeetCode problem set](https://www.google.com/search?q=LeetCode+problem+set) — ⏱️ ~10 min
+- [ ] 📄 [HelloC++ DSA Roadmap](https://www.hellocpp.dev/data-structures-algorithms) — ⏱️ ~15 min
+- [ ] 🎥 [NeetCode — patterns & solutions](https://neetcode.io/practice) — ⏱️ ~25 min
+- [ ] 📦 [LeetCode problem set](https://leetcode.com/problemset/) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*
 

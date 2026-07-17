@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Custom PyTorch Dataset.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day23_custom_pytorch_dataset.py     (or just:  python Day23_custom_pytorch_dataset.py)
+  2. Check yourself:   pytest custom_pytorch_dataset.py     (or just:  python custom_pytorch_dataset.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  eval.py: implement your metrics (success rate, IoU/NMS helpers) cleanly.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day23.md
-Setup:  pip install torch pytest
+Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -45,7 +45,7 @@ def batch_shapes(loader):
     raise NotImplementedError("Step 3: batch_shapes() not written yet")
 
 
-# ════ TESTS — run `pytest Day23_custom_pytorch_dataset.py` (or `python Day23_custom_pytorch_dataset.py`). All green = you're done. ════
+# ════ TESTS — run `pytest custom_pytorch_dataset.py` (or `python custom_pytorch_dataset.py`). All green = you're done. ════
 
 def test_batches_have_right_shape():
     img, act = batch_shapes(make_loader(make_dataset()))

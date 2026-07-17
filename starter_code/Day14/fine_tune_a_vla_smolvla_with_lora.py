@@ -5,7 +5,7 @@ OUTCOME: Working code plus saved output for Fine-tune a VLA (SmolVLA) with LoRA.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day14_fine_tune_a_vla_smolvla_with_lora.py     (or just:  python Day14_fine_tune_a_vla_smolvla_with_lora.py)
+  2. Check yourself:   pytest fine_tune_a_vla_smolvla_with_lora.py     (or just:  python fine_tune_a_vla_smolvla_with_lora.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ train_lora.py: LoRA fine-tune SmolVLA on a public LeRobot dataset — beat the zero-shot baseline (your own synthetic demos come Days 15–16).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day14.md
-Setup:  pip install lerobot transformers peft pytest
+Setup:  pip install lerobot transformers peft pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
@@ -41,7 +41,7 @@ def finetune():
     raise NotImplementedError("Step 2: finetune() not written yet")
 
 
-# ════ TESTS — run `pytest Day14_fine_tune_a_vla_smolvla_with_lora.py` (or `python Day14_fine_tune_a_vla_smolvla_with_lora.py`). All green = you're done. ════
+# ════ TESTS — run `pytest fine_tune_a_vla_smolvla_with_lora.py` (or `python fine_tune_a_vla_smolvla_with_lora.py`). All green = you're done. ════
 
 def test_lora_config_is_r16():
     cfg = build_lora_config()
