@@ -5,7 +5,7 @@ OUTCOME: A working Milvus operation for Milvus — First Collection.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day01_first_collection.py     (or just:  python Day01_first_collection.py)
+  2. Check yourself:   pytest first_collection.py     (or just:  python first_collection.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,91 +16,25 @@ DONE WHEN:
 CAPSTONE TODAY:  Stub the vla-edge repo + env; get SmolVLA running on one sample observation.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day01.md
-Setup:  pip install pymilvus numpy datasets transformers torch pillow pytest
+Setup:  pip install "pymilvus[milvus_lite]" numpy transformers torch pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 
 from __future__ import annotations
 
 import os
+import sys
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
-import torch
-from datasets import load_dataset
-from pymilvus import MilvusClient
-from transformers import CLIPModel, CLIPProcessor
-
-DEVICE = torch.device(
-    "cuda"
-    if torch.cuda.is_available()
-    else "mps"
-    if torch.backends.mps.is_available()
-    else "cpu"
+from helpers.embeddings import clip_bridge_embeddings
+from helpers.milvus import fresh_client
+from pymilvus import (
+    MilvusClient,  # noqa: F401  — you'll use this inside the functions below
 )
 
-# Real CLIP embeddings of BridgeData V2 robot manipulation scenes (WidowX arm, real robot).
-# 200 frames encoded with openai/clip-vit-base-patch32 → 512-d vectors.
-# First run: downloads CLIP model + computes embeddings (~1 min). Subsequent runs: instant.
-_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-_CACHE = os.path.join(_ROOT, "clip_bridge_embeddings.npy")
-
-
-def _build_clip_cache(path: str, n: int = 200) -> None:
-    """Compute CLIP embeddings of BridgeData V2 (WidowX) robot scenes and save to `path`."""
-    import io
-
-    from PIL import Image
-
-    print("[setup] computing CLIP embeddings — one-time, ~1 min…")
-    ds = load_dataset("jesbu1/bridge_v2_lerobot", split="train")
-    cam = next(k for k in ds.column_names if "images" in k)
-
-    def to_pil(r):
-        if hasattr(r, "convert"):
-            return r.convert("RGB")
-        b = (r.get("bytes") or r.get("data")) if isinstance(r, dict) else None
-        return (
-            Image.open(io.BytesIO(b)).convert("RGB")
-            if b
-            else Image.open(r["path"]).convert("RGB")
-        )
-
-    imgs = [to_pil(ds[i][cam]) for i in range(n)]
-    proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
-    mdl = CLIPModel.from_pretrained("openai/clip-vit-base-patch32").to(DEVICE)
-    mdl.eval()
-    vecs = []
-    with torch.no_grad():
-        for i in range(0, len(imgs), 32):
-            b = proc(images=imgs[i : i + 32], return_tensors="pt", padding=True)
-            b = {k: v.to(DEVICE) for k, v in b.items()}
-            feat = mdl.get_image_features(**b)
-            vecs.append(
-                (feat if isinstance(feat, torch.Tensor) else feat.pooler_output)
-                .cpu()
-                .numpy()
-            )
-    np.save(path, np.vstack(vecs).astype("float32"))
-    print(f"[setup] cached {n} embeddings → {path}")
-
-
-def _load_embeddings():
-    if not os.path.exists(_CACHE):
-        _build_clip_cache(_CACHE)
-    vecs = np.load(_CACHE)
-    return vecs, vecs[0], vecs.shape[1], len(vecs)
-
-
-EXAMPLE_VECTORS, QUERY, DIM, N = _load_embeddings()  # (N,512) CLIP vectors; N≈200
-
-
-def fresh_client():
-    """PROVIDED: a clean local Milvus (file-based, no Docker)."""
-    import shutil
-
-    _db = os.path.join(_ROOT, "milvus_demo.db")
-    if os.path.exists(_db):
-        shutil.rmtree(_db)  # MilvusClient stores data as a folder, not a file
-    return MilvusClient(_db)
+# Real CLIP ViT-B/32 embeddings of BridgeData V2 robot scenes (WidowX arm), computed once and
+# cached to starter_code/clip_bridge_embeddings.npy.  (See helpers/embeddings.py.)
+EXAMPLE_VECTORS, QUERY, DIM, N = clip_bridge_embeddings()  # (200, 512)
 
 
 # ════ FILL IN — each function raises until you write it ════
@@ -144,7 +78,7 @@ def run_search(client):
     # raise NotImplementedError("Step 3: run_search() not written yet")
 
 
-# ════ TESTS — run `pytest Day01_first_collection.py` (or `python Day01_first_collection.py`). All green = you're done. ════
+# ════ TESTS — run `pytest first_collection.py` (or `python first_collection.py`). All green = you're done. ════
 
 
 def test_insert_count():

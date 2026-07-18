@@ -16,29 +16,24 @@ DONE WHEN:
 CAPSTONE TODAY:  observe.py: plug in YOLO26 detection → an object list the policy can use.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day07.md
-Setup:  pip install pymilvus numpy transformers torch pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install "pymilvus[milvus_lite]" numpy transformers torch pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
-
 from __future__ import annotations
 
-import os
-import sys
-
+import os, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
-from helpers.embeddings import clip_bridge_embeddings
+from pymilvus import MilvusClient  # noqa: F401  — you'll use this inside the functions below
 from helpers.milvus import fresh_client
-from pymilvus import (
-    MilvusClient,  # noqa: F401  — you'll use this inside the functions below
-)
+from helpers.embeddings import clip_bridge_embeddings
 
 # Real CLIP ViT-B/32 embeddings of BridgeData V2 robot scenes (WidowX arm), computed once and
 # cached to starter_code/clip_bridge_embeddings.npy.  (See helpers/embeddings.py.)
-EXAMPLE_VECTORS, QUERY, DIM, N = clip_bridge_embeddings()  # (200, 512)
+EXAMPLE_VECTORS, QUERY, DIM, N = clip_bridge_embeddings()   # (200, 512)
+
 
 
 # ════ FILL IN — each function raises until you write it ════
-
 
 def create_seen_index(client):
     """TODO 1: Create collection 'seen_objects' with a vector field (dim DIM) plus an int64 'label' field."""
@@ -60,18 +55,14 @@ def query_seen(client, query=QUERY, k=5):
 
 # ════ TESTS — run `pytest detection_embedding_store.py` (or `python detection_embedding_store.py`). All green = you're done. ════
 
-
 def test_upsert_grows():
-    c = fresh_client()
-    create_seen_index(c)
+    c = fresh_client(); create_seen_index(c)
     n1 = upsert_detection(c, EXAMPLE_VECTORS[0], 3)
     n2 = upsert_detection(c, EXAMPLE_VECTORS[1], 7)
     assert n2 > n1, "each detection grows the 'seen objects' index"
 
-
 def test_query_returns_labels():
-    c = fresh_client()
-    create_seen_index(c)
+    c = fresh_client(); create_seen_index(c)
     upsert_detection(c, EXAMPLE_VECTORS[0], 3)
     ids, labels = query_seen(c, EXAMPLE_VECTORS[0], 5)
     assert len(ids) >= 1 and len(labels) == len(ids)
@@ -79,7 +70,6 @@ def test_query_returns_labels():
 
 if __name__ == "__main__":
     import sys
-
     try:
         import pytest as _pt
     except ImportError:

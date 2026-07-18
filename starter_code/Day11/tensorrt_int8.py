@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  SLAM — awareness only, don't build. It's the 'where am I' layer, noted for context.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day11.md
-Setup:  pip install onnxruntime torch torchvision numpy pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install onnxruntime torch torchvision numpy pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 

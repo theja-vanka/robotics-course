@@ -5,7 +5,7 @@ OUTCOME: A before/after measurement for Compression — FP16.
 
 HOW TO USE THIS FILE:
   1. Fill in each function below (delete its `raise` line when done).
-  2. Check yourself:   pytest Day02_fp16.py     (or just:  python Day02_fp16.py)
+  2. Check yourself:   pytest fp16.py     (or just:  python fp16.py)
      Green = passed. Red = the message tells you what's wrong. Fix until all pass.
 
 DONE WHEN:
@@ -16,92 +16,23 @@ DONE WHEN:
 CAPSTONE TODAY:  Add CLIP→Milvus retrieval over observations (the policy's memory).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day02.md
-Setup:  pip install torch torchvision datasets pillow pytest
+Setup:  pip install torch torchvision pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 
 from __future__ import annotations
 
-import csv
 import os
-import time
+import sys
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import torch
-from datasets import load_dataset  # OPEN dataset
-from torchvision import transforms
+from helpers.compress import RESULTS_CSV, example_input, log_metrics, measure
+from helpers.runtime import DEVICE
 from torchvision.models import resnet18
 
-DEVICE = torch.device(
-    "cuda"
-    if torch.cuda.is_available()
-    else "mps"
-    if torch.backends.mps.is_available()
-    else "cpu"
-)
-
-_ds_r = load_dataset("lerobot/aloha_sim_insertion_human_image", split="train")
-_cam_r = next(k for k in _ds_r.column_names if "images" in k)
-_raw_r = _ds_r[0][_cam_r]
-
-
-def _to_pil_r(_r):
-    import io
-
-    from PIL import Image
-
-    if hasattr(_r, "convert"):
-        return _r.convert("RGB")
-    b = (_r.get("bytes") or _r.get("data")) if isinstance(_r, dict) else None
-    return (
-        Image.open(io.BytesIO(b)).convert("RGB")
-        if b
-        else Image.open(_r["path"]).convert("RGB")
-    )
-
-
-_IMG = _to_pil_r(_raw_r)  # real robot scene image (ALOHA top-view camera)
-EXAMPLE_INPUT = (
-    transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])(_IMG)
-    .unsqueeze(0)
-    .to(DEVICE)
-)  # (1,3,224,224) on DEVICE
-
-# WHERE the metrics get logged — one row per variant. (In the vla-edge capstone this is
-# benchmarks/results.csv via eval.log_row(); here it's a local results.csv you screenshot.)
-_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-RESULTS_CSV = os.path.join(_ROOT, "results.csv")
-
-
-def measure(model, example_input=EXAMPLE_INPUT, runs: int = 50) -> dict:
-    """PROVIDED — the two metrics that matter for compression:
-    size_MB    = total parameter bytes / 1e6
-    latency_ms = average wall-clock time of one forward pass."""
-    model.eval()
-    size_mb = sum(p.numel() * p.element_size() for p in model.parameters()) / 1e6
-    latency_ms = -1.0
-    try:
-        with torch.no_grad():
-            for _ in range(5):
-                model(example_input)  # warm-up
-            t0 = time.perf_counter()
-            for _ in range(runs):
-                model(example_input)
-        latency_ms = round((time.perf_counter() - t0) / runs * 1000, 2)
-    except Exception as e:
-        print(
-            f"[measure] latency skipped ({type(e).__name__}) — put model + input on the same device/dtype to time it"
-        )
-    return {"size_MB": round(size_mb, 1), "latency_ms": latency_ms}
-
-
-def log_metrics(tag: str, metrics: dict) -> str:
-    """PROVIDED — append one row to RESULTS_CSV. Call it for 'baseline' AND each compressed variant."""
-    is_new = not os.path.exists(RESULTS_CSV)
-    with open(RESULTS_CSV, "a", newline="") as f:
-        w = csv.writer(f)
-        if is_new:
-            w.writerow(["tag", "size_MB", "latency_ms"])
-        w.writerow([tag, metrics["size_MB"], metrics["latency_ms"]])
-    return RESULTS_CSV
+# One real BridgeData V2 frame as a (1,3,224,224) tensor on DEVICE.  measure() + log_metrics()
+# are PROVIDED (helpers/compress.py) — call them for the baseline AND each compressed variant.
+EXAMPLE_INPUT = example_input()
 
 
 # ════ FILL IN — each function raises until you write it ════
@@ -132,7 +63,7 @@ def compress(model):
 
 def compare(model, compressed):
     """TODO 3: Measure BEFORE and AFTER, print the win, and LOG both rows to RESULTS_CSV (= results.csv).
-    HOW (measure() and log_metrics() are PROVIDED above):
+    HOW (measure() and log_metrics() are PROVIDED by helpers.compress):
         before = measure(model);            log_metrics("baseline", before)
         after  = measure(compressed);       log_metrics("compressed", after)
         print("baseline:", before, "-> compressed:", after)
@@ -145,10 +76,10 @@ def compare(model, compressed):
     log_metrics("compressed", after)
     print("baseline:", before, "-> compressed:", after)
     return before, after
-    # raise NotImplementedError("Step 3: compare() not written yet")
+    raise NotImplementedError("Step 3: compare() not written yet")
 
 
-# ════ TESTS — run `pytest Day02_fp16.py` (or `python Day02_fp16.py`). All green = you're done. ════
+# ════ TESTS — run `pytest fp16.py` (or `python fp16.py`). All green = you're done. ════
 
 
 def test_measure_reports_size_and_latency():

@@ -16,23 +16,27 @@ DONE WHEN:
 CAPSTONE TODAY:  Add CLIP→Milvus retrieval over observations (the policy's memory).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day02.md
-Setup:  pip install transformers torch pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install transformers torch pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
+
 from __future__ import annotations
 
-import os, sys
+import os
+import sys
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import json
+
 import torch
-from helpers.runtime import DEVICE
 from helpers.images import load_scene_image
+from helpers.runtime import DEVICE
 from transformers import CLIPModel, CLIPProcessor
 
-IMAGE = load_scene_image()   # real BridgeData V2 / WidowX robot scene (PIL)
-
+IMAGE = load_scene_image()  # real BridgeData V2 / WidowX robot scene (PIL)
 
 
 # ════ FILL IN — each function raises until you write it ════
+
 
 def load_clip():
     """TODO 1: Load CLIPModel + CLIPProcessor ('openai/clip-vit-base-patch32') onto DEVICE; return (model, processor)."""
@@ -54,19 +58,24 @@ def list_objects(image=IMAGE):
 
 # ════ TESTS — run `pytest run_llava_on_robot_scenes.py` (or `python run_llava_on_robot_scenes.py`). All green = you're done. ════
 
+
 def test_embedding_is_512d():
     model, proc = load_clip()
     emb = encode_image(model, proc)
     assert emb.shape[-1] == 512 and torch.isfinite(emb).all()
 
+
 def test_objects_are_json_list():
     objs = list_objects()
-    json.dumps(objs)   # must be JSON-serialisable
-    assert isinstance(objs, list) and len(objs) >= 3, "LLaVA should list at least 3 graspable objects"
+    json.dumps(objs)  # must be JSON-serialisable
+    assert isinstance(objs, list) and len(objs) >= 3, (
+        "LLaVA should list at least 3 graspable objects"
+    )
 
 
 if __name__ == "__main__":
     import sys
+
     try:
         import pytest as _pt
     except ImportError:

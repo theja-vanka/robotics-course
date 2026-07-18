@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  6-DoF pose — optional observation enrichment; awareness-level for your target.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day09.md
-Setup:  pip install onnxruntime torch torchvision numpy pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install onnxruntime torch torchvision numpy pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 

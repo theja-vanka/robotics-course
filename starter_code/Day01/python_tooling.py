@@ -18,14 +18,15 @@ IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on
 Full step-by-step:  ../obsidian_vault/Day01.md
 Setup:  pip install torch pytest   (or: pip install -r ../requirements.txt)
 """
+
 from __future__ import annotations
 
 import importlib
+
 import torch
 
-
-
 # ════ FILL IN — each function raises until you write it ════
+
 
 def report_env():
     """TODO 1: Return a dict like {'cuda': torch.cuda.is_available(), 'torch': torch.__version__}."""
@@ -41,17 +42,22 @@ def check_libraries():
 
 # ════ TESTS — run `pytest python_tooling.py` (or `python python_tooling.py`). All green = you're done. ════
 
+
 def test_report_env():
     e = report_env()
     assert isinstance(e, dict) and "cuda" in e and "torch" in e
 
+
 def test_torch_present():
     libs = check_libraries()
-    assert isinstance(libs, dict) and libs.get("torch") is not None, "torch should be installed"
+    assert isinstance(libs, dict) and libs.get("torch") is not None, (
+        "torch should be installed"
+    )
 
 
 if __name__ == "__main__":
     import sys
+
     try:
         import pytest as _pt
     except ImportError:

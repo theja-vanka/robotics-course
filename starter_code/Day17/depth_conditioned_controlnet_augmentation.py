@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ControlNet photorealism pass on synthetic data — shrink the sim-to-real gap.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day17.md
-Setup:  pip install diffusers transformers accelerate pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install diffusers transformers accelerate pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 

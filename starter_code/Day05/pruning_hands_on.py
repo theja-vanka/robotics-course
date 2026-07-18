@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  3D representations — awareness; note where 3DGS could enrich observations later.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day05.md
-Setup:  pip install torch torchvision pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install torch torchvision pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 

@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  ⭐ Deploy day: TensorRT/NVFP4 → run on edge (or edge-sim). Ship vla-edge v0.1.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day20.md
-Setup:  pip install torch torchvision pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install torch torchvision pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 

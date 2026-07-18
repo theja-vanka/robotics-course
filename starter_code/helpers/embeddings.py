@@ -21,6 +21,22 @@ def _cache(name: str) -> str:
     return os.path.join(_ROOT, name)
 
 
+def _clip_image_features(model, pixel_values):
+    """Projected (B, 512) CLIP image features as a tensor, robust across transformers versions.
+    Uses get_image_features when it returns a tensor (the normal case); otherwise recomputes
+    the projection straight from the vision tower — some builds return an output object here,
+    and its .pooler_output can already be projected, so we don't trust it and recompute."""
+    import torch
+
+    feat = model.get_image_features(pixel_values=pixel_values)
+    if isinstance(feat, torch.Tensor):
+        return feat
+    pooled = model.vision_model(
+        pixel_values=pixel_values
+    ).pooler_output  # (B, hidden, e.g. 768)
+    return model.visual_projection(pooled)  # (B, proj_dim, e.g. 512)
+
+
 def _clip_encode(images, batch: int = 32) -> np.ndarray:
     import torch
     from transformers import CLIPModel, CLIPProcessor
@@ -31,8 +47,8 @@ def _clip_encode(images, batch: int = 32) -> np.ndarray:
     with torch.no_grad():
         for i in range(0, len(images), batch):
             b = proc(images=images[i : i + batch], return_tensors="pt", padding=True)
-            b = {k: v.to(DEVICE) for k, v in b.items()}
-            vecs.append(model.get_image_features(**b).cpu().numpy())
+            pixels = b["pixel_values"].to(DEVICE)
+            vecs.append(_clip_image_features(model, pixels).detach().cpu().numpy())
     return np.vstack(vecs).astype("float32")
 
 

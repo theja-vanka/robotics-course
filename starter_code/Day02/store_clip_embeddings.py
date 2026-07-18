@@ -16,24 +16,29 @@ DONE WHEN:
 CAPSTONE TODAY:  Add CLIP→Milvus retrieval over observations (the policy's memory).
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day02.md
-Setup:  pip install pymilvus numpy transformers torch pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install "pymilvus[milvus_lite]" numpy transformers torch pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
+
 from __future__ import annotations
 
-import os, sys
+import os
+import sys
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
-from pymilvus import MilvusClient  # noqa: F401  — you'll use this inside the functions below
-from helpers.milvus import fresh_client
 from helpers.embeddings import clip_bridge_embeddings
+from helpers.milvus import fresh_client
+from pymilvus import (
+    MilvusClient,  # noqa: F401  — you'll use this inside the functions below
+)
 
 # Real CLIP ViT-B/32 embeddings of BridgeData V2 robot scenes (WidowX arm), computed once and
 # cached to starter_code/clip_bridge_embeddings.npy.  (See helpers/embeddings.py.)
-EXAMPLE_VECTORS, QUERY, DIM, N = clip_bridge_embeddings()   # (200, 512)
-
+EXAMPLE_VECTORS, QUERY, DIM, N = clip_bridge_embeddings()  # (200, 512)
 
 
 # ════ FILL IN — each function raises until you write it ════
+
 
 def build_image_index(client):
     """TODO 1: Create collection 'clip_images' (vector dim DIM) and insert the FIRST 100 EXAMPLE_VECTORS — these stand in for 100 CLIP image embeddings. Return how many you inserted."""
@@ -49,18 +54,22 @@ def search_similar(client, query=QUERY, k=5):
 
 # ════ TESTS — run `pytest store_clip_embeddings.py` (or `python store_clip_embeddings.py`). All green = you're done. ════
 
+
 def test_indexed_100():
     c = fresh_client()
     assert build_image_index(c) == 100, "should index exactly the 100 image embeddings"
 
+
 def test_topk_self():
-    c = fresh_client(); build_image_index(c)
+    c = fresh_client()
+    build_image_index(c)
     ids = list(search_similar(c, EXAMPLE_VECTORS[0], 5))
     assert len(ids) == 5 and ids[0] == 0, "image 0 must be its own nearest neighbour"
 
 
 if __name__ == "__main__":
     import sys
+
     try:
         import pytest as _pt
     except ImportError:

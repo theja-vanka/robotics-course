@@ -19,4 +19,6 @@ def fresh_client() -> MilvusClient:
     NOTE: MilvusClient stores its data as a DIRECTORY, so it must be removed with
     ``shutil.rmtree()`` — ``os.remove()`` raises IsADirectoryError on the second run.
     """
+    if os.path.exists(_DB):
+        shutil.rmtree(_DB)
     return MilvusClient(_DB)

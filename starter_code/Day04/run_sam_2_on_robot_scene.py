@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  observe.py: add SAM/ViT segmentation to turn frames into structured observations.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day04.md
-Setup:  pip install ultralytics pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install ultralytics pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 

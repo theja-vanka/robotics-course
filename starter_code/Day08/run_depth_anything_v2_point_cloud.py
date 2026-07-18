@@ -16,7 +16,7 @@ DONE WHEN:
 CAPSTONE TODAY:  observe.py: add Depth Anything depth → richer observation / conditioning.
 IF IT WON'T RUN: smaller model / Colab / timebox 90 min, then log it and move on.
 Full step-by-step:  ../obsidian_vault/Day08.md
-Setup:  pip install transformers pillow av huggingface_hub pytest   (or: pip install -r ../requirements.txt)
+Setup:  pip install transformers pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest   (or: pip install -r ../requirements.txt)
 """
 from __future__ import annotations
 
