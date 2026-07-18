@@ -85,7 +85,7 @@ def list_objects(image=IMAGE):
         model_id,
         torch_dtype=torch.float16,
         low_cpu_mem_usage=True,
-    ).to(0)
+    ).to(DEVICE)
     processor = AutoProcessor.from_pretrained(model_id)
     conversation = [
         {
@@ -116,7 +116,7 @@ def list_objects(image=IMAGE):
     prompt = processor.apply_chat_template(conversation, add_generation_prompt=True)
 
     inputs = processor(images=image, text=prompt, return_tensors="pt").to(
-        0, torch.float16
+        DEVICE, torch.float16
     )
 
     output = model.generate(**inputs, max_new_tokens=200, do_sample=False)
