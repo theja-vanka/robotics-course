@@ -126,7 +126,7 @@
 - [ ] 📝 [SmolVLA — fine-tune on consumer HW](https://huggingface.co/blog/smolvla) — ⏱️ ~15 min
 - [ ] 📦 [OpenVLA GitHub](https://github.com/openvla/openvla) — ⏱️ ~10 min
 - [ ] 📦 [LeRoBot GitHub (HuggingFace)](https://github.com/huggingface/lerobot) — ⏱️ ~10 min
-- [ ] 📄 [PEFT LoRA Docs](https://huggingface.co/docs/peft/conceptual_guides/lora) — ⏱️ ~15 min
+- [ ] 📄 [PEFT LoRA Docs](https://huggingface.co/docs/peft/main/en/conceptual_guides/lora) — ⏱️ ~15 min
 - [ ] 🎥 [Fine-tuning LLMs with LoRA](https://www.youtube.com/watch?v=eC6Hd1hFvos) — ⏱️ ~25 min
 - [ ] 🔥 📝 [SmolVLA — 450M open VLA that runs on consumer hardware (HF)](https://huggingface.co/blog/smolvla) — ⏱️ ~15 min
 

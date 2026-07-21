@@ -39,13 +39,20 @@ INIT_IMAGE = load_scene_image((512, 512))  # real robot scene, resized for SD
 def load_pipeline():
     """TODO 1: Load AutoPipelineForImage2Image ('runwayml/stable-diffusion-v1-5') onto DEVICE; return the pipe."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: load_pipeline() not written yet")
+    pipe = AutoPipelineForImage2Image.from_pretrained(
+        "runwayml/stable-diffusion-v1-5"
+    ).to(DEVICE)
+    return pipe
+    # raise NotImplementedError("Step 1: load_pipeline() not written yet")
 
 
 def run_img2img(pipe):
     """TODO 2: Run the pipe (prompt + INIT_IMAGE + strength=0.6). Return the output PIL.Image."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: run_img2img() not written yet")
+    prompt = "A futuristic robot in a sci-fi environment"
+    output = pipe(prompt=prompt, image=INIT_IMAGE, strength=0.6).images[0]
+    return output
+    # raise NotImplementedError("Step 2: run_img2img() not written yet")
 
 
 # ════ TESTS — run `pytest run_stable_diffusion_img2img.py` (or `python run_stable_diffusion_img2img.py`). All green = you're done. ════

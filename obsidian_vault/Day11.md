@@ -86,7 +86,7 @@
 - [ ] 📄 [ORB-SLAM3 Paper](https://arxiv.org/abs/2007.11898) — ⏱️ ~15 min
 - [ ] 🎥 [SLAM Explained — Cyrill Stachniss](https://www.youtube.com/watch?v=saVZtgPyyJQ) — ⏱️ ~25 min
 - [ ] 📝 [3DGS-SLAM Survey](https://github.com/3D-Vision-World/awesome-NeRF-and-3DGS-SLAM) — ⏱️ ~15 min
-- [ ] 🎥 [Loop Closure in SLAM](https://www.youtube.com/watch?v=NH-DC8STxeo) — ⏱️ ~25 min
+- [ ] 📦 [SLAM Book: Loop Closure and Pose Graphs](https://github.com/gaoxiang12/slambook-en) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~90 min*
 
@@ -193,7 +193,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [TensorRT INT8 Calibration Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#optimizing_int8) — ⏱️ ~15 min
-- [ ] 🎥 [INT8 Calibration with TensorRT](https://www.youtube.com/watch?v=AOHkAh3fj_M) — ⏱️ ~25 min
+- [ ] 📝 [INT8 Calibration — TensorRT](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#optimizing_int8) — ⏱️ ~15 min
 - [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*

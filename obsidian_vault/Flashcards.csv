@@ -1,0 +1,64 @@
+#separator:Comma
+#html:false
+#notetype:Basic
+#deck:VLA Edge Intensive
+#tags column:3
+"What does a VLA (vision-language-action) model output, and how?","Robot actions — usually as discrete action tokens decoded from a VLM backbone, or as continuous actions via a diffusion/flow head.",vla
+"What is action tokenization in a VLA?","Discretizing continuous robot actions into tokens an autoregressive model can predict (e.g. the FAST tokenizer).",vla
+"What are the System 1 / System 2 parts of pi-0.5-style VLAs?","System 2 = slow semantic reasoning emitting discrete tokens; System 1 = fast flow-matching head turning them into continuous control.",vla
+"Why is SmolVLA notable, and why start with it?","~450M params, open, runs on consumer/Colab hardware, trained on community LeRobot data; lowest-friction VLA to actually run.",vla
+"Role of the VLM backbone in a VLA?","Encodes image + language instruction into features that condition the action decoder.",vla
+"Discrete vs diffusion action heads?","Discrete = autoregressive token prediction (simple, fast). Diffusion/flow = sample continuous actions (smoother, better for high-DoF).",vla
+"What is GR00T N1.5?","NVIDIA open humanoid VLA foundation model, improved over N1, trained with large synthetic data (GR00T-Dreams).",vla
+"What is LeRobot?","HuggingFace open framework with a unified policy + dataset API for VLAs (GR00T, pi0/pi0.5, SmolVLA).",vla
+"Why fine-tune a pretrained VLA instead of training from scratch?","Pretrained policies carry broad manipulation priors, so a little task data adapts them to your robot/task.",vla
+"Idea behind retrieval-augmented VLA?","Store demo trajectories as embeddings; at inference retrieve similar demos to condition or warm-start the policy.",vla
+"What is PEFT?","Parameter-efficient fine-tuning: adapt a small set of params (LoRA, adapters, prompts) instead of all weights.",vla
+"Common sim benchmarks for evaluating VLAs?","LIBERO and Meta-World in sim; real tasks on SO-100/SO-101 arms.",vla
+"DDPM forward process?","Gradually add Gaussian noise over T steps until the image is approximately pure noise.",diffusion
+"DDPM reverse process?","Learn to denoise step by step, typically by predicting the noise added at each timestep.",diffusion
+"What does the UNet predict in a diffusion model?","The noise (or equivalently the score) to remove at a given timestep.",diffusion
+"Role of the VAE in latent diffusion (Stable Diffusion)?","Compress the image into a latent space, run diffusion there (cheaper), then decode back to pixels.",diffusion
+"DDIM vs DDPM sampling?","DDIM is deterministic and needs far fewer steps, so generation is much faster.",diffusion
+"What is classifier-free guidance?","Blend conditional and unconditional predictions to strengthen prompt adherence, controlled by a guidance scale.",diffusion
+"What does img2img strength control?","How much noise is added to the init image; higher strength means more deviation from the original.",diffusion
+"What is ControlNet?","Adds spatial conditioning (depth, edges, pose) to a frozen diffusion model via trainable zero-convolution branches.",diffusion
+"Score-function intuition in diffusion?","The score is the gradient of log-density; denoising follows the score toward higher-probability (more realistic) data.",diffusion
+"Why use diffusion for robot policies?","It models multimodal action distributions well and samples smooth high-DoF action sequences.",diffusion
+"What problem does SLAM solve?","Simultaneously estimate the camera/robot trajectory and build a map of an unknown environment.",slam
+"Core components of ORB-SLAM3?","ORB feature tracking, local mapping, loop closure, and pose-graph / bundle-adjustment optimization.",slam
+"What is loop closure?","Recognizing a previously visited place to correct accumulated trajectory drift.",slam
+"What is bundle adjustment?","Jointly optimize camera poses and 3D points to minimize total reprojection error.",slam
+"What is 3DGS-SLAM?","SLAM that uses 3D Gaussian Splatting as the map representation for dense, photorealistic reconstruction.",slam
+"Why is SLAM only awareness-level for an Applied-GenAI/VLA target?","These roles rarely build SLAM; you should know what it is and when it is needed, not implement it.",slam
+"Trade-off across FP16 / INT8 / 4-bit?","Lower precision means smaller and faster but higher accuracy risk; calibrate or fine-tune to recover quality.",compression
+"PTQ vs QAT?","Post-training quantization needs no retraining; quantization-aware training simulates quantization during training for better accuracy.",compression
+"What is LoRA?","Freeze the base weights and train small low-rank A times B adapters on selected layers — cheap fine-tuning.",compression
+"What is QLoRA?","LoRA applied on top of a 4-bit quantized base model, letting you fine-tune large models on small GPUs.",compression
+"GPTQ vs AWQ?","Both are 4-bit post-training quant for LLMs; GPTQ uses second-order error, AWQ protects salient weights by activation importance.",compression
+"What is NVFP4?","NVIDIA 4-bit float format (block size 16, two-level scaling) for Blackwell GPUs; about 2-3x throughput vs FP8.",compression
+"What is FlashAttention (and FA3)?","IO-aware exact attention that tiles work to avoid materializing the N by N matrix; FA3 adds asynchrony and FP8.",compression
+"What is knowledge distillation?","Train a small student model to match a large teacher's soft output distribution.",compression
+"What does TensorRT do?","Compiles a model into an optimized inference engine (kernel fusion, precision calibration) for NVIDIA GPUs.",compression
+"What is speculative decoding?","A small draft model proposes tokens that the large model verifies in parallel — faster generation, identical outputs.",compression
+"Why compress a VLA for robots?","Real-time control needs low latency on limited on-robot compute, so you must hit a tight latency/memory budget.",compression
+"CLIP training objective?","Contrastive: pull matching image-text pairs together and push non-matching apart in a shared embedding space.",vlm
+"What is SAM 3?","Meta's segment-anything-with-concepts model: detect, segment, and track objects from short noun-phrase prompts.",perception
+"Key change in YOLO26?","NMS-free end-to-end detection (also DFL-free), faster especially on edge.",perception
+"What is monocular depth estimation?","Predict per-pixel depth from a single RGB image (e.g. Depth Anything 3, Apple Depth Pro).",perception
+"What is 6-DoF pose?","An object's 3D position plus 3D orientation; FoundationPose estimates it for novel objects from a CAD model or reference images.",perception
+"What is DINOv3?","State-of-the-art self-supervised vision features (uses Gram anchoring); a strong frozen backbone for downstream tasks.",perception
+"NeRF vs 3D Gaussian Splatting?","NeRF uses an MLP with volume rendering (slow); 3DGS uses explicit Gaussians rasterized in real time.",3d
+"What is a world model (DreamerV3, Genie)?","A learned simulator that predicts future observations/states, used for planning or generating training data.",worldmodels
+"What is the sim-to-real gap?","Policies trained in simulation fail in reality due to visual and physics mismatch.",worldmodels
+"What is domain randomization?","Randomize textures, lighting, and physics in sim so the real world looks like just another variation.",worldmodels
+"What is IoU?","Intersection area divided by union area of two boxes; thresholded to match detections.",fundamentals
+"What is non-max suppression (NMS)?","Keep the highest-confidence box and drop overlapping duplicates above an IoU threshold.",fundamentals
+"What is focal loss?","A loss that down-weights easy examples to focus training on hard ones — handles class imbalance in detection.",fundamentals
+"Precision vs recall?","Precision = TP/(TP+FP); recall = TP/(TP+FN).",fundamentals
+"What is mAP?","Mean over classes of average precision (area under the precision-recall curve), often averaged over IoU thresholds.",fundamentals
+"How does the Adam optimizer work?","Adaptive per-parameter learning rates using running estimates of the gradient's first and second moments.",fundamentals
+"What is an ANN index?","An approximate nearest-neighbor structure (HNSW, IVF) trading a little recall for large search speedups.",milvus
+"What is HNSW?","A hierarchical navigable small-world graph enabling fast high-recall approximate nearest-neighbor search.",milvus
+"Cosine vs L2 similarity metric?","Cosine compares direction/angle (good for normalized embeddings); L2 is Euclidean distance.",milvus
+"Why use a vector DB in a VLA pipeline?","To retrieve similar past observations or demos to condition or warm-start the policy.",milvus

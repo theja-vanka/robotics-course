@@ -87,7 +87,7 @@
 ### 📚 Resources
 - [ ] 📝 [ML System Design — Chip Huyen Book](https://huyenchip.com/machine-learning-systems-design/toc.html) — ⏱️ ~15 min
 - [ ] 📝 [Designing ML Systems — Stanford CS329S](https://stanford-cs329s.github.io/) — ⏱️ ~15 min
-- [ ] 🎥 [ML System Design Interview](https://www.youtube.com/watch?v=9vS3tsu3t8E) — ⏱️ ~25 min
+- [ ] 📝 [Machine Learning Systems Design — Chip Huyen](https://huyenchip.com/machine-learning-systems-design/toc.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -179,7 +179,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Jetson Orin Benchmarks](https://developer.nvidia.com/embedded/jetson-agx-orin) — ⏱️ ~15 min
-- [ ] 📝 [Latency Optimization for CV — Blog](https://learnopencv.com/speeding-up-inference-with-openvino/) — ⏱️ ~15 min
+- [ ] 📝 [Optimize Inference — OpenVINO](https://docs.openvino.ai/2024/openvino-workflow/running-inference/optimize-inference.html) — ⏱️ ~15 min
 - [ ] 🔥 📄 [YOLO26 on NVIDIA Jetson — setup & benchmarks](https://docs.ultralytics.com/guides/nvidia-jetson) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*

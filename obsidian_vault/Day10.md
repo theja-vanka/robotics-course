@@ -88,8 +88,8 @@
 - [ ] 📄 [GraspNet Paper](https://arxiv.org/abs/2112.02104) — ⏱️ ~15 min
 - [ ] 📄 [AnyGrasp Paper](https://arxiv.org/abs/2212.08333) — ⏱️ ~15 min
 - [ ] 📦 [AnyGrasp SDK GitHub](https://github.com/graspnet/anygrasp_sdk) — ⏱️ ~10 min
-- [ ] 🎥 [Robot Grasping Explained](https://www.youtube.com/watch?v=iaJB0GFmxHc) — ⏱️ ~25 min
-- [ ] 📝 [Force Closure Grasps — Tutorial](https://manipulation.csail.mit.edu/grasp.html) — ⏱️ ~15 min
+- [ ] 📄 [Vision-Based Robotic Grasping Review](https://arxiv.org/abs/1905.06658) — ⏱️ ~15 min
+- [ ] 📝 [Model-Based Grasp Selection — MIT Robotic Manipulation](https://manipulation.csail.mit.edu/clutter.html#model-based-grasp-selection) — ⏱️ ~15 min
 - [ ] 🔥 📄 [FoundationGrasp — task-oriented grasping w/ foundation models](https://arxiv.org/abs/2404.10399) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
@@ -198,7 +198,7 @@
 ### 📚 Resources
 - [ ] 📄 [TensorRT FP16 Precision Guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#reduced-precision) — ⏱️ ~15 min
 - [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
-- [ ] 🎥 [TensorRT FP16 Optimization](https://www.youtube.com/watch?v=1YVoRBV68l8) — ⏱️ ~25 min
+- [ ] 📝 [Reduced-Precision Inference — TensorRT](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#reduced-precision) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -225,7 +225,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [CUDA C++ Guide — read a kernel](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) — ⏱️ ~15 min
-- [ ] 🎥 [CUDA explained](https://www.youtube.com/watch?v=clo38bKJkv4) — ⏱️ ~25 min
+- [ ] 📝 [An Even Easier Introduction to CUDA — NVIDIA](https://developer.nvidia.com/blog/even-easier-introduction-cuda/) — ⏱️ ~15 min
 - [ ] 🎥 [HelloC++ YouTube Channel](https://www.youtube.com/@HelloCppOrg) — ⏱️ ~25 min
 
 *⏱️ Resource time this block: ~65 min*

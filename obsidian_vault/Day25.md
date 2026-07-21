@@ -83,7 +83,7 @@
 
 ### 📚 Resources
 - [ ] 📝 [ML Interview Q&A — Chip Huyen](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
-- [ ] 📝 [CV Interview Questions — LearnOpenCV](https://learnopencv.com/interview-questions/) — ⏱️ ~15 min
+- [ ] 📝 [Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 

@@ -196,7 +196,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Low-Rank Factorisation Paper](https://arxiv.org/abs/1404.0736) — ⏱️ ~15 min
-- [ ] 📝 [Weight Matrix Decomposition Tutorial](https://towardsdatascience.com/matrix-factorization-for-model-compression) — ⏱️ ~15 min
+- [ ] 📝 [Low-Rank SVD — PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.svd_lowrank.html) — ⏱️ ~15 min
 - [ ] 📄 [torch.linalg.svd Docs](https://pytorch.org/docs/stable/generated/torch.linalg.svd.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*

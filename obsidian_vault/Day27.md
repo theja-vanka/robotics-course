@@ -107,7 +107,7 @@
 
 ### 📚 Resources
 - [ ] 📝 [Loom Screen Recorder](https://www.loom.com) — ⏱️ ~15 min
-- [ ] 📝 [LinkedIn Post Best Practices for Engineers](https://www.linkedin.com/pulse/how-write-technical-linkedin-post) — ⏱️ ~15 min
+- [ ] 📝 [Write and Publish Articles on LinkedIn](https://www.linkedin.com/help/linkedin/answer/a522427/publish-articles-on-linkedin?lang=en) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*
 
@@ -132,7 +132,7 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Productising Freelance Services](https://cushionapp.com/blog/productized-services) — ⏱️ ~15 min
+- [ ] 📝 [Productized Service Guide](https://www.manyrequests.com/blog/productized-service-guide) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~15 min*
 

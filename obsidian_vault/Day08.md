@@ -88,7 +88,7 @@
 ### 📚 Resources
 - [ ] 📄 [Depth Anything v2 Paper](https://arxiv.org/abs/2406.09414) — ⏱️ ~15 min
 - [ ] 📦 [Depth Anything v2 GitHub](https://github.com/DepthAnything/Depth-Anything-V2) — ⏱️ ~10 min
-- [ ] 🎥 [Monocular Depth Estimation Explained](https://www.youtube.com/watch?v=XGi9_Zt5m0A) — ⏱️ ~25 min
+- [ ] 📝 [Monocular Depth Estimation — Hugging Face](https://huggingface.co/docs/transformers/tasks/monocular_depth_estimation) — ⏱️ ~15 min
 - [ ] 📝 [Stereo Vision Guide — LearnOpenCV](https://learnopencv.com/introduction-to-epipolar-geometry-and-stereo-vision/) — ⏱️ ~15 min
 - [ ] 🔥 📦 [Depth Anything 3 — geometry from any views (ICLR 2026)](https://github.com/bytedance-seed/depth-anything-3) — ⏱️ ~10 min
 
@@ -162,7 +162,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Milvus Multi-Vector Fields](https://milvus.io/docs/multi-vector-search.md) — ⏱️ ~15 min
-- [ ] 📝 [Multi-modal Search with Milvus](https://zilliz.com/blog/multimodal-semantic-search) — ⏱️ ~15 min
+- [ ] 📝 [Multi-Vector Hybrid Search with Milvus](https://milvus.io/docs/multi-vector-search.md) — ⏱️ ~15 min
 - [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
@@ -200,7 +200,7 @@
 - [ ] 📄 [ONNX Export Docs — Ultralytics](https://docs.ultralytics.com/modes/export/) — ⏱️ ~15 min
 - [ ] 📦 [ONNX Runtime GitHub](https://github.com/microsoft/onnxruntime) — ⏱️ ~10 min
 - [ ] 📄 [ONNX Runtime Python Docs](https://onnxruntime.ai/docs/get-started/with-python.html) — ⏱️ ~15 min
-- [ ] 🎥 [ONNX Export Tutorial](https://www.youtube.com/watch?v=7n5HW2Vp1vI) — ⏱️ ~25 min
+- [ ] 📝 [Export a PyTorch Model to ONNX](https://docs.pytorch.org/tutorials/beginner/onnx/export_simple_model_to_onnx_tutorial.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~65 min*
 

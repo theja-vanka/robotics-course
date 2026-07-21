@@ -82,7 +82,7 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [LinkedIn Post Tips for Engineers](https://www.linkedin.com/pulse/) — ⏱️ ~15 min
+- [ ] 📝 [Write and Publish Articles on LinkedIn](https://www.linkedin.com/help/linkedin/answer/a522427/publish-articles-on-linkedin?lang=en) — ⏱️ ~15 min
 - [ ] 📝 [Loom — Record Demo](https://www.loom.com) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*

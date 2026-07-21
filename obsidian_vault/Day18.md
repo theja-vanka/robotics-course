@@ -91,8 +91,8 @@
 - [ ] 📄 [DreamerV3 Paper](https://arxiv.org/abs/2301.04104) — ⏱️ ~15 min
 - [ ] 📦 [DreamerV3 GitHub](https://github.com/danijar/dreamerv3) — ⏱️ ~10 min
 - [ ] 📄 [UniSim Paper](https://arxiv.org/abs/2310.06114) — ⏱️ ~15 min
-- [ ] 🎥 [World Models Explained — Yannic Kilcher](https://www.youtube.com/watch?v=dPmHnQ6aABQ) — ⏱️ ~25 min
-- [ ] 📝 [DreamerV3 Blog — DeepMind](https://deepmind.google/discover/blog/mastering-diverse-domains-through-world-models/) — ⏱️ ~15 min
+- [ ] 📝 [World Models Project Page](https://worldmodels.github.io/) — ⏱️ ~15 min
+- [ ] 📝 [DreamerV3 Project Page](https://danijar.com/project/dreamerv3/) — ⏱️ ~15 min
 - [ ] 🔥 📝 [Genie 3 — real-time interactive world model (DeepMind)](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
@@ -129,7 +129,7 @@
 ### 📚 Resources
 - [ ] 📦 [DreamerV3 GitHub](https://github.com/danijar/dreamerv3) — ⏱️ ~10 min
 - [ ] 📄 [DMControl Suite](https://github.com/google-deepmind/dm_control) — ⏱️ ~15 min
-- [ ] 🎥 [DreamerV3 Demo](https://www.youtube.com/watch?v=vfpZu0R1s_Y) — ⏱️ ~25 min
+- [ ] 📝 [DreamerV3 Project and Results](https://danijar.com/project/dreamerv3/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~50 min*
 

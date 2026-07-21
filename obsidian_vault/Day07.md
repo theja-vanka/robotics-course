@@ -90,7 +90,7 @@
 - [ ] 📄 [FCOS Paper](https://arxiv.org/abs/1904.01355) — ⏱️ ~15 min
 - [ ] 📄 [Focal Loss Paper (RetinaNet)](https://arxiv.org/abs/1708.02002) — ⏱️ ~15 min
 - [ ] 🎥 [YOLOv8 Explained](https://www.youtube.com/watch?v=ag3DLKsl2vk) — ⏱️ ~25 min
-- [ ] 📝 [Anchor-Free Detection Overview](https://towardsdatascience.com/anchor-free-object-detection-b8a4c3f9dc7c) — ⏱️ ~15 min
+- [ ] 📄 [FCOS: Fully Convolutional One-Stage Object Detection](https://arxiv.org/abs/1904.01355) — ⏱️ ~15 min
 - [ ] 🔥 📝 [YOLO26 — NMS-free real-time detector (Jan 2026)](https://www.ultralytics.com/yolo/yolo26) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~100 min*
@@ -200,7 +200,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Knowledge Distillation PyTorch Tutorial](https://pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html) — ⏱️ ~15 min
-- [ ] 📝 [Distilling YOLOv8 — Blog](https://learnopencv.com/knowledge-distillation/) — ⏱️ ~15 min
+- [ ] 📝 [Knowledge Distillation Tutorial — PyTorch](https://docs.pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html) — ⏱️ ~15 min
 - [ ] 📦 [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*

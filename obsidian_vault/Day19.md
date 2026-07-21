@@ -84,7 +84,7 @@
 ### 📚 Resources
 - [ ] 📄 [3DGS Robotics Survey](https://arxiv.org/abs/2410.12262) — ⏱️ ~15 min
 - [ ] 📄 [GaussianGrasper Paper](https://arxiv.org/abs/2403.09637) — ⏱️ ~15 min
-- [ ] 🎥 [3DGS for Robotics — Tutorial](https://www.youtube.com/watch?v=HVv_IschId8) — ⏱️ ~25 min
+- [ ] 📦 [NeRF and 3DGS for Robotics — Curated Resources](https://github.com/3D-Vision-World/awesome-NeRF-and-3DGS-SLAM) — ⏱️ ~15 min
 - [ ] 📦 [awesome-representation-for-robotics](https://github.com/dtc111111/awesome-representation-for-robotics) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~65 min*

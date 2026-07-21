@@ -41,13 +41,28 @@ EXAMPLE_INPUT = example_input()
 def load_model():
     """TODO 1: Return ResNet-18 in fp32, eval mode:  resnet18(weights='DEFAULT').eval()  (weights download once). (Day 19+ on the VLA: load your fine-tuned SmolVLA like vla-edge/src/policy.py instead.)"""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: load_model() not written yet")
+    model = resnet18(weights="DEFAULT").to(DEVICE).eval()
+    return model
+    # raise NotImplementedError("Step 1: load_model() not written yet")
 
 
 def compress(model):
     """TODO 2: Apply THIS block's technique and return the new model. fp16 -> model.half(); int8 -> torch.quantization.quantize_dynamic(model, dtype=torch.qint8); prune -> torch.nn.utils.prune.l1_unstructured(...); 4-bit -> bitsandbytes. (The Task line says which.)"""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: compress() not written yet")
+    import copy
+
+    compressed_model = copy.deepcopy(model)
+    compressed_model = torch.quantization.quantize_dynamic(
+        compressed_model,
+        {torch.nn.Linear},
+        dtype=torch.qint8,
+    )
+    for module in compressed_model.modules():
+        if isinstance(module, torch.nn.Linear):
+            torch.nn.utils.prune.l1_unstructured(module, name="weight", amount=0.2)
+            torch.nn.utils.prune.remove(module, "weight")
+    return compressed_model.to(DEVICE).eval()
+    # raise NotImplementedError("Step 2: compress() not written yet")
 
 
 def compare(model, compressed):
@@ -59,7 +74,13 @@ def compare(model, compressed):
     Return (before, after).
     """
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 3: compare() not written yet")
+    before = measure(model)
+    log_metrics("baseline", before)
+    after = measure(compressed, example_input=EXAMPLE_INPUT.half())
+    log_metrics("compressed", after)
+    print("baseline:", before, "-> compressed:", after)
+    return before, after
+    # raise NotImplementedError("Step 3: compare() not written yet")
 
 
 # ════ TESTS — run `pytest int8_ptq.py` (or `python int8_ptq.py`). All green = you're done. ════

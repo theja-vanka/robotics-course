@@ -88,8 +88,8 @@
 
 ### 📚 Resources
 - [ ] 📄 [VLA Survey — Perception Section](https://vla-survey.github.io/) — ⏱️ ~15 min
-- [ ] 📝 [Robot Perception Overview — Towards Robotics](https://towardsai.net/p/machine-learning/robot-perception) — ⏱️ ~15 min
-- [ ] 🎥 [Robot Perception Pipeline — MIT OpenCourseWare](https://www.youtube.com/watch?v=GUoJSRyPKYU) — ⏱️ ~25 min
+- [ ] 📝 [Robotic Manipulation: Perception, Planning, and Control — MIT](https://manipulation.csail.mit.edu/) — ⏱️ ~15 min
+- [ ] 📝 [Deep Perception for Manipulation — MIT](https://manipulation.csail.mit.edu/deep_perception.html) — ⏱️ ~15 min
 - [ ] 📄 [ROS2 Perception Docs](https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Introduction-To-Tf2.html) — ⏱️ ~15 min
 - [ ] 🔥 📄 [NVIDIA GR00T N1.5 — open humanoid foundation model](https://research.nvidia.com/labs/gear/gr00t-n1_5/) — ⏱️ ~15 min
 
@@ -134,7 +134,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Python OOP Guide](https://docs.python.org/3/tutorial/classes.html) — ⏱️ ~15 min
-- [ ] 📝 [Designing a Robot Perception System](https://robotics.stackexchange.com/questions/tagged/perception) — ⏱️ ~15 min
+- [ ] 📝 [Robot Perception-to-Grasp Pipeline — DeepClaw](https://bionicdl-sustech.github.io/DeepClaw/pipeline/) — ⏱️ ~15 min
 - [ ] 📦 [Open3D GitHub](https://github.com/isl-org/Open3D) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*
@@ -201,7 +201,7 @@
 ### 📚 Resources
 - [ ] 📄 [Knowledge Distillation Paper (Hinton et al.)](https://arxiv.org/abs/1503.02531) — ⏱️ ~15 min
 - [ ] 📄 [DistilBERT Paper](https://arxiv.org/abs/1910.01108) — ⏱️ ~15 min
-- [ ] 🎥 [Knowledge Distillation Explained](https://www.youtube.com/watch?v=IObONhOGgEk) — ⏱️ ~25 min
+- [ ] 📄 [Distilling the Knowledge in a Neural Network — Google Research](https://research.google/pubs/distilling-the-knowledge-in-a-neural-network/) — ⏱️ ~15 min
 - [ ] 📝 [KD Tutorial — PyTorch](https://pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~70 min*

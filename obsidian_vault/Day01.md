@@ -95,8 +95,8 @@
 ### 📚 Resources
 - [ ] 📝 [CVPR 2026 Trends — Encord](https://encord.com/cvpr-2026/) — ⏱️ ~15 min
 - [ ] 📄 [VLA Models Survey](https://vla-survey.github.io/) — ⏱️ ~15 min
-- [ ] 📝 [NVIDIA GR00T N1 Blog](https://blogs.nvidia.com/blog/gr00t-n1-open-foundation-model-humanoid-robots/) — ⏱️ ~15 min
-- [ ] 🎥 [Andrej Karpathy — Software 2.0](https://www.youtube.com/watch?v=VrBiDsYB8J0) — ⏱️ ~25 min
+- [ ] 📝 [NVIDIA GR00T N1 Research](https://research.nvidia.com/publication/2025-03_nvidia-isaac-gr00t-n1-open-foundation-model-humanoid-robots) — ⏱️ ~15 min
+- [ ] 📝 [Andrej Karpathy — Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) — ⏱️ ~15 min
 - [ ] 📝 [CVPR 2026 Robotics Showcase](https://cvpr.thecvf.com/Conferences/2026/News/Robotics) — ⏱️ ~15 min
 - [ ] 🔥 📝 [VLA Models Comparison 2026 — Octo · OpenVLA · π0/π0.5 · GR00T · SmolVLA](https://www.roboticscenter.ai/tools/vla-models-comparison) — ⏱️ ~15 min
 
@@ -175,7 +175,7 @@
 - [ ] 📄 [pymilvus Hello Milvus Tutorial](https://milvus.io/docs/quickstart.md) — ⏱️ ~15 min
 - [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 - [ ] 📦 [Milvus GitHub](https://github.com/milvus-io/milvus) — ⏱️ ~10 min
-- [ ] 🎥 [Milvus Getting Started](https://www.youtube.com/watch?v=P6DP3VLTNqo) — ⏱️ ~25 min
+- [ ] 📝 [Milvus Quickstart](https://milvus.io/docs/quickstart.md) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~75 min*
 
@@ -203,7 +203,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [TensorRT Developer Guide](https://developer.nvidia.com/tensorrt) — ⏱️ ~15 min
-- [ ] 📝 [Model Compression Survey — Medium](https://towardsdatascience.com/model-compression-approaches-overview-5c0e4b0b3f4) — ⏱️ ~15 min
+- [ ] 📄 [Model Compression Survey](https://arxiv.org/abs/1710.09282) — ⏱️ ~15 min
 - [ ] 🎥 [Neural Network Quantization Explained](https://www.youtube.com/watch?v=DDelqfkYCuo) — ⏱️ ~25 min
 - [ ] 📄 [PyTorch Quantization Overview](https://pytorch.org/docs/stable/quantization.html) — ⏱️ ~15 min
 - [ ] 🔥 📝 [π0.5 on Jetson Thor with NVFP4 — real edge VLA inference](https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/) — ⏱️ ~15 min

@@ -91,7 +91,7 @@
 - [ ] 📄 [CLIP Paper (Radford et al.)](https://arxiv.org/abs/2103.00020) — ⏱️ ~15 min
 - [ ] 📄 [BLIP-2 Paper](https://arxiv.org/abs/2301.12597) — ⏱️ ~15 min
 - [ ] 🎥 [CLIP Explained — Yannic Kilcher](https://www.youtube.com/watch?v=T9XSU0pKX2E) — ⏱️ ~25 min
-- [ ] 📝 [Understanding CLIP — LearnOpenCV](https://learnopencv.com/clip-what-it-is-how-it-works-applications/) — ⏱️ ~15 min
+- [ ] 📝 [CLIP: Connecting Text and Images — OpenAI](https://openai.com/index/clip/) — ⏱️ ~15 min
 - [ ] 📦 [LLaVA GitHub](https://github.com/haotian-liu/LLaVA) — ⏱️ ~10 min
 - [ ] 🔥 📝 [Gemini Robotics 1.5 — DeepMind VLA](https://deepmind.google/models/gemini-robotics/) — ⏱️ ~15 min
 
@@ -129,7 +129,7 @@
 ### 📚 Resources
 - [ ] 📄 [LLaVA HuggingFace Model Card](https://huggingface.co/llava-hf/llava-1.5-7b-hf) — ⏱️ ~15 min
 - [ ] 📄 [Transformers Pipeline Docs](https://huggingface.co/docs/transformers/main_classes/pipelines) — ⏱️ ~15 min
-- [ ] 🎥 [Run LLaVA Locally Tutorial](https://www.youtube.com/watch?v=MqMAnO8yJGQ) — ⏱️ ~25 min
+- [ ] 📦 [LLaVA Setup and Usage](https://github.com/haotian-liu/LLaVA) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 
@@ -164,7 +164,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Milvus Image Search Tutorial](https://milvus.io/docs/image_similarity_search.md) — ⏱️ ~15 min
-- [ ] 📝 [CLIP + Milvus Reverse Image Search](https://zilliz.com/blog/building-a-reverse-image-search-with-milvus-and-clip) — ⏱️ ~15 min
+- [ ] 📝 [Text-to-Image Search with CLIP + Milvus](https://milvus.io/docs/text_image_search.md) — ⏱️ ~15 min
 - [ ] 📦 [pymilvus GitHub](https://github.com/milvus-io/pymilvus) — ⏱️ ~10 min
 - [ ] 📄 [Milvus Insert Docs](https://milvus.io/docs/insert-update.md) — ⏱️ ~15 min
 
@@ -202,7 +202,7 @@
 ### 📚 Resources
 - [ ] 📄 [PyTorch AMP (Automatic Mixed Precision)](https://pytorch.org/docs/stable/amp.html) — ⏱️ ~15 min
 - [ ] 📝 [FP16 vs FP32 Training — PyTorch Blog](https://pytorch.org/blog/accelerating-training-on-nvidia-gpus-with-pytorch-automatic-mixed-precision/) — ⏱️ ~15 min
-- [ ] 🎥 [Mixed Precision Training Explained](https://www.youtube.com/watch?v=UK8IMfgEMhs) — ⏱️ ~25 min
+- [ ] 📝 [Automatic Mixed Precision Recipe — PyTorch](https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 

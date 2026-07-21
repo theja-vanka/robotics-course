@@ -126,7 +126,7 @@
 ### 📚 Resources
 - [ ] 📦 [HuggingFace Diffusers GitHub](https://github.com/huggingface/diffusers) — ⏱️ ~10 min
 - [ ] 📄 [Diffusers img2img Pipeline](https://huggingface.co/docs/diffusers/using-diffusers/img2img) — ⏱️ ~15 min
-- [ ] 🎥 [Diffusers Library Tutorial](https://www.youtube.com/watch?v=cS_7mFPWifA) — ⏱️ ~25 min
+- [ ] 📝 [Diffusers Quicktour — Hugging Face](https://huggingface.co/docs/diffusers/quicktour) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~50 min*
 
@@ -199,7 +199,7 @@
 ### 📚 Resources
 - [ ] 📄 [PyTorch PTQ Tutorial](https://pytorch.org/tutorials/advanced/static_quantization_tutorial.html) — ⏱️ ~15 min
 - [ ] 📝 [Intro to Quantization — PyTorch Blog](https://pytorch.org/blog/introduction-to-quantization-on-pytorch/) — ⏱️ ~15 min
-- [ ] 🎥 [INT8 Quantization Explained](https://www.youtube.com/watch?v=ShZAeLkXeqw) — ⏱️ ~25 min
+- [ ] 📝 [Quantization — PyTorch Documentation](https://docs.pytorch.org/docs/stable/quantization.html) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~55 min*
 

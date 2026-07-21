@@ -36,7 +36,7 @@ Every per-day starter (inside `starter_code/DayNN/`) **loads an open dataset for
 2. Install its tools — the quickest is the shared, pinned list (covers every day); or use the file's own `Setup:` line:
    ```python
    !pip install -q -r intensive\ study/starter_code/requirements.txt   # ← everything, pinned
-   # ...or just the file's Setup line, e.g.:  !pip install -q pymilvus transformers torch pillow av huggingface_hub pytest
+   # ...or just the file's Setup line, e.g.:  !pip install -q "pymilvus[milvus_lite]" transformers torch pillow opencv-python-headless imageio imageio-ffmpeg huggingface_hub pytest
    ```
    *(The shared setup — dataset download, CLIP/DINOv2, Milvus client — lives in `starter_code/helpers/`; the day files just import it.)*
 3. Run the tests:

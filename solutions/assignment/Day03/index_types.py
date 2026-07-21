@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import os
 import sys
+from pydoc import cli
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
@@ -43,19 +44,106 @@ EXAMPLE_VECTORS, QUERY, DIM, N = clip_bridge_embeddings()  # (200, 512)
 def build_with_index(client, index_type):
     """TODO 1: Create collection 'vecs', insert EXAMPLE_VECTORS, building the given index_type ('FLAT' or 'HNSW'). milvus-lite may map both to FLAT — that's fine, set the param. Return the collection name."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: build_with_index() not written yet")
+    collection_name = "vecs"
+
+    index_type = index_type.upper()
+    if index_type not in {"FLAT", "HNSW"}:
+        raise ValueError("index_type must be 'FLAT' or 'HNSW'")
+
+    if client.has_collection(collection_name):
+        client.drop_collection(collection_name)
+
+    # Quick setup creates and loads the collection with a default index.
+    client.create_collection(
+        collection_name=collection_name,
+        dimension=DIM,
+        primary_field_name="id",
+        vector_field_name="embeddings",
+        auto_id=False,
+        enable_dynamic_field=True,
+        metric_type="COSINE",
+    )
+
+    # Remove the automatically created index.
+    client.release_collection(collection_name)
+
+    default_indexes = client.list_indexes(collection_name=collection_name)
+
+    for index_name in default_indexes:
+        client.drop_index(
+            collection_name=collection_name,
+            index_name=index_name,
+        )
+
+    data = [
+        {
+            "id": i,
+            "embeddings": vector,
+            "dataset": "digits",
+        }
+        for i, vector in enumerate(EXAMPLE_VECTORS[:100].tolist())
+    ]
+
+    result = client.insert(
+        collection_name=collection_name,
+        data=data,
+    )
+
+    print("Inserted:", result["insert_count"])
+
+    index_params = client.prepare_index_params()
+
+    if index_type == "HNSW":
+        index_specific_params = {
+            "M": 16,
+            "efConstruction": 200,
+        }
+    else:
+        index_specific_params = {}
+
+    index_params.add_index(
+        field_name="embeddings",
+        index_name="embedding_idx",
+        index_type=index_type,
+        metric_type="COSINE",
+        params=index_specific_params,
+    )
+
+    client.create_index(
+        collection_name=collection_name,
+        index_params=index_params,
+    )
+
+    client.load_collection(collection_name)
+
+    return collection_name
+    # raise NotImplementedError("Step 1: build_with_index() not written yet")
 
 
 def timed_search(client, query=QUERY, k=5):
     """TODO 2: Run one search; return (ids, elapsed_seconds)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: timed_search() not written yet")
+    import time
+
+    start = time.time()
+    result = client.search("vecs", [query.tolist()], limit=k)
+    elapsed = time.time() - start
+
+    return [hit["id"] for hit in result[0]], elapsed
+    # raise NotImplementedError("Step 2: timed_search() not written yet")
 
 
 def compare_indexes(client):
     """TODO 3: Rebuild the collection once as 'FLAT' and once as 'HNSW', time a search on each, and return {'FLAT': seconds, 'HNSW': seconds}."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 3: compare_indexes() not written yet")
+    times = {}
+    for index_type in ["FLAT", "HNSW"]:
+        build_with_index(client, index_type)
+        _, elapsed = timed_search(client)
+        times[index_type] = elapsed
+
+    return times
+    # raise NotImplementedError("Step 3: compare_indexes() not written yet")
 
 
 # ════ TESTS — run `pytest index_types.py` (or `python index_types.py`). All green = you're done. ════

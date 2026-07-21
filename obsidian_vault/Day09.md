@@ -88,7 +88,7 @@
 ### 📚 Resources
 - [ ] 📄 [MegaPose Paper](https://arxiv.org/abs/2212.06870) — ⏱️ ~15 min
 - [ ] 📦 [MegaPose GitHub](https://github.com/megapose6d/megapose6d) — ⏱️ ~10 min
-- [ ] 🎥 [6-DoF Pose Estimation Explained](https://www.youtube.com/watch?v=FYgHYtCp570) — ⏱️ ~25 min
+- [ ] 📝 [Perspective-n-Point Pose Estimation — OpenCV](https://docs.opencv.org/4.x/d5/d1f/calib3d_solvePnP.html) — ⏱️ ~15 min
 - [ ] 📝 [PnP Algorithm — LearnOpenCV](https://learnopencv.com/head-pose-estimation-using-opencv-and-dlib/) — ⏱️ ~15 min
 - [ ] 📄 [FoundPose Paper](https://arxiv.org/abs/2311.18809) — ⏱️ ~15 min
 - [ ] 🔥 📄 [FoundationPose — unified 6D pose for novel objects (NVIDIA)](https://research.nvidia.com/publication/2024-06_foundationpose-unified-6d-pose-estimation-and-tracking-novel-objects) — ⏱️ ~15 min
@@ -126,7 +126,7 @@
 
 ### 📚 Resources
 - [ ] 📦 [MegaPose GitHub](https://github.com/megapose6d/megapose6d) — ⏱️ ~10 min
-- [ ] 📄 [MegaPose HuggingFace Demo](https://huggingface.co/spaces/nv-nguyen/megapose) — ⏱️ ~15 min
+- [ ] 📝 [MegaPose Project Page and Results](https://megapose6d.github.io/) — ⏱️ ~15 min
 - [ ] 📄 [YCB Dataset Download](https://www.ycbbenchmarks.com/) — ⏱️ ~15 min
 - [ ] 🔥 📄 [FoundationPose in Isaac ROS — deploy on a robot](https://nvidia-isaac-ros.github.io/concepts/pose_estimation/foundationpose/index.html) — ⏱️ ~15 min
 
@@ -201,7 +201,7 @@
 ### 📚 Resources
 - [ ] 📄 [TensorRT Python Quickstart](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html) — ⏱️ ~15 min
 - [ ] 📦 [TensorRT GitHub](https://github.com/NVIDIA/TensorRT) — ⏱️ ~10 min
-- [ ] 🎥 [TensorRT Tutorial — NVIDIA](https://www.youtube.com/watch?v=dM5bhHJEtIE) — ⏱️ ~25 min
+- [ ] 📝 [TensorRT Quick Start Guide — NVIDIA](https://docs.nvidia.com/deeplearning/tensorrt/quick-start-guide/index.html) — ⏱️ ~15 min
 - [ ] 📄 [TensorRT ONNX Workflow](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#import_onnx_c) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~65 min*

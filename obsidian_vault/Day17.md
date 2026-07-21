@@ -87,7 +87,7 @@
 ### 📚 Resources
 - [ ] 📄 [ControlNet Paper](https://arxiv.org/abs/2302.05543) — ⏱️ ~15 min
 - [ ] 📦 [ControlNet GitHub](https://github.com/lllyasviel/ControlNet) — ⏱️ ~10 min
-- [ ] 🎥 [ControlNet Explained — Yannic Kilcher](https://www.youtube.com/watch?v=WmYiA_bpLts) — ⏱️ ~25 min
+- [ ] 📄 [ControlNet Paper](https://arxiv.org/abs/2302.05543) — ⏱️ ~15 min
 - [ ] 📝 [ControlNet Tutorial — HuggingFace](https://huggingface.co/docs/diffusers/using-diffusers/controlnet) — ⏱️ ~15 min
 - [ ] 🔥 📦 [FLUX.1 — frontier open-weight diffusion (Black Forest Labs)](https://github.com/black-forest-labs/flux) — ⏱️ ~10 min
 
@@ -189,7 +189,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Once-for-All Paper](https://arxiv.org/abs/1908.09791) — ⏱️ ~15 min
-- [ ] 🎥 [Neural Architecture Search Explained](https://www.youtube.com/watch?v=9OFiRB1wE_M) — ⏱️ ~25 min
+- [ ] 📝 [Once-for-All Neural Architecture Search — MIT HAN Lab](https://hanlab.mit.edu/projects/ofa) — ⏱️ ~15 min
 - [ ] 📦 [Once-for-All GitHub](https://github.com/mit-han-lab/once-for-all) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~50 min*

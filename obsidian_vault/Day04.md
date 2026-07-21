@@ -127,7 +127,7 @@
 ### 📚 Resources
 - [ ] 📦 [SAM 2 GitHub (Meta)](https://github.com/facebookresearch/segment-anything-2) — ⏱️ ~10 min
 - [ ] 📄 [SAM 2 HuggingFace Docs](https://huggingface.co/docs/transformers/model_doc/sam) — ⏱️ ~15 min
-- [ ] 🎥 [SAM 2 Demo & Tutorial](https://www.youtube.com/watch?v=Dv003fTyO6Y) — ⏱️ ~25 min
+- [ ] 📦 [SAM 2 Demos and Usage — Meta](https://github.com/facebookresearch/segment-anything-2) — ⏱️ ~15 min
 - [ ] 🔥 📦 [SAM 3 — Segment Anything with Concepts (Meta, 2025)](https://github.com/facebookresearch/sam3) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~60 min*
@@ -193,7 +193,7 @@
 ### 📚 Resources
 - [ ] 📄 [PyTorch Pruning Tutorial](https://pytorch.org/tutorials/intermediate/pruning_tutorial.html) — ⏱️ ~15 min
 - [ ] 📄 [torch.nn.utils.prune Docs](https://pytorch.org/docs/stable/generated/torch.nn.utils.prune.l1_unstructured.html) — ⏱️ ~15 min
-- [ ] 🎥 [Neural Network Pruning Explained](https://www.youtube.com/watch?v=x2TGPHhZm4g) — ⏱️ ~25 min
+- [ ] 📝 [Pruning Tutorial — PyTorch](https://pytorch.org/tutorials/intermediate/pruning_tutorial.html) — ⏱️ ~15 min
 - [ ] 📄 [Pruning Paper Survey](https://arxiv.org/abs/2101.09671) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~70 min*

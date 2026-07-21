@@ -84,7 +84,7 @@
 - [ ] Block complete
 
 ### 📚 Resources
-- [ ] 📝 [Interview Prep Guide — Robotics CV](https://learnopencv.com/interview-questions/) — ⏱️ ~15 min
+- [ ] 📝 [Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
 - [ ] 📝 [ML Interview Questions — Chip Huyen](https://huyenchip.com/ml-interviews-book/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~30 min*

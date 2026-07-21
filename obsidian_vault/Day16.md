@@ -198,7 +198,7 @@
 ### 📚 Resources
 - [ ] 📄 [EfficientDet Paper](https://arxiv.org/abs/1911.09070) — ⏱️ ~15 min
 - [ ] 📄 [EfficientNet Paper](https://arxiv.org/abs/1905.11946) — ⏱️ ~15 min
-- [ ] 🎥 [EfficientDet Explained](https://www.youtube.com/watch?v=voFRgzMBdQE) — ⏱️ ~25 min
+- [ ] 📄 [EfficientDet Paper](https://arxiv.org/abs/1911.09070) — ⏱️ ~15 min
 - [ ] 📦 [EfficientDet PyTorch](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~65 min*

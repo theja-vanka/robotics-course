@@ -90,7 +90,7 @@
 - [ ] 📄 [OpenVLA Paper](https://arxiv.org/abs/2406.09246) — ⏱️ ~15 min
 - [ ] 📄 [π0 Paper — Physical Intelligence](https://www.physicalintelligence.company/blog/pi0) — ⏱️ ~15 min
 - [ ] 📄 [State of VLA at ICLR 2026](https://mbreuss.github.io/blog_post_iclr_26_vla.html) — ⏱️ ~15 min
-- [ ] 🎥 [VLA Models Explained](https://www.youtube.com/watch?v=Ow1_k5ysM6A) — ⏱️ ~25 min
+- [ ] 📝 [Vision-Language-Action Models Survey](https://vla-survey.github.io/) — ⏱️ ~15 min
 - [ ] 🔥 📦 [openpi — π0 / π0.5 open VLA (Physical Intelligence)](https://github.com/Physical-Intelligence/openpi) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~95 min*
@@ -201,7 +201,7 @@
 
 ### 📚 Resources
 - [ ] 📄 [Are Sixteen Heads Really Better Than One?](https://arxiv.org/abs/1905.10650) — ⏱️ ~15 min
-- [ ] 📝 [Attention Head Pruning Tutorial](https://towardsdatascience.com/pruning-attention-heads-dba4d8aa9db4) — ⏱️ ~15 min
+- [ ] 📄 [Are Sixteen Heads Really Better Than One?](https://arxiv.org/abs/1905.10650) — ⏱️ ~15 min
 - [ ] 📦 [transformers GitHub](https://github.com/huggingface/transformers) — ⏱️ ~10 min
 
 *⏱️ Resource time this block: ~40 min*

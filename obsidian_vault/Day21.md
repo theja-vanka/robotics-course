@@ -83,7 +83,7 @@
 
 ### 📚 Resources
 - [ ] 🎥 [Backpropagation Calculus — 3Blue1Brown](https://www.youtube.com/watch?v=tIeHLnjs5U8) — ⏱️ ~25 min
-- [ ] 📝 [Adam Optimizer Explained](https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization) — ⏱️ ~15 min
+- [ ] 📝 [Adam Optimizer — PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html) — ⏱️ ~15 min
 - [ ] 🎥 [Loss Functions in Deep Learning](https://www.youtube.com/watch?v=IVVVjBSk9N0) — ⏱️ ~25 min
 - [ ] 📄 [Diffusion ELBO Derivation](https://arxiv.org/abs/2208.11970) — ⏱️ ~15 min
 

@@ -89,7 +89,7 @@
 - [ ] 📄 [3DGS Paper (Kerbl et al.)](https://arxiv.org/abs/2308.04079) — ⏱️ ~15 min
 - [ ] 📄 [3DGS in Robotics Survey](https://arxiv.org/abs/2410.12262) — ⏱️ ~15 min
 - [ ] 🎥 [NeRF Explained — Two Minute Papers](https://www.youtube.com/watch?v=CRlN-cYFxTk) — ⏱️ ~25 min
-- [ ] 🎥 [3D Gaussian Splatting Explained](https://www.youtube.com/watch?v=HVv_IschId8) — ⏱️ ~25 min
+- [ ] 📝 [3D Gaussian Splatting Project Page](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~95 min*
 
@@ -162,7 +162,7 @@
 ### 📚 Resources
 - [ ] 📄 [Milvus Schema Design Guide](https://milvus.io/docs/schema.md) — ⏱️ ~15 min
 - [ ] 📄 [Milvus Data Types Reference](https://milvus.io/docs/schema.md#Supported-data-types) — ⏱️ ~15 min
-- [ ] 📝 [Milvus Best Practices — Zilliz](https://zilliz.com/blog/milvus-best-practices) — ⏱️ ~15 min
+- [ ] 📝 [Milvus Data Model Design](https://milvus.io/docs/schema-hands-on.md) — ⏱️ ~15 min
 
 *⏱️ Resource time this block: ~45 min*
 
