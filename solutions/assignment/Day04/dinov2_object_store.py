@@ -41,13 +41,56 @@ EXAMPLE_VECTORS, QUERY, DIM, N = dinov2_bridge_embeddings()  # (200, 768)
 def store_objects(client):
     """TODO 1: Create collection 'objects' (vector dim DIM=768) and insert EXAMPLE_VECTORS — real DINOv2 CLS features of BridgeData V2 robot scene crops. Return the count."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: store_objects() not written yet")
+    import time
+
+    collection_name = "objects"
+    if client.has_collection(collection_name):
+        client.drop_collection(collection_name)
+
+    client.create_collection(
+        collection_name=collection_name,
+        dimension=DIM,
+        primary_field_name="id",
+        vector_field_name="embeddings",
+        auto_id=False,
+        enable_dynamic_field=True,
+    )
+
+    data = [
+        {
+            "id": i,
+            "embeddings": vector,
+            "dataset": "digits",
+        }
+        for i, vector in enumerate(EXAMPLE_VECTORS[:200].tolist())
+    ]
+
+    result = client.insert(
+        collection_name=collection_name,
+        data=data,
+    )
+    time.sleep(2)  # wait for Milvus to finish inserting
+    return len(result["ids"])
+    # raise NotImplementedError("Step 1: store_objects() not written yet")
 
 
 def find_similar_objects(client, query=QUERY, k=5):
     """TODO 2: Return ids of the k object crops most similar to `query` (your SAM-segmented object lookup)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: find_similar_objects() not written yet")
+    collection_name = "objects"
+    search_params = {
+        "metric_type": "L2",
+        "params": {"nprobe": 10},
+    }
+    search_results = client.search(
+        collection_name=collection_name,
+        data=[query.tolist()],
+        limit=k,
+        params=search_params,
+        output_fields=["id", "dataset"],
+    )
+    return [result.id for result in search_results[0]]
+    # raise NotImplementedError("Step 2: find_similar_objects() not written yet")
 
 
 # ════ TESTS — run `pytest dinov2_object_store.py` (or `python dinov2_object_store.py`). All green = you're done. ════

@@ -23,6 +23,8 @@ from __future__ import annotations
 
 import os
 import sys
+from pyexpat import model
+from turtle import mode
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from helpers.images import load_scene_image
@@ -38,13 +40,19 @@ IMAGE.save("scene.jpg")
 def load_model():
     """TODO 1: Load SAM('sam2.1_b.pt') (downloads once); return it."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 1: load_model() not written yet")
+    model = SAM(
+        "sam2.1_b.pt"
+    )  # Load the SAM model (this will download it if not already present)
+    return model
+    # raise NotImplementedError("Step 1: load_model() not written yet")
 
 
 def segment(model):
     """TODO 2: Run the model on 'scene.jpg' and return the results object (the first element)."""
     # 👇 write your code here, then DELETE the line below
-    raise NotImplementedError("Step 2: segment() not written yet")
+    results = model("scene.jpg")  # Run the model on the scene image
+    return results[0]  # Return the first result object
+    # raise NotImplementedError("Step 2: segment() not written yet")
 
 
 # ════ TESTS — run `pytest run_sam_2_on_robot_scene.py` (or `python run_sam_2_on_robot_scene.py`). All green = you're done. ════
